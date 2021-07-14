@@ -9,6 +9,7 @@ In addition to the home page this website also features the 'Play Game' page and
 The business goals of the website are:
 1. To provide an educational learning platform for children.
 2. To provide engaging content so that users enjoy using this quiz.
+3. To create an easy to navigate website to ensure that it is user friendly.
 
 The user goals of this website are:
 1. To learn key geography facts and information about our world.
@@ -20,6 +21,21 @@ The user goals of this website are:
 ## UX
 
 ### Strategy
+Using the core UX principles I first started with Strategy, thinking about the target audience for this quiz & the features they would want.
+
+The target audience for 'Around the World' are:
+- Children aged 8-12
+- Children interested in geography
+- Children that would like to improve their geographical knowledge
+
+Features that they would need included:
+- A fun & interactive quiz
+- The ability to track their scores so they can see if they're improving
+- Control over which questions they answer to allow for continent specific testing
+
+It was imperative to me that this website was simple & easy to use to ensure that the users had an enjoyable experience; therefore each page has a limited amount of information, written in simple language. 
+
+As children aren't always guaranteed to have mobile phones this website has been designed to work well on desktops & tablets as well, to ensure that no matter the device the user has a positive user experience.
 
 ### Scope
 
