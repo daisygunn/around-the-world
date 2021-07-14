@@ -2,6 +2,8 @@
 
 h1 {
     font-family: 'Yomogi', cursive;
+    text-align: center;
+    color: #f2f2f2
 }
 
 body {
@@ -9,18 +11,20 @@ body {
     background-image: linear-gradient(to right bottom, #3917ca, #352ad2, #3138d9, #2d44e0, #2b50e6, #1762f0, #0074f8, #0084ff, #009dff, #00b2ff, #0dc6ff, #5fd8fb);
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100vh;
 }
 
-.navbar-container {
-    background-color: #3917ca;
-}
+/* .navbar-container {
+    
+} */
 
 .navbar-container a {
     background-color: #3917ca;
     color: #f2f2f2;
+    text-decoration: none;
+    padding: 10px;
     
 }
-
 .navbar-container a:hover {
     background-color: #f2f2f2;
     color: #3917ca;
