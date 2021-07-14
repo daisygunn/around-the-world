@@ -1,4 +1,4 @@
-* Around The World
+# Around The World
 
 View the website here
 
@@ -15,3 +15,29 @@ The user goals of this website are:
 2. To test my geography knowledge using the quiz game.
 3. To improve my previous scores & therefore my overall knowledge.
 
+--- 
+
+## UX
+
+### Strategy
+
+### Scope
+
+### Structure
+
+### Skeleton
+
+### Surface
+---
+
+## Features 
+---
+## Technologies Used
+---
+## Testing
+---
+## Deployment
+---
+## Credits
+---
+## Acknowledgements
