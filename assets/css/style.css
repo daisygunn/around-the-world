@@ -19,10 +19,12 @@ body {
 } */
 
 .navbar-container a {
-    background-color: #3917ca;
+    /* background-color: #3917ca; */
     color: #f2f2f2;
     text-decoration: none;
     padding: 10px;
+    float: right;
+    display: inline;
     
 }
 .navbar-container a:hover {
