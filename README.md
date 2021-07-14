@@ -7,7 +7,8 @@ This website has been produced to provide a platform for an Educational geograph
 In addition to the home page this website also features:
 - The 'Play Game' page
 - A 'Rules' page
-- A 'Fun Facts' page
+- A 'High Scores' page
+<!-- - A 'Fun Facts' page -->
 
 The player has the option of selecting a quiz on a single continent - if they feel they need to test themselves in a more specific way; otherwise they can select the 'Whole World' option which will give them questions to test their overall knowledge.
 
@@ -35,9 +36,9 @@ The target audience for 'Around the World' are:
 
 Features that they would need included:
 - A fun & interactive quiz
-- The ability to track their scores so they can see if they're improving
+- The ability to track their high scores so they can see if they're improving
 - Control over which questions they answer to allow for continent specific testing
-- A page with fun and interesting facts to enhance their learning
+<!-- - A page with fun and interesting facts to enhance their learning -->
 
 It was imperative to me that this website was simple & easy to use to ensure that the users had an enjoyable experience; therefore each page has a limited amount of information, written in simple language. 
 
@@ -64,16 +65,26 @@ In order to acheive the desired user and business goals this website will includ
 - Navigation bar
 - Quiz rules and instructions
 
-4. Fun Facts page:
+<!-- 4. Fun Facts page:
 - H1 element
 - Navigation bar
-- Animated text boxes for users to click in order to read the fun facts.
+- Animated text boxes for users to click in order to read the fun facts. -->
 
 ### Structure
+This is a multi-page website to keep the amount of information on each page limited and easy to digest; the rules, game and high scores are all seperated so that the child using the website are able to find what they want easily.
+Each page is designed with simplicity in mind, each with a navbar and a H1 element and then the desired content centered below; this simplicity will allow for users to feel comfortable using and navigating each page.
+The quiz itself has a question, a text input and four answer buttons - this layout of this will be responsive so that it isn't too squashed when being viewed on a smaller screen. 
 
 ### Skeleton
+- link to wireframe
+Please note the actual website differs from these wireframes.
 
 ### Surface
+I chose to use a graident background using blues and greens to resemble the colour of the globe, I wanted something simple so as not to detract from any of the content. 
+On the landing page there is an animated globe which zooms in and out upon the mouse being scrolled, this ineractive element provides something fun for the user straight away.
+For the continent specific quiz games there is an font-awesome icon of that continent on a globe, this is used to break up the text but also provides a visual reminder of what this continent looks like. 
+Using google fonts I chose Yogomi and Pacifico, I felt that Yogomi had a child handwriting feel to it and this will be used for all the heading elements on the webssite. I paired this with Pacifico for the bigger pieces of text as this would be easier to read.
+
 ---
 
 ## Features 
