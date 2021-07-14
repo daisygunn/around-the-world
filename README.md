@@ -8,7 +8,7 @@ In addition to the home page this website also features the 'Play Game' page and
 
 The business goals of the website are:
 1. To provide an educational learning platform for children.
-2. To provide engaging content so that user's enjoy using this website.
+2. To provide engaging content so that users enjoy using this quiz.
 
 The user goals of this website are:
 1. To learn key geography facts and information about our world.
