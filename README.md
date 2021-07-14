@@ -76,8 +76,7 @@ Each page is designed with simplicity in mind, each with a navbar and a H1 eleme
 The quiz itself has a question, a text input and four answer buttons - this layout of this will be responsive so that it isn't too squashed when being viewed on a smaller screen. 
 
 ### Skeleton
-- link to wireframe
-Please note the actual website differs from these wireframes.
+[View wireframes here](.assets/documents/wiresframes.pdf) - please note the actual website differs slightly from these wireframes.
 
 ### Surface
 I chose to use a graident background using blues and greens to resemble the colour of the globe, I wanted something simple so as not to detract from any of the content. 
