@@ -76,7 +76,7 @@ Each page is designed with simplicity in mind, each with a navbar and a H1 eleme
 The quiz itself has a question, a text input and four answer buttons - this layout of this will be responsive so that it isn't too squashed when being viewed on a smaller screen. 
 
 ### Skeleton
-[View wireframes here](.assets/documents/wiresframes.pdf) - please note the actual website differs slightly from these wireframes.
+[View wireframes here](assets/documents/wiresframes.pdf) - please note the actual website differs slightly from these wireframes.
 
 ### Surface
 I chose to use a graident background using blues and greens to resemble the colour of the globe, I wanted something simple so as not to detract from any of the content. 
@@ -93,6 +93,37 @@ Using google fonts I chose Yogomi and Pacifico, I felt that Yogomi had a child h
 ## Testing
 ---
 ## Deployment
+I deployed this website by using GitPages and following the below steps:
+
+### GitHub pages deployment
+
+1. Log in to GitHub
+2. In your Repository section, select the project repository that you want to deploy
+3. In the menu located at the top of this section, click 'Settings'
+4. Select 'Pages' on the left-hand menu - this is around halfway down
+5. In the source section, select branch 'Master' and save
+6. The page is then given a site URL which you will see above the source section, it will look like the following:
+
+Please note it can take a while for this link to become fully active.
+
+### Forking the GitHub Repository
+
+If you want to make changes to your repository without affecting it, you can make a copy of it by 'Forking' it. This ensures your original repository remains unchanged.
+
+1. Find the relevant GitHub repository
+2. In the top right corner of the page, click the Fork button (under your account)
+3. Your repository has now been 'Forked' and you have a copy to work on
+
+### Cloning the GitHub Repository
+
+Cloning your repository will allow you to download a local version of the repository to be worked on. Cloning can also be a great way to backup your work.
+
+1. Find the relevant GitHub repository
+2. Press the arrow on the Code button
+3. Copy the link that is shown in the drop-down
+4. Now open Gitpod & select the directory location where you would like the clone created
+5. In the terminal type 'git clone' & then paste the link you copied in GitHub
+6. Press enter and your local clone will be created.
 ---
 ## Credits
 ---
