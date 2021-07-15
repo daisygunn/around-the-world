@@ -8,7 +8,7 @@ h1 {
     padding-top: 20px;
     font-size: 55px;
     line-height: 75px;
-}
+    }
 
 body {
     font-family: 'Lato', sans-serif;
@@ -17,7 +17,7 @@ body {
     background-size: cover;
     height: 100vh;
 }
-
+/* Navbar styling */
 .navbar-container {
    display: block;
    padding-bottom: 20px; 
@@ -45,6 +45,10 @@ body {
     color: #3917ca;
 }
 
+/* General content styling for entire website */
+.title-container {
+    margin: none;
+}
 .container {
     display: flex;
     justify-content: center;
@@ -66,6 +70,7 @@ body {
     color: white;
 }
 
+/* Styling for quiz game */
 .question {
     font-size: 30px;
     font-family: 'Lato', serif;
@@ -89,4 +94,11 @@ body {
     background-color: white;
     color: #3917ca;
     border: solid 1pxs #3917ca;
+}
+/* Styling for rules page */
+#rules-list {
+    font-family: 'Yomogi', cursive;
+    color: white;
+    font-size: 20px;
+
 }
