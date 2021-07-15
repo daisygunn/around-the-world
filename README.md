@@ -37,7 +37,7 @@ The target audience for 'Around the World' are:
 Features that they would need included:
 - A fun & interactive quiz
 - The ability to track their high scores so they can see if they're improving
-- Control over which questions they answer to allow for continent specific testing
+- The choice over quiz type to have more specific testing 
 <!-- - A page with fun and interesting facts to enhance their learning -->
 
 It was imperative to me that this website was simple & easy to use to ensure that the users had an enjoyable experience; therefore each page has a limited amount of information, written in simple language. 
@@ -65,14 +65,19 @@ In order to acheive the desired user and business goals this website will includ
 - Navigation bar
 - Quiz rules and instructions
 
+4. High Scores page:
+- H1 element
+- Navigation bar
+- List of top 5 high scores
+
 <!-- 4. Fun Facts page:
 - H1 element
 - Navigation bar
 - Animated text boxes for users to click in order to read the fun facts. -->
 
 ### Structure
-This is a multi-page website to keep the amount of information on each page limited and easy to digest; the rules, game and high scores are all seperated so that the child using the website are able to find what they want easily.
-Each page is designed with simplicity in mind, each with a navbar and a H1 element and then the desired content centered below; this simplicity will allow for users to feel comfortable using and navigating each page.
+This is a multi-page website to keep the amount of information on each page limited and easy to digest; the rules, game and high scores are all seperated so that any child using the website is able to find what they want easily.
+Each page is designed with simplicity in mind, with a navbar and a H1 element and then the relevant content centered below; this simplicity will allow for users to feel comfortable using and navigating each page.
 The quiz itself has a question, a text input and four answer buttons - this layout of this will be responsive so that it isn't too squashed when being viewed on a smaller screen. 
 
 ### Skeleton
