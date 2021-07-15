@@ -3,7 +3,9 @@
 h1 {
     font-family: 'Yomogi', cursive;
     text-align: center;
-    color: #f2f2f2
+    color: #f2f2f2;
+    align-content: center;
+    padding-top: 20px;
 }
 
 body {
@@ -14,16 +16,25 @@ body {
     height: 100vh;
 }
 
-/* .navbar-container {
-    
-} */
+.navbar-container {
+   display: block;
+   padding-bottom: 20px; 
+}
+
+.navbar-top {
+    float: right;
+}
+
+.navbar-top li {
+    list-style: none;
+    display: inline;
+}
 
 .navbar-container a {
     /* background-color: #3917ca; */
     color: #f2f2f2;
     text-decoration: none;
     padding: 10px;
-    float: right;
     display: inline;
     
 }
