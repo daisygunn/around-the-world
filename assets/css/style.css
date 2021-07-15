@@ -11,7 +11,7 @@ h1 {
     }
 
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Yomogi', cursive;
     background-image: linear-gradient(to right bottom, #3917ca, #352ad2, #3138d9, #2d44e0, #2b50e6, #1762f0, #0074f8, #0084ff, #009dff, #00b2ff, #0dc6ff, #5fd8fb);
     background-repeat: no-repeat;
     background-size: cover;
@@ -66,7 +66,7 @@ body {
     display: inline-block;
     line-height: 1em;
   }
-  
+
 /* General content styling for entire website */
 .title-container {
     margin: none;
@@ -80,7 +80,7 @@ body {
 .btn {
     background-color: white;
     color: #3917ca;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Yomogi', cursive;
     font-size: 20px;
     border: white;
     margin: 15px; 
@@ -95,7 +95,7 @@ body {
 /* Styling for quiz game */
 .question {
     font-size: 30px;
-    font-family: 'Lato', serif;
+    font-family: 'Yomogi', cursive;
     color: white;
     text-align: center;
 }
