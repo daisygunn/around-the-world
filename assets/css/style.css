@@ -57,10 +57,36 @@ body {
     font-family: 'Lato', sans-serif;
     font-size: 20px;
     border: white;
-    margin: 15px;  
+    margin: 15px; 
+    padding: 15px;
 }
 
 .btn:hover {
     background-color: #5fd8fb;
     color: white;
+}
+
+.question {
+    font-size: 30px;
+    font-family: 'Lato', serif;
+    color: white;
+    text-align: center;
+}
+
+.answer-btn {
+    font-family: 'Yomogi', cursive;
+    text-align: center;
+    color: white;
+    background-color: #3917ca;
+    margin: 20px;
+    padding: 10px;
+    font-size: 20px;
+    width: 150px;
+    border: solid 1px white;
+}
+
+.answer-btn:hover {
+    background-color: white;
+    color: #3917ca;
+    border: solid 1pxs #3917ca;
 }
