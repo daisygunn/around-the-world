@@ -807,11 +807,16 @@ const countries = [{
 ];
 // Game controls
 let startButton = document.getElementById('start-button');
-    startButton.addEventListener('click', startGame) 
+const gameContainer = document.getElementById('game-container');
+
+
+startButton.addEventListener('click', startGame) 
 
 // Start game
 function startGame(event) {
-    console.log('Game started')
+    startButton.classList.add('hidden')
+    gameContainer.classList.remove('hidden')
+    SetQuestion()
 }
 
 // Choose question difficulty
