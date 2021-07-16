@@ -1,17 +1,3 @@
-// const countries = [{
-//         name: 'England',
-//         capital: 'London',
-//     },
-//     {
-//         name: 'Scotland',
-//         capital: 'Edinburgh'
-//     },
-//     {
-//         name: 'Spain',
-//         capital: 'Madrid'
-//     },
-// ];
-
 // let quiz = [];
 
 // const quizExample = [{
@@ -818,4 +804,30 @@ const countries = [{
         country: 'Zimbabwe',
         capital: 'Harare'
     },
-]
+];
+// Game controls
+let startButton = document.getElementById('start-button');
+    startButton.addEventListener('click', startGame) 
+
+// Start game
+function startGame(event) {
+    console.log('Game started')
+}
+
+// Choose question difficulty
+// if function loop
+
+// Question 1 is generated
+// 'What is the capital city of ______?' the blank is populated using the array countries - each question is dynamically created using a random country from the index of the array.
+function generateQuestion() {
+
+}
+// Checks if the answer is right
+function checkAnswer(){}
+// Gives an alert if it is right or wrong
+
+// Next question is generated
+
+// Checks if answer is right
+
+// repeat x 10 in total 
