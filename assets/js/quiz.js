@@ -16,7 +16,7 @@
 
 // quiz.push({})
 
-const countries = [{
+const countriesList = [{
         country: 'Afghanistan',
         capital: 'Kabul'
     },
@@ -806,10 +806,15 @@ const countries = [{
     },
 ];
 // Game controls
-let startButton = document.getElementById('start-button');
-let quitButton = document.getElementById('quit-button');
+const startButton = document.getElementById('start-button');
+const quitButton = document.getElementById('quit-button');
 const gameContainer = document.getElementById('game-container');
 
+let quiz = [];
+
+// let question = document.getElementsByClassName('question');
+// let questionText = 'What is the capital of' + `${country}` + '?'
+// question.innerHTML=questionText
 
 startButton.addEventListener('click', startGame) 
 quitButton.addEventListener('click', quitGame)
@@ -818,7 +823,7 @@ quitButton.addEventListener('click', quitGame)
 function startGame(event) {
     startButton.classList.add('hidden')
     gameContainer.classList.remove('hidden')
-    SetQuestion()
+    generateQuestion()
 }
 
 // Quit Game
@@ -826,20 +831,37 @@ function quitGame(event) {
     if (window.confirm('Are you sure you want to quit?')) {
         gameContainer.classList.add('hidden') 
         startButton.classList.remove('hidden')
-    } else {
-        
-    }
-      
+    }       
 }
 
-// Choose question difficulty
-// if function loop
+// // Choose question difficulty
+// // if function loop
+// function chooseDifficulty() {
+    
+// }
 
 // Question 1 is generated
 // 'What is the capital city of ______?' the blank is populated using the array countries - each question is dynamically created using a random country from the index of the array.
 function generateQuestion() {
 
-}
+    
+    for (let i = 0; i < countriesList.length; i++) {
+        
+        let selectedCountry = countriesList[countriesList.length * Math.random() | 0]
+        console.log(selectedCountry)
+    };
+    
+   };
+
+    // for (let i = 0; i < countriesList.length; ++i) {
+    //     allCountries = countriesList[i].country
+    //     selectedCountry= allCountries[Math.floor(Math.random()*countriesList.length)];
+    //     console.log(allCountries);
+        
+    // }
+
+    // };
+
 // Checks if the answer is right
 function checkAnswer(){}
 // Gives an alert if it is right or wrong
@@ -848,4 +870,4 @@ function checkAnswer(){}
 
 // Checks if answer is right
 
-// repeat x 10 in total 
+// repeat x 10 in total }
