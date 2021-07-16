@@ -807,16 +807,29 @@ const countries = [{
 ];
 // Game controls
 let startButton = document.getElementById('start-button');
+let quitButton = document.getElementById('quit-button');
 const gameContainer = document.getElementById('game-container');
 
 
 startButton.addEventListener('click', startGame) 
+quitButton.addEventListener('click', quitGame)
 
 // Start game
 function startGame(event) {
     startButton.classList.add('hidden')
     gameContainer.classList.remove('hidden')
     SetQuestion()
+}
+
+// Quit Game
+function quitGame(event) {
+    if (window.confirm('Are you sure you want to quit?')) {
+        gameContainer.classList.add('hidden') 
+        startButton.classList.remove('hidden')
+    } else {
+        
+    }
+      
 }
 
 // Choose question difficulty
