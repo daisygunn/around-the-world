@@ -1,3 +1,10 @@
+// Game controls
+const startButton = document.getElementById('start-button');
+const quitButton = document.getElementById('quit-button');
+const gameContainer = document.getElementById('game-container');
+const randomQuestion = document.getElementById('random-question');
+
+// Array used to generate questions
 const countriesList = [{
         country: 'Afghanistan',
         capital: 'Kabul'
@@ -787,19 +794,6 @@ const countriesList = [{
         capital: 'Harare'
     },
 ];
-
-
-// Game controls
-const startButton = document.getElementById('start-button');
-const quitButton = document.getElementById('quit-button');
-const gameContainer = document.getElementById('game-container');
-const randomQuestion = document.getElementById('random-question');
-
-let quiz = [];
-
-// let question = document.getElementsBy('question');
-
-
 startButton.addEventListener('click', startGame);
 quitButton.addEventListener('click', quitGame);
 randomQuestion.addEventListener('click', getRandomQuestion);
@@ -809,7 +803,7 @@ function startGame(event) {
     startButton.classList.add('hidden')
     gameContainer.classList.remove('hidden')
     generateQuestion()
-}
+};
 
 // Quit Game
 function quitGame(event) {
@@ -817,11 +811,12 @@ function quitGame(event) {
         gameContainer.classList.add('hidden')
         startButton.classList.remove('hidden')
     }
-}
+};
 
+// Used for testing 
 function getRandomQuestion(event) {
     generateQuestion();
-}
+};
 
 // // Choose question difficulty
 // // if function loop
@@ -830,25 +825,26 @@ function getRandomQuestion(event) {
 // }
 
 // Question 1 is generated
-// Generate random number 
-// 'What is the capital city of ______?' the blank is populated using the array countries - each question is dynamically created using a random country from the index of the array.
+// 'What is the capital city of ______?' the blank is populated using the array countries - 
+// each question is dynamically created using a random country from the index of the array.
 function generateQuestion() {
     let countriesCount = countriesList.length;
     let randomNumber = getRandomInt(0, countriesCount);
     let chosenCountry = (countriesList[randomNumber].country); // Generate random country from array 
     let correctAnswer = (countriesList[randomNumber].capital); // Generate the correct capital city from array 
-   
-    // generate 3 random cities from capitalListOptions
+
+    // Define correct answer
     let isCorrectQuestionAnswer = {
         question: chosenCountry,
         answer: correctAnswer
     };
-    
-    // Need to prevent correct answer being generated in the random answers
+
+    // To do: Need to prevent correct answer being generated in the random answers
+    // generate 3 random cities from capitalListOptions
     let answerOption1 = (countriesList[getRandomInt(0, countriesList.length)].capital);
     let answerOption2 = (countriesList[getRandomInt(0, countriesList.length)].capital);
     let answerOption3 = (countriesList[getRandomInt(0, countriesList.length)].capital);
-    //console.log(answerOption1, answerOption2, answerOption3);
+
     let optionOutputs = [{
             'question': chosenCountry,
             'option': correctAnswer
@@ -865,26 +861,28 @@ function generateQuestion() {
             'question': chosenCountry,
             'option': answerOption3
         }
-        ];
-    // randomise the outputs so the correct answer isn't in the same place all the time 
+    ];
+    // Randomise the outputs so the correct answer isn't in the same place all the time 
     randomOptionOutputs = optionOutputs.sort(() => Math.random() - 0.5);
     let buttonOutputs = '';
     let i = 0;
-
-    Object.keys(randomOptionOutputs).forEach(function (key) {
+    
+    // Loop through 
+        Object.keys(randomOptionOutputs).forEach(function (key) {
 
         console.log(randomOptionOutputs[key]);
+        // Code to define the html for the buttons 
         buttonOutputs += '<button id="answer-' + i + '" data-answer="' + randomOptionOutputs[key]['option'] + '" data-country="' + randomOptionOutputs[key]['question'] + '" class="answer-btn">' + randomOptionOutputs[key]['option'] + '</button>';
         i++;
-        //console.log(key);
+
     });
-    console.log(buttonOutputs);
+    // Create the answer buttons and the questionText
     document.getElementById('country-name').innerHTML = chosenCountry;
     document.getElementById('answers-container').innerHTML = buttonOutputs;
 };
 
 
-// Generate random number 
+// Generate random number to use as array index to generate questions and answers 
 function getRandomInt(min, max) {
     min = Math.ceil(min);
     max = Math.floor(max);
@@ -900,7 +898,7 @@ function checkAnswer() {
 
     // Gives an alert if it is right or wrong
 
-     // Next question is generated
-    
+    // Next question is generated
+
     // repeat x 10 in total
 };
