@@ -1,21 +1,3 @@
-// let quiz = [];
-
-// const quizExample = [{
-//     question: 'What is the capital of England?',
-//     answers: [{
-//             answer: 'London',
-//             isCorrect: true
-//         },
-//         {
-//             answer: 'Dublin',
-//             isCorrect: false
-//         }
-//     ]
-
-// }];
-
-// quiz.push({})
-
 const countriesList = [{
         country: 'Afghanistan',
         capital: 'Kabul'
@@ -883,10 +865,22 @@ function generateQuestion() {
             'question': chosenCountry,
             'option': answerOption3
         }
-    ];
-
+        ];
+    // randomise the outputs so the correct answer isn't in the same place all the time 
     randomOptionOutputs = optionOutputs.sort(() => Math.random() - 0.5);
+
+    Object.keys(randomOptionOutputs).forEach(function (key) {
+
+        console.log(randomOptionOutputs[key]);
+        buttonOutputs += '<button id="answer-' + i + '" data-answer="' + randomOptionOutputs[key]['option'] + '" data-country="' + randomOptionOutputs[key]['question'] + '" class="answer-btn">' + randomOptionOutputs[key]['option'] + '</button>';
+        i++;
+        //console.log(key);
+    });
+    console.log(buttonOutputs);
+    document.getElementById('country-name').innerHTML = chosenCountry;
+    document.getElementById('answers-container').innerHTML = buttonOutputs;
 };
+
 
 // Generate random number 
 function getRandomInt(min, max) {
