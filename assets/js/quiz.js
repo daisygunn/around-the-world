@@ -806,598 +806,6 @@ const countriesList = [{
     },
 ];
 
-const countriesListOptions = [{
-    capital: 'Kabul'
-},
-{
-    capital: 'Tirana'
-},
-{
-    capital: 'Algiers'
-},
-{
-    capital: 'Andorra la Vella'
-},
-{
-    capital: 'Luanda'
-},
-{
-    capital: 'Saint John"s'
-},
-{
-    capital: 'Buenos Aires'
-},
-{
-    capital: 'Yerevan'
-},
-{
-    capital: 'Canberra'
-},
-{
-    capital: 'Vienna'
-},
-{
-    capital: 'Baku'
-},
-{
-    capital: 'Nassau'
-},
-{
-    capital: 'Manama'
-},
-{
-    capital: 'Dhaka'
-},
-{
-    capital: 'Bridgetown'
-},
-{
-    capital: 'Minsk'
-},
-{
-    capital: 'Brussels'
-},
-{
-    capital: 'Belmopan'
-},
-{
-    capital: 'Porto-Novo'
-},
-{
-    capital: 'Thimphu'
-},
-{
-    capital: 'La Paz (seat of government)'
-},
-{
-    capital: 'Sarajevo'
-},
-{
-    capital: 'Gaborone'
-},
-{
-    capital: 'Brasilia'
-},
-{
-    capital: 'Bandar Seri Begawan'
-},
-{
-    capital: 'Sofia'
-},
-{
-    capital: 'Ouagadougou'
-},
-{
-    capital: 'Gitega'
-},
-{
-    capital: 'Praia'
-},
-{
-    capital: 'Phnom Penh'
-},
-{
-    capital: 'Yaounde'
-},
-{
-    capital: 'Ottawa'
-},
-{
-    capital: 'Bangui'
-},
-{
-    capital: 'N"Djamena'
-},
-{
-    capital: 'Santiago'
-},
-{
-    capital: 'Beijing'
-},
-{
-    capital: 'Bogotá'
-},
-{
-    capital: 'Moroni'
-},
-{
-    capital: 'Kinshasa'
-},
-{
-    capital: 'Brazzaville'
-},
-{
-    capital: 'San Jose'
-},
-{
-    capital: 'Yamoussoukro'
-},
-{
-    capital: 'Zagreb'
-},
-{
-    capital: 'Havana'
-},
-{
-    capital: 'Nicosia'
-},
-{
-    capital: 'Prague'
-},
-{
-    capital: 'Copenhagen'
-},
-{
-    capital: 'Djibouti (city)'
-},
-{
-    capital: 'Roseau'
-},
-{
-    capital: 'Santo Domingo'
-},
-{
-    capital: 'Quito'
-},
-{
-    capital: 'Cairo'
-},
-{
-    capital: 'San Salvador'
-},
-{
-    capital: 'Malabo (de jure) or Oyala (seat of government)'
-},
-{
-    capital: 'Asmara'
-},
-{
-    capital: 'Tallinn'
-},
-{
-    capital: 'Mbabane (administrative), Lobamba (legislative, royal)'
-},
-{
-    capital: 'Addis Ababa'
-},
-{
-    capital: 'Suva'
-},
-{
-    capital: 'Helsinki'
-},
-{
-    capital: 'Paris'
-},
-{
-    capital: 'Libreville'
-},
-{
-    capital: 'Banjul'
-},
-{
-    capital: 'Tbilisi'
-},
-{
-    capital: 'Berlin'
-},
-{
-    capital: 'Accra'
-},
-{
-    capital: 'Athens'
-},
-{
-    capital: 'Saint George"s'
-},
-{
-    capital: 'Guatemala City'
-},
-{
-    capital: 'Conakry'
-},
-{
-    capital: 'Bissau'
-},
-{
-    capital: 'Georgetown'
-},
-{
-    capital: 'Port-au-Prince'
-},
-{
-    capital: 'Tegucigalpa'
-},
-{
-    capital: 'Budapest'
-},
-{
-    capital: 'Reykjavik'
-},
-{
-    capital: 'New Delhi'
-},
-{
-    capital: 'Jakarta'
-},
-{
-    capital: 'Tehran'
-},
-{
-    capital: 'Baghdad'
-},
-{
-    capital: 'Dublin'
-},
-{
-    capital: 'Jerusalem'
-},
-{
-    capital: 'Rome'
-},
-{
-    capital: 'Kingston'
-},
-{
-    capital: 'Tokyo'
-},
-{
-    capital: 'Amman'
-},
-{
-    capital: 'Nur-Sultan'
-},
-{
-    capital: 'Nairobi'
-},
-{
-    capital: 'Tarawa'
-},
-{
-    capital: 'Pristina'
-},
-{
-    capital: 'Kuwait City'
-},
-{
-    capital: 'Bishkek'
-},
-{
-    capital: 'Vientiane'
-},
-{
-    capital: 'Riga'
-},
-{
-    capital: 'Beirut'
-},
-{
-    capital: 'Maseru'
-},
-{
-    capital: 'Monrovia'
-},
-{
-    capital: 'Tripoli'
-},
-{
-    capital: 'Vaduz'
-},
-{
-    capital: 'Vilnius'
-},
-{
-    capital: 'Luxembourg (city)'
-},
-{
-    capital: 'Antananarivo'
-},
-{
-    capital: 'Lilongwe'
-},
-{
-    capital: 'Kuala Lumpur'
-},
-{
-    capital: 'Male'
-},
-{
-    capital: 'Bamako'
-},
-{
-    capital: 'Valletta'
-},
-{
-    capital: 'Majuro'
-},
-{
-    capital: 'Nouakchott'
-},
-{
-    capital: 'Port Louis'
-},
-{
-    capital: 'Mexico City'
-},
-{
-    capital: 'Palikir'
-},
-{
-    capital: 'Chisinau'
-},
-{
-    capital: 'Monaco'
-},
-{
-    capital: 'Ulaanbaatar'
-},
-{
-    capital: 'Podgorica'
-},
-{
-    capital: 'Rabat'
-},
-{
-    capital: 'Maputo'
-},
-{
-    capital: 'Naypyidaw'
-},
-{
-    capital: 'Windhoek'
-},
-{
-    capital: 'Yaren District (de facto)'
-},
-{
-    capital: 'Kathmandu'
-},
-{
-    capital: 'Amsterdam'
-},
-{
-    capital: 'Wellington'
-},
-{
-    capital: 'Managua'
-},
-{
-    capital: 'Niamey'
-},
-{
-    capital: 'Abuja'
-},
-{
-    capital: 'Pyongyang'
-},
-{
-    capital: 'Skopje'
-},
-{
-    capital: 'Oslo'
-},
-{
-    capital: 'Muscat'
-},
-{
-    capital: 'Islamabad'
-},
-{
-    capital: 'Ngerulmud'
-},
-{
-    capital: 'Jerusalem (East)'
-},
-{
-    capital: 'Panama City'
-},
-{
-    capital: 'Port Moresby'
-},
-{
-    capital: 'Asunción'
-},
-{
-    capital: 'Lima'
-},
-{
-    capital: 'Manila'
-},
-{
-    capital: 'Warsaw'
-},
-{
-    capital: 'Lisbon'
-},
-{
-    capital: 'Doha'
-},
-{
-    capital: 'Bucharest'
-},
-{
-    capital: 'Moscow'
-},
-{
-    capital: 'Kigali'
-},
-{
-    capital: 'Basseterre'
-},
-{
-    capital: 'Castries'
-},
-{
-    capital: 'Kingstown'
-},
-{
-    capital: 'Apia'
-},
-{
-    capital: 'San Marino'
-},
-{
-    capital: 'São Tomé'
-},
-{
-    capital: 'Riyadh'
-},
-{
-    capital: 'Dakar'
-},
-{
-    capital: 'Belgrade'
-},
-{
-    capital: 'Victoria'
-},
-{
-    capital: 'Freetown'
-},
-{
-    capital: 'Singapore'
-},
-{
-    capital: 'Bratislava'
-},
-{
-    capital: 'Ljubljana'
-},
-{
-    capital: 'Honiara'
-},
-{
-    capital: 'Mogadishu'
-},
-{
-    capital: 'Pretoria (administrative) Cape Town (legislative), Bloemfontein (judicial)'
-},
-{
-    capital: 'Seoul'
-},
-{
-    capital: 'Juba'
-},
-{
-    capital: 'Madrid'
-},
-{
-    capital: 'Sri Jayawardenepura Kotte'
-},
-{
-    capital: 'Khartoum'
-},
-{
-    capital: 'Paramaribo'
-},
-{
-    capital: 'Stockholm'
-},
-{
-    capital: 'Bern'
-},
-{
-    capital: 'Damascus'
-},
-{
-    capital: 'Taipei'
-},
-{
-    capital: 'Dushanbe'
-},
-{
-    capital: 'Dodoma'
-},
-{
-    capital: 'Bangkok'
-},
-{
-    capital: 'Dili'
-},
-{
-    capital: 'Lomé'
-},
-{
-    capital: 'Nukuʻalofa'
-},
-{
-    capital: 'Port of Spain'
-},
-{
-    capital: 'Tunis'
-},
-{
-    capital: 'Ankara'
-},
-{
-    capital: 'Ashgabat'
-},
-{
-    capital: 'Funafuti'
-},
-{
-    capital: 'Kampala'
-},
-{
-    capital: 'Kyiv (also known as Kiev)'
-},
-{
-    capital: 'Abu Dhabi'
-},
-{
-    capital: 'London'
-},
-{
-    capital: 'Washington, D.C.'
-},
-{
-    capital: 'Montevideo'
-},
-{
-    capital: 'Tashkent'
-},
-{
-    capital: 'Port Vila'
-},
-{
-    capital: 'Vatican City'
-},
-{
-    capital: 'Caracas'
-},
-{
-    capital: 'Hanoi'
-},
-{
-    capital: "Sana'a"
-},
-{
-    capital: 'Lusaka'
-},
-{
-    capital: 'Harare'
-}
-];
 
 // Game controls
 const startButton = document.getElementById('start-button');
@@ -1440,21 +848,45 @@ function getRandomQuestion(event) {
 // }
 
 // Question 1 is generated
-// Generate random number
+// Generate random number 
 // 'What is the capital city of ______?' the blank is populated using the array countries - each question is dynamically created using a random country from the index of the array.
 function generateQuestion() {
     let countriesCount = countriesList.length;
     let randomNumber = getRandomInt(0, countriesCount);
-    let chosenCountry = (countriesList[randomNumber].country);
-    // let questionText = document.getElementById('country-name');
-    // questionText.innerHTML = chosenCountry;
-    let correctAnswer = (countriesList[randomNumber].capital);
-    console.log(chosenCountry);
-    console.log(correctAnswer);
+    let chosenCountry = (countriesList[randomNumber].country); // Generate random country from array 
+    let correctAnswer = (countriesList[randomNumber].capital); // Generate the correct capital city from array 
+   
+    // generate 3 random cities from capitalListOptions
+    let isCorrectQuestionAnswer = {
+        question: chosenCountry,
+        answer: correctAnswer
+    };
+    
+    // Need to prevent correct answer being generated in the random answers
+    let answerOption1 = (countriesList[getRandomInt(0, countriesList.length)].capital);
+    let answerOption2 = (countriesList[getRandomInt(0, countriesList.length)].capital);
+    let answerOption3 = (countriesList[getRandomInt(0, countriesList.length)].capital);
+    //console.log(answerOption1, answerOption2, answerOption3);
+    let optionOutputs = [{
+            'question': chosenCountry,
+            'option': correctAnswer
+        },
+        {
+            'question': chosenCountry,
+            'option': answerOption1
+        },
+        {
+            'question': chosenCountry,
+            'option': answerOption2
+        },
+        {
+            'question': chosenCountry,
+            'option': answerOption3
+        }
+    ];
 };
 
-
-// 
+// Generate random number 
 function getRandomInt(min, max) {
     min = Math.ceil(min);
     max = Math.floor(max);
@@ -1462,27 +894,15 @@ function getRandomInt(min, max) {
 };
 
 
-// for (let i = 0; i < allCountries; i++) {
-
-//       }
-// };
-
-
-// for (let i = 0; i < countriesList.length; ++i) {
-//     allCountries = countriesList[i].country
-//     selectedCountry= allCountries[Math.floor(Math.random()*countriesList.length)];
-//     console.log(allCountries);
-
-// }
-
-// };
-
 // Checks if the answer is right
-function checkAnswer() {}
-// Gives an alert if it is right or wrong
+function checkAnswer() {
 
-// Next question is generated
+    // Depending on button pressed, check data-country value against countriesList
+    // get correct capital name and then check if this matches the data-answer
 
-// Checks if answer is right
+    // Gives an alert if it is right or wrong
 
-// repeat x 10 in total
+     // Next question is generated
+    
+    // repeat x 10 in total
+};
