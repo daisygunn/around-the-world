@@ -868,6 +868,8 @@ function generateQuestion() {
         ];
     // randomise the outputs so the correct answer isn't in the same place all the time 
     randomOptionOutputs = optionOutputs.sort(() => Math.random() - 0.5);
+    let buttonOutputs = '';
+    let i = 0;
 
     Object.keys(randomOptionOutputs).forEach(function (key) {
 
