@@ -884,6 +884,8 @@ function generateQuestion() {
             'option': answerOption3
         }
     ];
+
+    randomOptionOutputs = optionOutputs.sort(() => Math.random() - 0.5);
 };
 
 // Generate random number 
