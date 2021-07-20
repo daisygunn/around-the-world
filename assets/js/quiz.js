@@ -812,9 +812,9 @@ const gameContainer = document.getElementById('game-container');
 
 let quiz = [];
 
-// let question = document.getElementsByClassName('question');
-// let questionText = 'What is the capital of' + `${country}` + '?'
-// question.innerHTML=questionText
+// let question = document.getElementsBy('question');
+let questionText = document.getElementById('country-name')
+questionText.innerHTML=chosenCountry
 
 startButton.addEventListener('click', startGame) 
 quitButton.addEventListener('click', quitGame)
@@ -843,15 +843,20 @@ function quitGame(event) {
 // Question 1 is generated
 // 'What is the capital city of ______?' the blank is populated using the array countries - each question is dynamically created using a random country from the index of the array.
 function generateQuestion() {
+let allCountries = countriesList.length
 
-    
-    for (let i = 0; i < countriesList.length; i++) {
+function randomCountry(countriesList) {
+    let countryIndex = countriesList[Math.floor(Math.random() * countriesList.length)];
+    return countryIndex
+  }
+
+  console.log(countryIndex[2])
+};
+    // for (let i = 0; i < allCountries; i++) {
         
-        let selectedCountry = countriesList[countriesList.length * Math.random() | 0]
-        console.log(selectedCountry)
-    };
+    //       }
+    // };
     
-   };
 
     // for (let i = 0; i < countriesList.length; ++i) {
     //     allCountries = countriesList[i].country
@@ -870,4 +875,4 @@ function checkAnswer(){}
 
 // Checks if answer is right
 
-// repeat x 10 in total }
+// repeat x 10 in total
