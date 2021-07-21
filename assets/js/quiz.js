@@ -837,7 +837,7 @@ function generateQuestion() {
     // Define correct answer
     let isCorrectQuestionAnswer = {
         question: chosenCountry,
-        answer: correctAnswer
+        option: correctAnswer
     };
 
     // To do: Need to prevent correct answer being generated in the random answers
@@ -875,11 +875,17 @@ function generateQuestion() {
         // Code to define the html for the buttons 
         buttonOutputs += '<button id="answer-' + i + '" data-answer="' + randomOptionOutputs[key]['option'] + '" data-country="' + randomOptionOutputs[key]['question'] + '" class="answer-btn">' + randomOptionOutputs[key]['option'] + '</button>';
         i++;
-
     });
     // Create the answer buttons and the questionText
     document.getElementById('country-name').innerHTML = chosenCountry;
     document.getElementById('answers-container').innerHTML = buttonOutputs;
+
+    for (let i = 0; i < 4; i++) {
+        document.getElementById("answer-" +i).addEventListener("click", function(){
+            checkAnswer(isCorrectQuestionAnswer)
+        });
+        
+    };
 };
 
 
@@ -892,13 +898,18 @@ function getRandomInt(min, max) {
 
 
 // Checks if the answer is right
-function checkAnswer() {
-
+function checkAnswer(isCorrectQuestionAnswer) {
+    
     // Depending on button pressed, check data-country value against countriesList
     // get correct capital name and then check if this matches the data-answer
+    
+    console.log(isCorrectQuestionAnswer)
+    
+    if (["target"]["dataset"]["answer"] === isCorrectQuestionAnswer["option"]) {
+        console.log('Correct')
+    }
 
     // Gives an alert if it is right or wrong
-
     // Next question is generated
 
     // repeat x 10 in total
