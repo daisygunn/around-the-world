@@ -30,6 +30,8 @@ body {
 .navbar-top li {
     list-style: none;
     display: inline;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .navbar-container a {
@@ -47,13 +49,13 @@ body {
 
 /* Index.html main heading */
 /* Code found https://tobiasahlin.com/moving-letters/#6 */
-.ml6 {
+.animated-heading {
     position: relative;
     font-weight: 900;
     font-size: 3.3em;
   }
   
-  .ml6 .text-wrapper {
+  .animated-heading .text-wrapper {
     position: relative;
     display: inline-block;
     padding-top: 0.2em;
@@ -62,10 +64,13 @@ body {
     overflow: hidden;
   }
   
-  .ml6 .letter {
+  .animated-heading .letter {
     display: inline-block;
     line-height: 1em;
   }
+
+/* Globe */
+#rotatingGlobe {width: 400px; height: 400px; cursor: move; padding-left: 50px;}
 
 /* General content styling for entire website */
 .title-container {
@@ -128,4 +133,27 @@ body {
     color: white;
     font-size: 20px;
 
+}
+
+@media screen and (max-width: 525px) {
+    .animated-heading {
+        font-weight: 900;
+        font-size: 1.5em;
+      }
+
+    .navbar-top {
+        float: none;
+    }
+
+    .navbar-top li {
+        list-style: none;
+        display: inline;
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    #rotatingGlobe {
+        width: 200px;
+        height: 200px;
+    }
 }

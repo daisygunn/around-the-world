@@ -794,6 +794,7 @@ const countriesList = [{
         capital: 'Harare'
     },
 ];
+
 startButton.addEventListener('click', startGame);
 quitButton.addEventListener('click', quitGame);
 randomQuestion.addEventListener('click', getRandomQuestion);
