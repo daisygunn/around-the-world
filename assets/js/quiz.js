@@ -873,9 +873,9 @@ function generateQuestion() {
     // Loop through 
         Object.keys(randomOptionOutputs).forEach(function (key) {
 
-        console.log(randomOptionOutputs[key]);
+        // console.log(randomOptionOutputs[key]);
         // Code to define the html for the buttons 
-        buttonOutputs += '<button id="answer-' + i + '" data-answer="' + randomOptionOutputs[key]['option'] + '" data-country="' + randomOptionOutputs[key]['question'] + '" class="answer-btn" onClick="reply_click(this.id)">' + randomOptionOutputs[key]['option'] + '</button>';
+        buttonOutputs += '<button id="answer-' + i + '" data-answer="' + randomOptionOutputs[key]['option'] + '" data-country="' + randomOptionOutputs[key]['question'] + '" class="answer-btn" >' + randomOptionOutputs[key]['option'] + '</button>';
         i++;
     });
     // Create the answer buttons and the questionText
@@ -902,30 +902,36 @@ function getRandomInt(min, max) {
 
 
 // Checks if the answer is right
-function checkAnswer(isCorrectQuestionAnswer, chosenAnswer) {
+function checkAnswer(isCorrectQuestionAnswer) {
 
-    function reply_click(clicked_id)
-    {
-    console.log(clicked_id)
-
-      return clicked_id.getAttribute('data-answer');
-      
-    };
+    $(document).on('click', '.answer-btn' , function(){
+        var clickedButton =  $(this).data('answer');
+        if (clickedButton === isCorrectQuestionAnswer["option"]) {
+            console.log('Correct')
+            generateQuestion();
+            return
+        } else {
+            console.log('Incorrect')
+            generateQuestion();
+            return
+        };
+        });
+       
+      };
     
-    console.log(chosenAnswer);
-    // Depending on button pressed, check data-country value against countriesList
+ 
+// Depending on button pressed, check data-country value against countriesList
     // get correct capital name and then check if this matches the data-answer
-    
-    console.log(isCorrectQuestionAnswer)
-    
-    if (chosenAnswer === isCorrectQuestionAnswer["option"]) {
-        console.log('Correct')
-    } else {
-        console.log('Incorrect')
-    };
-
     // Gives an alert if it is right or wrong
     // Next question is generated
 
     // repeat x 10 in total
-};
+
+     // onClick="reply_click(this.id)"
+    // function reply_click(clicked_id)
+    // {
+    // console.log(clicked_id)
+
+    //   return clicked_id.getAttribute('data-answer');
+      
+    // };
