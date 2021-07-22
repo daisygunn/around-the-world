@@ -4,6 +4,8 @@ const quitButton = document.getElementById('quit-button');
 const gameContainer = document.getElementById('game-container');
 const randomQuestion = document.getElementById('random-question');
 
+var chosenAnswer = function reply_click() {};
+
 // Array used to generate questions
 const countriesList = [{
         country: 'Afghanistan',
@@ -873,7 +875,7 @@ function generateQuestion() {
 
         console.log(randomOptionOutputs[key]);
         // Code to define the html for the buttons 
-        buttonOutputs += '<button id="answer-' + i + '" data-answer="' + randomOptionOutputs[key]['option'] + '" data-country="' + randomOptionOutputs[key]['question'] + '" class="answer-btn">' + randomOptionOutputs[key]['option'] + '</button>';
+        buttonOutputs += '<button id="answer-' + i + '" data-answer="' + randomOptionOutputs[key]['option'] + '" data-country="' + randomOptionOutputs[key]['question'] + '" class="answer-btn" onClick="reply_click(this.id)">' + randomOptionOutputs[key]['option'] + '</button>';
         i++;
     });
     // Create the answer buttons and the questionText
@@ -889,6 +891,7 @@ function generateQuestion() {
 };
 
 
+
 // Generate random number to use as array index to generate questions and answers 
 function getRandomInt(min, max) {
     min = Math.ceil(min);
@@ -897,17 +900,29 @@ function getRandomInt(min, max) {
 };
 
 
+
 // Checks if the answer is right
-function checkAnswer(isCorrectQuestionAnswer) {
+function checkAnswer(isCorrectQuestionAnswer, chosenAnswer) {
+
+    function reply_click(clicked_id)
+    {
+    console.log(clicked_id)
+
+      return clicked_id.getAttribute('data-answer');
+      
+    };
     
+    console.log(chosenAnswer);
     // Depending on button pressed, check data-country value against countriesList
     // get correct capital name and then check if this matches the data-answer
     
     console.log(isCorrectQuestionAnswer)
     
-    if (["target"]["dataset"]["answer"] === isCorrectQuestionAnswer["option"]) {
+    if (chosenAnswer === isCorrectQuestionAnswer["option"]) {
         console.log('Correct')
-    }
+    } else {
+        console.log('Incorrect')
+    };
 
     // Gives an alert if it is right or wrong
     // Next question is generated
