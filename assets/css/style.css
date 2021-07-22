@@ -8,7 +8,7 @@ h1 {
     padding-top: 20px;
     font-size: 55px;
     line-height: 75px;
-    }
+}
 
 body {
     font-family: 'Yomogi', cursive;
@@ -17,10 +17,11 @@ body {
     background-size: cover;
     height: 100vh;
 }
+
 /* Navbar styling */
 .navbar-container {
-   display: block;
-   padding-bottom: 20px; 
+    display: block;
+    padding-bottom: 20px;
 }
 
 .navbar-top {
@@ -40,8 +41,9 @@ body {
     text-decoration: none;
     padding: 10px;
     display: inline;
-    
+
 }
+
 .navbar-container a:hover {
     background-color: #f2f2f2;
     color: #3917ca;
@@ -53,33 +55,40 @@ body {
     position: relative;
     font-weight: 900;
     font-size: 3.3em;
-  }
-  
-  .animated-heading .text-wrapper {
+}
+
+.animated-heading .text-wrapper {
     position: relative;
     display: inline-block;
     padding-top: 0.2em;
     padding-right: 0.05em;
     padding-bottom: 0.1em;
     overflow: hidden;
-  }
-  
-  .animated-heading .letter {
+}
+
+.animated-heading .letter {
     display: inline-block;
     line-height: 1em;
-  }
+}
 
 /* Globe */
-#rotatingGlobe {width: 400px; height: 400px; cursor: move; padding-left: 50px;}
+#rotatingGlobe {
+    width: 400px;
+    height: 400px;
+    cursor: move;
+    padding-left: 50px;
+}
 
 /* General content styling for entire website */
 .title-container {
     margin: none;
 }
+
 .container {
     display: flex;
     justify-content: center;
     align-content: center;
+    clear: both;
 }
 
 .btn {
@@ -88,7 +97,7 @@ body {
     font-family: 'Yomogi', cursive;
     font-size: 20px;
     border: white;
-    margin: 15px; 
+    margin: 15px;
     padding: 15px;
     border-radius: 20%;
     box-shadow: 5px #00b2ff;
@@ -102,6 +111,7 @@ body {
 .hidden {
     display: none;
 }
+
 /* Styling for quiz game */
 .question {
     font-size: 30px;
@@ -127,6 +137,31 @@ body {
     color: #3917ca;
     border: solid 1pxs #3917ca;
 }
+
+#progress-container {
+    height: 50px;
+    padding: 20px;
+    width: fit-content;
+    display: inline;
+    float: right;
+}
+
+#score-container {
+    height: 50px;
+    padding: 20px;
+    width: fit-content;
+    display: inline;
+    float: left;
+}
+
+.progress {
+    color: white;
+    font-family: 'Yomogi', cursive;
+    font-size: 25px;
+    font-weight: bold;
+
+}
+
 /* Styling for rules page */
 #rules-list {
     font-family: 'Yomogi', cursive;
@@ -139,7 +174,7 @@ body {
     .animated-heading {
         font-weight: 900;
         font-size: 1.5em;
-      }
+    }
 
     .navbar-top {
         float: none;

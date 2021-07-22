@@ -1,11 +1,12 @@
 // Game controls
 const startButton = document.getElementById('start-button');
 const quitButton = document.getElementById('quit-button');
+const mainHeading = document.getElementById('main-heading');
 const gameContainer = document.getElementById('game-container');
 const randomQuestion = document.getElementById('random-question');
 
-var chosenAnswer = function reply_click() {};
 
+var currentScore = 0;
 // Array used to generate questions
 const countriesList = [{
         country: 'Afghanistan',
@@ -804,6 +805,7 @@ randomQuestion.addEventListener('click', getRandomQuestion);
 // Start game
 function startGame(event) {
     startButton.classList.add('hidden')
+    mainHeading.classList.add('hidden')
     gameContainer.classList.remove('hidden')
     generateQuestion()
 };
@@ -908,6 +910,7 @@ function checkAnswer(isCorrectQuestionAnswer) {
         var clickedButton =  $(this).data('answer');
         if (clickedButton === isCorrectQuestionAnswer["option"]) {
             console.log('Correct')
+            alert('Well done - you got it right')
             generateQuestion();
             return
         } else {

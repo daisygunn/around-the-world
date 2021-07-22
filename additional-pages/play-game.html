@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="../assets/css/style.css">
     <title>Around the World!</title>
 </head>
+
 <body>
     <div class="navbar-container">
         <nav class="navbar-top">
@@ -27,30 +29,38 @@
         </nav>
     </div>
     <div class="title-container">
-        <h1>Let's Play</h1>
+        <h1 id="main-heading">Let's Play</h1>
     </div>
-    
-        <div id="start-game" class="container">
-            <button id="start-button" class="btn">Start Game</button>
+
+    <div id="start-game" class="container">
+        <button id="start-button" class="btn">Start Game</button>
+    </div>
+
+    <div id="game-container" class="hidden">
+        <div id="progress-container">
+            <p class="progress">Question <span id="question-count">1</span> of 10</p>
         </div>
-        <div id="game-container" class="hidden">
+        <div id="score-container">
+            <p class="progress">Score <span id="score-total">0</span></p>
+        </div>
         <div id="questions-container" class="container">
-            <h2 class="question">What is the capital city of <span id="country-name" >country name</span>?</h2>
+            <h2 class="question">What is the capital city of <span id="country-name">country name</span>?</h2>
         </div>
-    
+
         <div id="answers-container" class="container">
-           
+
         </div>
 
         <div id="quit-game" class="container">
             <button id="quit-button" class="btn">Quit Game</button>
             <button id="random-question" class="btn">Random question</button>
         </div>
-             
+
     </div>
-    
-<script src="../assets/js/script.js" defer></script>
-<script src="../assets/js/quiz.js"></script>   
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+
+    <script src="../assets/js/script.js" defer></script>
+    <script src="../assets/js/quiz.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </body>
+
 </html>
