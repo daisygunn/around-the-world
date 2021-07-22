@@ -10,6 +10,7 @@ const randomQuestion = document.getElementById('random-question');
 
 let currentScore = 0;
 let questionCount = 0;
+
 // Array used to generate questions
 const countriesList = [{
         country: 'Afghanistan',
@@ -806,6 +807,7 @@ quitButton.addEventListener('click', quitGame);
 randomQuestion.addEventListener('click', getRandomQuestion);
 
 const maxQuestions = 10;
+const scoreValue = 20;
 
 // Start game
 function startGame(event) {
@@ -883,9 +885,9 @@ function generateQuestion() {
     randomOptionOutputs = optionOutputs.sort(() => Math.random() - 0.5);
     let buttonOutputs = '';
     let i = 0;
-    
+
     // Loop through the options and retrieve their key values
-        Object.keys(randomOptionOutputs).forEach(function (key) {
+    Object.keys(randomOptionOutputs).forEach(function (key) {
         // Code to define the html for the buttons 
         buttonOutputs += '<button id="answer-' + i + '" data-answer="' + randomOptionOutputs[key]['option'] + '" data-country="' + randomOptionOutputs[key]['question'] + '" class="answer-btn" >' + randomOptionOutputs[key]['option'] + '</button>';
         i++;
@@ -897,10 +899,10 @@ function generateQuestion() {
 
     // Loop through the buttons that have been created and add event listeners to them
     for (let i = 0; i < 4; i++) {
-        document.getElementById("answer-" +i).addEventListener("click", function(){
+        document.getElementById("answer-" + i).addEventListener("click", function () {
             checkAnswer(isCorrectQuestionAnswer)
         });
-        
+
     };
 };
 
@@ -913,12 +915,13 @@ function getRandomInt(min, max) {
 
 // Checks if the answer selected is right, increments the score if it is, then moves on the to the next question
 function checkAnswer(isCorrectQuestionAnswer) {
-//  Using a jquery method, retrieve the data-answer for the button clicked and compare this with the isCorrectQuestionAnswer object 'option'
-    $(document).on('click', '.answer-btn' , function(){
-        var clickedButton =  $(this).data('answer');
+    //  Using a jquery method, retrieve the data-answer for the button clicked and compare this with the isCorrectQuestionAnswer object 'option'
+    $(document).on('click', '.answer-btn', function () {
+        var clickedButton = $(this).data('answer');
         if (clickedButton === isCorrectQuestionAnswer["option"]) {
-            console.log('Correct')
-            alert('Well done - you got it right')
+            console.log('Correct');
+            incrementScore(scoreValue);
+            alert('Well done - you got it right');
             generateQuestion();
             return
         } else {
@@ -926,23 +929,27 @@ function checkAnswer(isCorrectQuestionAnswer) {
             generateQuestion();
             return
         };
-        });
-       
-      };
-    
- 
+    });
+
+};
+
+function incrementScore(num)  {
+    currentScore += num;
+    scoreOutput.innerText = `${currentScore}`;
+  };
+
 // Depending on button pressed, check data-country value against countriesList
-    // get correct capital name and then check if this matches the data-answer
-    // Gives an alert if it is right or wrong
-    // Next question is generated
+// get correct capital name and then check if this matches the data-answer
+// Gives an alert if it is right or wrong
+// Next question is generated
 
-    // repeat x 10 in total
+// repeat x 10 in total
 
-     // onClick="reply_click(this.id)"
-    // function reply_click(clicked_id)
-    // {
-    // console.log(clicked_id)
+// onClick="reply_click(this.id)"
+// function reply_click(clicked_id)
+// {
+// console.log(clicked_id)
 
-    //   return clicked_id.getAttribute('data-answer');
-      
-    // };
+//   return clicked_id.getAttribute('data-answer');
+
+// };
