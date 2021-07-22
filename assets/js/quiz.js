@@ -3,10 +3,13 @@ const startButton = document.getElementById('start-button');
 const quitButton = document.getElementById('quit-button');
 const mainHeading = document.getElementById('main-heading');
 const gameContainer = document.getElementById('game-container');
+const scoreOutput = document.getElementById('score-total');
+const questionCountOutput = document.getElementById('question-count');
 const randomQuestion = document.getElementById('random-question');
 
 
-var currentScore = 0;
+let currentScore = 0;
+let questionCount = 0;
 // Array used to generate questions
 const countriesList = [{
         country: 'Afghanistan',
@@ -802,11 +805,15 @@ startButton.addEventListener('click', startGame);
 quitButton.addEventListener('click', quitGame);
 randomQuestion.addEventListener('click', getRandomQuestion);
 
+const maxQuestions = 10;
+
 // Start game
 function startGame(event) {
     startButton.classList.add('hidden')
     mainHeading.classList.add('hidden')
     gameContainer.classList.remove('hidden')
+    questionCount = 0;
+    currentScore = 0;
     generateQuestion()
 };
 
@@ -833,6 +840,10 @@ function getRandomQuestion(event) {
 // 'What is the capital city of ______?' the blank is populated using the array countries - 
 // each question is dynamically created using a random country from the index of the array.
 function generateQuestion() {
+    // Increment question count by 1 each time
+    questionCount++;
+    questionCountOutput.innerText = `${questionCount}`;
+
     let countriesCount = countriesList.length;
     let randomNumber = getRandomInt(0, countriesCount);
     let chosenCountry = (countriesList[randomNumber].country); // Generate random country from array 
@@ -845,7 +856,7 @@ function generateQuestion() {
     };
 
     // To do: Need to prevent correct answer being generated in the random answers
-    // generate 3 random cities from capitalListOptions
+    // Generate 3 random cities from capitalListOptions to act as other answer options
     let answerOption1 = (countriesList[getRandomInt(0, countriesList.length)].capital);
     let answerOption2 = (countriesList[getRandomInt(0, countriesList.length)].capital);
     let answerOption3 = (countriesList[getRandomInt(0, countriesList.length)].capital);
@@ -867,23 +878,24 @@ function generateQuestion() {
             'option': answerOption3
         }
     ];
+
     // Randomise the outputs so the correct answer isn't in the same place all the time 
     randomOptionOutputs = optionOutputs.sort(() => Math.random() - 0.5);
     let buttonOutputs = '';
     let i = 0;
     
-    // Loop through 
+    // Loop through the options and retrieve their key values
         Object.keys(randomOptionOutputs).forEach(function (key) {
-
-        // console.log(randomOptionOutputs[key]);
         // Code to define the html for the buttons 
         buttonOutputs += '<button id="answer-' + i + '" data-answer="' + randomOptionOutputs[key]['option'] + '" data-country="' + randomOptionOutputs[key]['question'] + '" class="answer-btn" >' + randomOptionOutputs[key]['option'] + '</button>';
         i++;
     });
+
     // Create the answer buttons and the questionText
     document.getElementById('country-name').innerHTML = chosenCountry;
     document.getElementById('answers-container').innerHTML = buttonOutputs;
 
+    // Loop through the buttons that have been created and add event listeners to them
     for (let i = 0; i < 4; i++) {
         document.getElementById("answer-" +i).addEventListener("click", function(){
             checkAnswer(isCorrectQuestionAnswer)
@@ -892,8 +904,6 @@ function generateQuestion() {
     };
 };
 
-
-
 // Generate random number to use as array index to generate questions and answers 
 function getRandomInt(min, max) {
     min = Math.ceil(min);
@@ -901,11 +911,9 @@ function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min) + min); //The maximum is exclusive and the minimum is inclusive
 };
 
-
-
-// Checks if the answer is right
+// Checks if the answer selected is right, increments the score if it is, then moves on the to the next question
 function checkAnswer(isCorrectQuestionAnswer) {
-
+//  Using a jquery method, retrieve the data-answer for the button clicked and compare this with the isCorrectQuestionAnswer object 'option'
     $(document).on('click', '.answer-btn' , function(){
         var clickedButton =  $(this).data('answer');
         if (clickedButton === isCorrectQuestionAnswer["option"]) {
