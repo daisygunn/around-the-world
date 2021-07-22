@@ -138,6 +138,16 @@ body {
     border: solid 1pxs #3917ca;
 }
 
+/* .correct {
+    background-color: green;
+    color: white;
+}
+.incorrect {
+    background-color: red;
+    color: white;
+} */
+
+
 #progress-container {
     height: 50px;
     padding: 20px;

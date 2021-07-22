@@ -842,6 +842,7 @@ function getRandomQuestion(event) {
 // 'What is the capital city of ______?' the blank is populated using the array countries - 
 // each question is dynamically created using a random country from the index of the array.
 function generateQuestion() {
+    
     // Increment question count by 1 each time
     questionCount++;
     questionCountOutput.innerText = `${questionCount}`;
@@ -917,15 +918,16 @@ function getRandomInt(min, max) {
 function checkAnswer(isCorrectQuestionAnswer) {
     //  Using a jquery method, retrieve the data-answer for the button clicked and compare this with the isCorrectQuestionAnswer object 'option'
     $(document).on('click', '.answer-btn', function () {
-        var clickedButton = $(this).data('answer');
-        if (clickedButton === isCorrectQuestionAnswer["option"]) {
+        var clickedButtonAnswer = $(this).data('answer');
+        if (clickedButtonAnswer === isCorrectQuestionAnswer["option"]) {
             console.log('Correct');
             incrementScore(scoreValue);
-            alert('Well done - you got it right');
+            alert('Well done!!! You got that right ');
             generateQuestion();
             return
         } else {
-            console.log('Incorrect')
+            console.log('Incorrect');
+            alert("Ahhh that wasn't quite right - no worries, you'll get it next time!");
             generateQuestion();
             return
         };
@@ -933,10 +935,18 @@ function checkAnswer(isCorrectQuestionAnswer) {
 
 };
 
-function incrementScore(num)  {
+function incrementScore(num) {
     currentScore += num;
     scoreOutput.innerText = `${currentScore}`;
-  };
+};
+
+// function correctPopup() {
+//     $("#correct-dialog").dialog();
+// };
+
+// function incorrectPopup() {
+//     $("#incorrect-dialog").dialog();
+// };
 
 // Depending on button pressed, check data-country value against countriesList
 // get correct capital name and then check if this matches the data-answer
