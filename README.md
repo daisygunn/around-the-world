@@ -2,15 +2,13 @@
 
 [View the website here](https://daisygunn.github.io/around-the-world/)
 
-This website has been produced to provide a platform for an Educational geography game for children aged 8-12, it offers questions in a quiz format to test their knowledge on capital cities, borders, oceans & continents. 
+This website has been produced to provide a platform for an Educational geography game for children aged 8-12, it offers questions in a quiz format to test their knowledge on capital cities around the world. 
 
 In addition to the home page this website also features:
 - The 'Play Game' page
 - A 'Rules' page
 - A 'High Scores' page
 <!-- - A 'Fun Facts' page -->
-
-The player has the option of selecting a quiz on a single continent - if they feel they need to test themselves in a more specific way; otherwise they can select the 'Whole World' option which will give them questions to test their overall knowledge.
 
 The business goals of the website are:
 1. To provide an educational learning platform for children.
@@ -37,7 +35,6 @@ The target audience for 'Around the World' are:
 Features that they would need included:
 - A fun & interactive quiz
 - The ability to track their high scores so they can see if they're improving
-- The choice over quiz type to have more specific testing 
 <!-- - A page with fun and interesting facts to enhance their learning -->
 
 It was imperative to me that this website was simple & easy to use to ensure that the users had an enjoyable experience; therefore each page has a limited amount of information, written in simple language. 
@@ -48,14 +45,13 @@ As children aren't always guaranteed to have mobile phones this website has been
 In order to acheive the desired user and business goals this website will include the following:
 1. A landing page with:
 - a H1 element
-- animated globe image
+- Interactive 3D globe that responds to mouse movement
 - Navigation bar
 
 2. Play game page:
 - H1 element
 - Navigation bar
 - Start game button
-- Type of quiz buttons
 - Quiz questions
 - Score tally
 - Quit game button
@@ -86,7 +82,6 @@ The quiz itself has a question, a text input and four answer buttons - this layo
 ### Surface
 I chose to use a graident background using blues and greens to resemble the colour of the globe, I wanted something simple so as not to detract from any of the content. 
 On the landing page there is an animated globe which zooms in and out upon the mouse being scrolled, this ineractive element provides something fun for the user straight away.
-For the continent specific quiz games there is an font-awesome icon of that continent on a globe, this is used to break up the text but also provides a visual reminder of what this continent looks like. 
 Using google fonts I chose Yogomi and Pacifico, I felt that Yogomi had a child handwriting feel to it and this will be used for all the heading elements on the webssite. I paired this with Pacifico for the bigger pieces of text as this would be easier to read.
 
 ---
