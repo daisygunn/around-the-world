@@ -4,12 +4,15 @@ const quitButton = document.getElementById('quit-button');
 const mainHeading = document.getElementById('main-heading');
 const gameContainer = document.getElementById('game-container');
 const scoreOutput = document.getElementById('score-total');
-const questionCountOutput = document.getElementById('question-count');
+var questionCountOutput = document.getElementById('question-count');
 const randomQuestion = document.getElementById('random-question');
 
 
 let currentScore = 0;
 let questionCount = 0;
+
+var lastClick = 0;
+var delay = 20;
 
 // Array used to generate questions
 const countriesList = [{
@@ -842,7 +845,7 @@ function getRandomQuestion(event) {
 // 'What is the capital city of ______?' the blank is populated using the array countries - 
 // each question is dynamically created using a random country from the index of the array.
 function generateQuestion() {
-    
+
     // Increment question count by 1 each time
     questionCount++;
     questionCountOutput.innerText = `${questionCount}`;
@@ -919,21 +922,33 @@ function checkAnswer(isCorrectQuestionAnswer) {
     //  Using a jquery method, retrieve the data-answer for the button clicked and compare this with the isCorrectQuestionAnswer object 'option'
     $(document).on('click', '.answer-btn', function () {
         var clickedButtonAnswer = $(this).data('answer');
-        if (clickedButtonAnswer === isCorrectQuestionAnswer["option"]) {
-            console.log('Correct');
-            incrementScore(scoreValue);
-            alert('Well done!!! You got that right ');
-            generateQuestion();
-            return
-        } else {
-            console.log('Incorrect');
-            alert("Ahhh that wasn't quite right - no worries, you'll get it next time!");
-            generateQuestion();
-            return
+        // var clickedButtonQuestion = $(this).data('country');
+        if (clickedButtonAnswer == isCorrectQuestionAnswer["option"]) {
+            if (lastClick >= (Date.now() - delay)) {
+                return;
+            } else {
+                alert('Well done!!! You got that right');
+                $(this).addClass("correct");
+                incrementScore(scoreValue);
+                generateQuestion();
+                return
+            }
+        } else if (clickedButtonAnswer != isCorrectQuestionAnswer["option"]) {
+            if (lastClick >= (Date.now() - delay)) {
+                return;
+            } else {
+                alert("Ahhh that wasn't quite right - no worries, you'll get it next time!");
+                $(this).addClass("incorrect");
+                generateQuestion();
+                return
+            };
+
         };
     });
-
 };
+
+
+
 
 function incrementScore(num) {
     currentScore += num;
@@ -962,4 +977,4 @@ function incrementScore(num) {
 
 //   return clicked_id.getAttribute('data-answer');
 
-// };
+//  
