@@ -8,30 +8,28 @@
     <title>Around the World!</title>
 </head>
 <body>
-    <div class="navbar-container">
-        <nav class="navbar-top">
-            <ul>
-                <li>
-                    <a href="../index.html">Home</a>
-                </li>
-                <li>
-                    <a href="rules.html">Rules</a>
-                </li>
-                <li>
-                    <a href="play-game.html">Play Game</a>
-                </li>
-                <li>
-                    <a href="high-scores.html">High Scores</a>
-                </li>
-            </ul>
-        </nav>
-    </div>>
-    <div id="title-container">
-        <h1>Around the World</h1>
+    <div class="title-container">
+        <h1 id="main-heading">Game over!</h1>
     </div>
-    <div id="rotating-globe">
+
+    <div id="game-container" class="hidden">
+        <div id="final-score-container">
+            <p class="progress">Final Score: <span id="final-score-total">0</span></p>
+            <p>Save your score below & see if you've made our high scores table!</p>
+        </div>
+       <form id="save-score-form">
+           <input type="text" name="username" placeholder="Please enter your name!" id="username" required>
+           <button class="btn" id="save-score" type="submit">Save!</button>
+       </form>
+
+        <div id="buttons-container" class="container">
+            <button id="high-scores-button" class="btn">High Scores</button>
+            <button id="play-again-button" class="btn">Play Again</button>
+            <button id="home-button" class="btn">Home</button>
+        </div>
 
     </div>
+    
 <script src="assets/js/script.js" defer></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>    
 </body>
