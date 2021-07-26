@@ -843,6 +843,12 @@ function getRandomQuestion(event) {
 // each question is dynamically created using a random country from the index of the array.
 function generateQuestion() {
 
+    if (questionCount > maxQuestions) {
+        localStorage.setItem('recentScore', currentScore);
+
+        return window.location.assign(`../additional-pages/end-page.html`);
+    }
+
     // Increment question count by 1 each time
     questionCount++;
     questionCountOutput.innerText = `${questionCount}`;
