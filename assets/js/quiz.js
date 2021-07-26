@@ -846,7 +846,7 @@ function generateQuestion() {
     if (questionCount > maxQuestions) {
         localStorage.setItem('recentScore', currentScore);
 
-        return window.location.assign(`../additional-pages/end-page.html`);
+        return window.location.assign(`end-page.html`);
     }
 
     // Increment question count by 1 each time
