@@ -15,7 +15,7 @@ h2 {
     text-align: center;
     color: #f2f2f2;
     align-content: center;
-    font-size: 35px;
+    font-size: 30px;
     line-height: 75px;
 }
 
@@ -24,9 +24,8 @@ h3 {
     text-align: center;
     color: #f2f2f2;
     align-content: center;
-    font-size: 25px;
-    line-height: 75px;
-}
+    font-size: 20px;
+    }
 
 body {
     font-family: 'Yomogi', cursive;
@@ -234,6 +233,11 @@ body {
     text-align: center;
 }
 
+#end-game-container {
+    position: absolute;
+    top: 150px;
+}
+
 #buttons-list li {
     list-style: none;
     display: inline;
@@ -249,4 +253,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#username {
+    height: 40px;
+    display: block;
 }
