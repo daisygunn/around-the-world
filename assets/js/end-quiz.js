@@ -5,7 +5,7 @@ setInterval(function(){
 
     gameOverText.innerHTML="Game Over!";
     
-    gameOverText.style.display=(txt.style.display=='none'?'':'none');
+    gameOverText.style.display=(gameOverText.style.display=='none'?'':'none');
 }, 600);
 
 
