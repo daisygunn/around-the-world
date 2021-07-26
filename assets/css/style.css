@@ -117,8 +117,8 @@ body {
     margin: 15px;
     padding: 15px;
     border-radius: 20%;
-    box-shadow: 5px #00b2ff;
     width: 150px;
+    font-weight: bold;
 }
 
 .btn:hover {
@@ -147,7 +147,10 @@ body {
     padding: 10px;
     font-size: 20px;
     width: 150px;
+    height: 100px;
     border: solid 1px white;
+    font-weight: bold;
+    border-radius: 20%;
 }
 
 .answer-btn:hover {
@@ -195,31 +198,10 @@ body {
     font-family: 'Yomogi', cursive;
     color: white;
     font-size: 20px;
+    margin: 20px;
 
 }
 
-@media screen and (max-width: 525px) {
-    .animated-heading {
-        font-weight: 900;
-        font-size: 1.5em;
-    }
-
-    .navbar-top {
-        float: none;
-    }
-
-    .navbar-top li {
-        list-style: none;
-        display: inline;
-        font-size: 15px;
-        font-weight: bold;
-    }
-
-    #rotatingGlobe {
-        width: 200px;
-        height: 200px;
-    }
-}
 
 
 /* Styling for end-page */
@@ -258,4 +240,28 @@ body {
 #username {
     height: 40px;
     display: block;
+}
+
+/* Index.html media queries for mobile phone  */
+@media screen and (max-width: 525px) {
+    .animated-heading {
+        font-weight: 900;
+        font-size: 1.5em;
+    }
+
+    .navbar-top {
+        float: none;
+    }
+
+    .navbar-top li {
+        list-style: none;
+        display: inline;
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    #rotatingGlobe {
+        width: 200px;
+        height: 200px;
+    }
 }
