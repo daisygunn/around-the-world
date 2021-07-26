@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="../assets/css/style.css">
     <title>Around the World!</title>
 </head>
+
 <body>
     <div class="title-container">
         <h1 id="main-heading">Game over!</h1>
@@ -14,22 +16,31 @@
 
     <div id="end-game-container">
         <div id="final-score-container">
-            <p class="progress">Final Score: <span id="final-score-total">0</span></p>
-            <p>Save your score below & see if you've made our high scores table!</p>
+            <h2. >Final Score: <span id="final-score-total">0</span></h2>
+            <h3>Save your score below & see if you've made our high scores table!</h3>
         </div>
-       <form id="save-score-form">
-           <input type="text" name="username" placeholder="Please enter your name!" id="username" required>
-           <button class="btn" id="save-score" type="submit">Save!</button>
-       </form>
+        <form id="save-score-form">
+            <input type="text" name="username" placeholder="Please enter your name!" id="username" required>
+            <button class="btn" id="save-score" type="submit">Save!</button>
+        </form>
 
         <div id="buttons-container" class="container">
-            <button id="high-scores-button" class="btn"><a href="high-scores.html">High Scores</a></button>
-            <button id="play-again-button" class="btn"><a href="play-game.html">Play Again</a></button>
-            <button id="home-button" class="btn"><a href="../index.html">Home</a></button>
+            <ul id="buttons-list">
+                <li>
+                    <button id="high-scores-button" class="btn"><a href="high-scores.html">High Scores</a></button>
+                </li>
+                <li>
+                    <button id="play-again-button" class="btn"><a href="play-game.html">Play Again</a></button>
+                </li>
+                <li>
+                    <button id="home-button" class="btn"><a href="../index.html">Home</a></button>
+                </li>
+            </ul>
         </div>
     </div>
-    
-<script src="assets/js/script.js" defer></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>    
+
+    <script src="assets/js/script.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </body>
+
 </html>
