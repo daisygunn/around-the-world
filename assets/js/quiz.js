@@ -897,7 +897,7 @@ function generateQuestion() {
     // Loop through the options and retrieve their key values
     Object.keys(randomOptionOutputs).forEach(function (key) {
         // Code to define the html for the buttons 
-        buttonOutputs += '<button id="answer-' + i + '" data-answer="' + randomOptionOutputs[key]['option'] + '" data-country="' + randomOptionOutputs[key]['question'] + '" class="answer-btn" >' + randomOptionOutputs[key]['option'] + '</button>';
+        buttonOutputs += '<button id="answer-' + i + '" data-answer="' + randomOptionOutputs[key]['option'] + '" data-country="' + randomOptionOutputs[key]['question'] + '" class="answer-btn">' + randomOptionOutputs[key]['option'] + '</button>';
         i++;
     });
 
@@ -935,6 +935,9 @@ function checkAnswer(e) {
          } else {
                 $(e.target).addClass("incorrect");
             };
+        for (let i = 0; i < 4; i++) {
+            document.getElementById("answer-" + i).setAttribute('disabled', true)
+        };
           nextQuestion.classList.remove('hidden');
 
 };
