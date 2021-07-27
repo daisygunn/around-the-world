@@ -3,14 +3,17 @@ const startButton = document.getElementById('start-button');
 const quitButton = document.getElementById('quit-button');
 const mainHeading = document.getElementById('main-heading');
 const gameContainer = document.getElementById('game-container');
-const scoreOutput = document.getElementById('score-total');
-var questionCountOutput = document.getElementById('question-count');
 const nextQuestion = document.getElementById('next-question');
 
+// Global variables so that it can be accessed from within functions
 let isCorrectQuestionAnswer = '';
+
 
 let currentScore = 0;
 let questionCount = 0;
+
+const scoreOutput = document.getElementById('score-total');
+var questionCountOutput = document.getElementById('question-count');
 
 // Array used to generate questions
 const countriesList = [{
@@ -828,7 +831,7 @@ function quitGame() {
     }
 };
 
-// Used for testing 
+// Function for the 'Next Question' button
 function getNextQuestion(event) {
     generateQuestion();
 };
@@ -839,10 +842,16 @@ function getNextQuestion(event) {
 
 // }
 
-// Question 1 is generated
-// 'What is the capital city of ______?' the blank is populated using the array countries - 
-// each question is dynamically created using a random country from the index of the array.
+/**
+ * Function to generate each question
+ * Questions and their answer buttons are generated dynamically each time.
+ */
 function generateQuestion() {
+
+    /** If questionCount is more than the specified max questions
+     * then save currectScore as the recentScore to local storage
+     * and go to end-page
+     */ 
 
     if (questionCount > maxQuestions) {
         localStorage.setItem('recentScore', currentScore);
@@ -859,7 +868,8 @@ function generateQuestion() {
     let chosenCountry = (countriesList[randomNumber].country); // Generate random country from array 
     let correctAnswer = (countriesList[randomNumber].capital); // Generate the correct capital city from array 
 
-    // Define correct answer
+   
+    // Define correct answer to compare against
     isCorrectQuestionAnswer = {
         question: chosenCountry,
         option: correctAnswer
@@ -924,43 +934,28 @@ function getRandomInt(min, max) {
 
 // Checks if the answer selected is right, increments the score if it is, then moves on the to the next question
 function checkAnswer(e) {
-    //  Using a jquery method, retrieve the data-answer for the button clicked and compare this with the isCorrectQuestionAnswer object 'option'
+
+    /** retrieve the data-answer for the button clicked and 
+     * compare this with the isCorrectQuestionAnswer object 'option'
+     */ 
     console.log(e.target)
         var clickedButtonAnswer = e.target.getAttribute('data-answer');
-        console.log(clickedButtonAnswer);
-        console.log(isCorrectQuestionAnswer["option"]);
         if (clickedButtonAnswer === isCorrectQuestionAnswer["option"]) {
                 $(e.target).addClass("correct");
                 incrementScore(scoreValue);
          } else {
                 $(e.target).addClass("incorrect");
             };
+        // Loop through the remaining buttons and set them to disabled
         for (let i = 0; i < 4; i++) {
             document.getElementById("answer-" + i).setAttribute('disabled', true)
         };
+        // Show the nextQuestion button
           nextQuestion.classList.remove('hidden');
 
 };
-
-
+// Increment the score by 1
 function incrementScore(num) {
     currentScore += num;
     scoreOutput.innerText = `${currentScore}`;
 };
-
-// function correctPopup() {
-//     $("#correct-dialog").dialog();
-// };
-
-// function incorrectPopup() {
-//     $("#incorrect-dialog").dialog();
-// };
-
-// Depending on button pressed, check data-country value against countriesList
-// get correct capital name and then check if this matches the data-answer
-// Gives an alert if it is right or wrong
-// Next question is generated
-
-// repeat x 10 in total
-
-//  
