@@ -906,13 +906,12 @@ function generateQuestion() {
     document.getElementById('answers-container').innerHTML = buttonOutputs;
 
     // Loop through the buttons that have been created and add event listeners to them
-    if (questionCount == 1 ) {
     for (let i = 0; i < 4; i++) {
         document.getElementById("answer-" + i).addEventListener("click", function(e) { 
             checkAnswer(e)
         });
     };
-    };
+    
 };
 
 // Generate random number to use as array index to generate questions and answers 
@@ -933,18 +932,13 @@ function checkAnswer(e) {
         if (clickedButtonAnswer === isCorrectQuestionAnswer["option"]) {
                 $(e.target).addClass("correct");
                 incrementScore(scoreValue);
-                console.log('is correct');
-                return
          } else {
                 $(e.target).addClass("incorrect");
-                console.log('is not correct');
-                return
             };
-
-
+          nextQuestion.classList.remove('hidden');
 
 };
-nextQuestion.classList.remove('hidden');
+
 
 function incrementScore(num) {
     currentScore += num;
