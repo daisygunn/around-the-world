@@ -908,8 +908,8 @@ function generateQuestion() {
     // Loop through the buttons that have been created and add event listeners to them
     if (questionCount == 1 ) {
     for (let i = 0; i < 4; i++) {
-        document.getElementById("answer-" + i).addEventListener("click", function () {
-            checkAnswer()
+        document.getElementById("answer-" + i).addEventListener("click", function(e) { 
+            checkAnswer(e)
         });
     };
     };
@@ -924,23 +924,27 @@ function getRandomInt(min, max) {
 
 
 // Checks if the answer selected is right, increments the score if it is, then moves on the to the next question
-function checkAnswer() {
+function checkAnswer(e) {
     //  Using a jquery method, retrieve the data-answer for the button clicked and compare this with the isCorrectQuestionAnswer object 'option'
-    $(document).on('click', '.answer-btn', function () {
-        var clickedButtonAnswer = $(this).data('answer');
+    console.log(e.target)
+        var clickedButtonAnswer = e.target.getAttribute('data-answer');
+        console.log(clickedButtonAnswer);
+        console.log(isCorrectQuestionAnswer["option"]);
         if (clickedButtonAnswer === isCorrectQuestionAnswer["option"]) {
-                $(this).addClass("correct");
+                $(e.target).addClass("correct");
                 incrementScore(scoreValue);
+                console.log('is correct');
                 return
          } else {
-                $(this).addClass("incorrect");
+                $(e.target).addClass("incorrect");
+                console.log('is not correct');
                 return
             };
-});
-nextQuestion.classList.remove('hidden');
+
+
 
 };
-
+nextQuestion.classList.remove('hidden');
 
 function incrementScore(num) {
     currentScore += num;
