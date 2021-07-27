@@ -7,7 +7,7 @@ const nextQuestion = document.getElementById('next-question');
 
 // Global variables so that it can be accessed from within functions
 let isCorrectQuestionAnswer = '';
-
+let randomQuestionsArray = [];
 
 let currentScore = 0;
 let questionCount = 0;
@@ -868,6 +868,8 @@ function generateQuestion() {
     let chosenCountry = (countriesList[randomNumber].country); // Generate random country from array 
     let correctAnswer = (countriesList[randomNumber].capital); // Generate the correct capital city from array 
 
+    randomQuestionsArray.push(randomNumber);
+    console.log(randomQuestionsArray);
    
     // Define correct answer to compare against
     isCorrectQuestionAnswer = {
@@ -928,7 +930,7 @@ function generateQuestion() {
 function getRandomInt(min, max) {
     min = Math.ceil(min);
     max = Math.floor(max);
-    return Math.floor(Math.random() * (max - min) + min); //The maximum is exclusive and the minimum is inclusive
+    if (Math.floor(Math.random() * (max - min) + min)); //The maximum is exclusive and the minimum is inclusive
 };
 
 
