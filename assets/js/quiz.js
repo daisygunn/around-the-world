@@ -5,8 +5,9 @@ const mainHeading = document.getElementById('main-heading');
 const gameContainer = document.getElementById('game-container');
 const scoreOutput = document.getElementById('score-total');
 var questionCountOutput = document.getElementById('question-count');
-const randomQuestion = document.getElementById('random-question');
+const nextQuestion = document.getElementById('next-question');
 
+let isCorrectQuestionAnswer = '';
 
 let currentScore = 0;
 let questionCount = 0;
@@ -804,7 +805,7 @@ const countriesList = [{
 
 startButton.addEventListener('click', startGame);
 quitButton.addEventListener('click', quitGame);
-randomQuestion.addEventListener('click', getRandomQuestion);
+nextQuestion.addEventListener('click', getNextQuestion);
 
 const maxQuestions = 10;
 const scoreValue = 10;
@@ -828,7 +829,7 @@ function quitGame() {
 };
 
 // Used for testing 
-function getRandomQuestion(event) {
+function getNextQuestion(event) {
     generateQuestion();
 };
 
@@ -905,11 +906,12 @@ function generateQuestion() {
     document.getElementById('answers-container').innerHTML = buttonOutputs;
 
     // Loop through the buttons that have been created and add event listeners to them
+    if (questionCount == 1 ) {
     for (let i = 0; i < 4; i++) {
         document.getElementById("answer-" + i).addEventListener("click", function () {
-            checkAnswer(isCorrectQuestionAnswer)
+            checkAnswer()
         });
-
+    };
     };
 };
 
@@ -922,24 +924,20 @@ function getRandomInt(min, max) {
 
 
 // Checks if the answer selected is right, increments the score if it is, then moves on the to the next question
-function checkAnswer(isCorrectQuestionAnswer) {
+function checkAnswer() {
     //  Using a jquery method, retrieve the data-answer for the button clicked and compare this with the isCorrectQuestionAnswer object 'option'
     $(document).on('click', '.answer-btn', function () {
         var clickedButtonAnswer = $(this).data('answer');
-        // var clickedButtonQuestion = $(this).data('country');
         if (clickedButtonAnswer === isCorrectQuestionAnswer["option"]) {
-                alert('Well done!!! You got that right');
                 $(this).addClass("correct");
                 incrementScore(scoreValue);
-                generateQuestion();
                 return
          } else {
-                alert("Ahhh that wasn't quite right - no worries, you'll get it next time!");
                 $(this).addClass("incorrect");
-                generateQuestion();
                 return
             };
 });
+nextQuestion.classList.remove('hidden');
 
 };
 
