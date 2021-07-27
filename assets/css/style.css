@@ -206,6 +206,13 @@ body {
 
 /* Styling for end-page */
 
+#end-game-container {
+    position: absolute;
+    top: 150px;
+    left: 70px;
+    right: 70px;
+}
+
 #final-score-container {
     justify-content: center;
     align-items: center;
@@ -213,13 +220,6 @@ body {
 
 #final-score-container > h2, h3 {
     text-align: center;
-}
-
-#end-game-container {
-    position: absolute;
-    top: 150px;
-    left: 15%;
-    
 }
 
 #buttons-list li {
