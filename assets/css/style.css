@@ -218,6 +218,8 @@ body {
 #end-game-container {
     position: absolute;
     top: 150px;
+    left: 15%;
+    
 }
 
 #buttons-list li {
