@@ -50,6 +50,7 @@ body {
     display: inline;
     font-size: 20px;
     font-weight: bold;
+    font-family: 'Yomogi', cursive;
 }
 
 .navbar-container a {
@@ -101,14 +102,14 @@ body {
     margin: none;
 }
 
-.container {
+/* .container {
     display: flex;
     justify-content: center;
     align-content: center;
     clear: both;
-}
+} */
 
-.btn {
+.button {
     background-color: white;
     color: #3917ca;
     font-family: 'Yomogi', cursive;
@@ -121,7 +122,7 @@ body {
     font-weight: bold;
 }
 
-.btn:hover {
+.button:hover {
     background-color: #5fd8fb;
     color: white;
 }
@@ -169,8 +170,8 @@ body {
 }
 
 
-#progress-container {
-    height: 50px;
+/* #progress-container { */
+    /* height: 50px;
     padding: 20px;
     width: fit-content;
     display: inline;
@@ -183,9 +184,9 @@ body {
     width: fit-content;
     display: inline;
     float: left;
-}
+} */
 
-.progress {
+.progress-items {
     color: white;
     font-family: 'Yomogi', cursive;
     font-size: 25px;
@@ -246,28 +247,9 @@ body {
         font-weight: 900;
         font-size: 1.5em;
     }
-
-    .navbar-top {
-        float: none;
-    }
-
-    .navbar-top li {
-        list-style: none;
-        display: inline;
-        font-size: 15px;
-        font-weight: bold;
-    }
-
     #rotatingGlobe {
         width: 200px;
         height: 200px;
     }
-    
-    .answer-btn {
-        display: block;
-        margin: 5px;
-        padding: 5x;
-        width: 150px;
-        height: 100px;
-    }
-}
+};
+   
