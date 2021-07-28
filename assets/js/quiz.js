@@ -866,6 +866,15 @@ function generateQuestion() {
 
     let countriesCount = countriesList.length;
     let randomNumber = getRandomInt(0, countriesCount);
+
+    do {
+        randomNumber++;
+        console.log('Already found');
+    } while (randomQuestionsArray.includes(randomNumber)) {
+    }; 
+
+    randomQuestionsArray.push(randomNumber);
+    
     let chosenCountry = (countriesList[randomNumber].country); // Generate random country from array 
     let correctAnswer = (countriesList[randomNumber].capital); // Generate the correct capital city from array 
 
@@ -885,8 +894,14 @@ function generateQuestion() {
     // To do: Need to prevent correct answer being generated in the random answers
     // Generate 3 random cities from capitalListOptions to act as other answer options
     let answerOption1 = (countriesList[getRandomInt(0, countriesList.length)].capital);
+    randomQuestionsArray.push(getRandomInt(0, countriesList.length));
+    console.log(randomQuestionsArray);
     let answerOption2 = (countriesList[getRandomInt(0, countriesList.length)].capital);
+    randomQuestionsArray.push(getRandomInt(0, countriesList.length));
+    console.log(randomQuestionsArray);
     let answerOption3 = (countriesList[getRandomInt(0, countriesList.length)].capital);
+    randomQuestionsArray.push(getRandomInt(0, countriesList.length));
+    console.log(randomQuestionsArray);
 
     let optionOutputs = [{
             'question': chosenCountry,
@@ -936,6 +951,7 @@ function getRandomInt(min, max) {
     min = Math.ceil(min);
     max = Math.floor(max); //The maximum is exclusive and the minimum is inclusive
     return Math.floor(Math.random() * (max - min) + min);
+   
 };
 
 
