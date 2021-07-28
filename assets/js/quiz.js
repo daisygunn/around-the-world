@@ -853,7 +853,7 @@ function generateQuestion() {
     /** If questionCount is more than the specified max questions
      * then save currectScore as the recentScore to local storage
      * and go to end-page
-     */ 
+     */
 
     if (questionCount > maxQuestions) {
         localStorage.setItem('recentScore', currentScore);
@@ -871,21 +871,20 @@ function generateQuestion() {
     do {
         randomNumber++;
         console.log('Already found');
-    } while (randomQuestionsArray.includes(randomNumber)) {
-    }; 
+    } while (randomQuestionsArray.includes(randomNumber)) {};
 
     randomQuestionsArray.push(randomNumber);
-    
+
     let chosenCountry = (countriesList[randomNumber].country); // Generate random country from array 
     let correctAnswer = (countriesList[randomNumber].capital); // Generate the correct capital city from array 
 
 
     randomQuestionsArray.push(randomNumber);
     console.log(randomQuestionsArray);
-    
+
     console.log(chosenCountry);
     console.log(correctAnswer);
-      
+
     // Define correct answer to compare against
     isCorrectQuestionAnswer = {
         question: chosenCountry,
@@ -930,7 +929,7 @@ function generateQuestion() {
     // Loop through the options and retrieve their key values
     Object.keys(randomOptionOutputs).forEach(function (key) {
         // Code to define the html for the buttons 
-        buttonOutputs += '<button id="answer-' + i + '" data-answer="' + randomOptionOutputs[key]['option'] + '" data-country="' + randomOptionOutputs[key]['question'] + '" class="answer-btn">' + randomOptionOutputs[key]['option'] + '</button>';
+        buttonOutputs += '<button id="answer-' + i + '" data-answer="' + randomOptionOutputs[key]['option'] + '" data-country="' + randomOptionOutputs[key]['question'] + '" class="answer-btn stack-buttons">' + randomOptionOutputs[key]['option'] + '</button>';
         i++;
     });
 
@@ -938,46 +937,44 @@ function generateQuestion() {
     document.getElementById('country-name').innerHTML = chosenCountry;
     document.getElementById('answers-container').innerHTML = buttonOutputs;
 
-    // Loop through the buttons that have been created and add event listeners to them
+    // Loop through the buttons that have been created and add click event listeners to them
     for (let i = 0; i < 4; i++) {
-        document.getElementById("answer-" + i).addEventListener("click", function(e) { 
+        document.getElementById("answer-" + i).addEventListener("click", function (e) {
             checkAnswer(e)
         });
     };
-    
 };
 
 // Generate random number to use as array index to generate questions and answers 
 function getRandomInt(min, max) {
     min = Math.ceil(min);
-    max = Math.floor(max); //The maximum is exclusive and the minimum is inclusive
-    return Math.floor(Math.random() * (max - min) + min);
-   
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min) + min); //The maximum is exclusive and the minimum is inclusive
 };
-
 
 // Checks if the answer selected is right, increments the score if it is, then moves on the to the next question
 function checkAnswer(e) {
 
     /** retrieve the data-answer for the button clicked and 
      * compare this with the isCorrectQuestionAnswer object 'option'
-     */ 
+     */
     console.log(e.target)
-        var clickedButtonAnswer = e.target.getAttribute('data-answer');
-        if (clickedButtonAnswer === isCorrectQuestionAnswer["option"]) {
-                $(e.target).addClass("correct");
-                incrementScore(scoreValue);
-         } else {
-                $(e.target).addClass("incorrect");
-            };
-        // Loop through the remaining buttons and set them to disabled
-        for (let i = 0; i < 4; i++) {
-            document.getElementById("answer-" + i).setAttribute('disabled', true)
-        };
-        // Show the nextQuestion button
-          nextQuestion.classList.remove('hidden');
+    var clickedButtonAnswer = e.target.getAttribute('data-answer');
+    if (clickedButtonAnswer === isCorrectQuestionAnswer["option"]) {
+        $(e.target).addClass("correct");
+        incrementScore(scoreValue);
+    } else {
+        $(e.target).addClass("incorrect");
+    };
+    // Loop through the remaining buttons and set them to disabled so they can't be cicked again
+    for (let i = 0; i < 4; i++) {
+        document.getElementById("answer-" + i).setAttribute('disabled', true)
+    };
+    // Show the nextQuestion button
+    nextQuestion.classList.remove('hidden');
 
 };
+
 // Increment the score by 1
 function incrementScore(num) {
     currentScore += num;

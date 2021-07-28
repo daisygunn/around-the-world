@@ -158,7 +158,7 @@ body {
     color: #3917ca;
     border: solid 1pxs #3917ca;
 }
-
+      
 .correct {
     background-color: green !important;
     color: white;
@@ -261,5 +261,13 @@ body {
     #rotatingGlobe {
         width: 200px;
         height: 200px;
+    }
+    
+    .answer-btn {
+        display: block;
+        margin: 5px;
+        padding: 5x;
+        width: 150px;
+        height: 100px;
     }
 }
