@@ -828,6 +828,7 @@ function startGame() {
 function quitGame() {
     if (window.confirm('Are you sure you want to quit?')) {
         gameContainer.classList.add('hidden')
+        mainHeading.classList.remove('hidden')
         startButton.classList.remove('hidden')
     }
 };
