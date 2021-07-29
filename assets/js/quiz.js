@@ -851,7 +851,6 @@ function getNextQuestion(event) {
 function generateQuestion() {
 
     /** If questionCount is more than the specified max questions
-     * then save currectScore as the recentScore to local storage
      * and go to end-page
      */
 
