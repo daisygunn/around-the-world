@@ -838,12 +838,6 @@ function getNextQuestion(event) {
     generateQuestion();
 };
 
-// // Choose question difficulty
-// // if function loop
-// function chooseDifficulty() {
-
-// }
-
 /**
  * Function to generate each question
  * Questions and their answer buttons are generated dynamically each time.
