@@ -1,7 +1,7 @@
-//  Code for  main heading found https://tobiasahlin.com/moving-letters/#6
+//  Code for  main heading found here https://tobiasahlin.com/moving-letters/#6
 
 let textWrapper = document.querySelector('.animated-heading .letters');
-textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+textWrapper.innerHTML = textWrapper.textContent.replace("<span class='letter'>$&</span>");
 
 anime.timeline({loop: true})
   .add({
