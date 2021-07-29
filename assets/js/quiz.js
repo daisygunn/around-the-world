@@ -855,7 +855,7 @@ function generateQuestion() {
      * and go to end-page
      */
 
-    if (questionCount > maxQuestions) {
+    if (questionCount >= maxQuestions) {
         localStorage.setItem('recentScore', currentScore);
 
         return window.location.assign(`end-page.html`);
