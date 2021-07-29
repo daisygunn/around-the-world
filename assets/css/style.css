@@ -133,6 +133,11 @@ body {
 }
 
 /* Styling for quiz game */
+
+#game-container {
+    margin: 20px;
+}
+
 .question {
     font-size: 30px;
     font-family: 'Yomogi', cursive;
@@ -258,6 +263,8 @@ h3 {
         width: 200px;
         height: 200px;
     }
-}
 
-;
+    .answer-btn {
+        display: inline;
+    }
+}
