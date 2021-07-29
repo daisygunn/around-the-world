@@ -1,11 +1,11 @@
-// Blinking Game Over heading - https://www.youtube.com/watch?v=9iDm3QiIEzU
-setInterval(function () {
-    var gameOverText = document.getElementById('game-over-heading');
+// // Blinking Game Over heading - https://www.youtube.com/watch?v=9iDm3QiIEzU
+// setInterval(function () {
+//     var gameOverText = document.getElementById('game-over-heading');
 
-    gameOverText.innerHTML = "Game Over!";
+//     gameOverText.innerHTML = "Game Over!";
 
-    gameOverText.style.display = (gameOverText.style.display == 'none' ? '' : 'none');
-}, 600);
+//     gameOverText.style.display = (gameOverText.style.display == 'none' ? '' : 'none');
+// }, 600);
 
 
 const username = document.getElementById('username');
@@ -39,5 +39,5 @@ saveHighScore = e => {
     highScores.splice(5)
 
     localStorage.setItem('highScores', JSON.stringify(highScores))
-    window.location.assign('/')
+    window.location.assign('https://daisygunn.github.io/around-the-world/additional-pages/high-scores.html')
 };
