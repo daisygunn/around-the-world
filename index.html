@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Around the World!</title>
 </head>
+
 <body>
     <div class="navbar-container">
         <nav class="navbar-top">
@@ -32,25 +34,30 @@
     <div class="title-container">
         <h1 class="animated-heading">
             <span class="text-wrapper">
-              <span class="letters">Around the World</span>
+                <span class="letters">Around the World</span>
             </span>
-          </h1>
+        </h1>
     </div>
     <div id="globe" class="globe-container">
-        <canvas id='rotatingGlobe' width='400' height='400'
-        ></canvas>
-        
+        <canvas id='rotatingGlobe' width='400' height='400'></canvas>
+
     </div>
     <div id="play-game" class="container">
-        <a href="additional-pages/play-game.html"><button id="game-button" class="btn">To the Quiz</button></a>
+        <div class="row">
+            <div class="text-center">
+                <a href="additional-pages/play-game.html"><button id="game-button" class="button">To the
+                        Quiz</button></a>
+            </div>
+        </div>
     </div>
-<script src="assets/js/script.js" defer></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="assets/js/script.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 
-<script type='text/javascript' src='https://d3js.org/d3.v3.min.js'></script>
-<script type='text/javascript' src='https://d3js.org/topojson.v1.min.js'></script>
-<script type='text/javascript' src='assets/libs/planetary.js-1.1.2/dist/planetaryjs.min.js'></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="assets/js/rotating.js"></script>  
+    <script type='text/javascript' src='https://d3js.org/d3.v3.min.js'></script>
+    <script type='text/javascript' src='https://d3js.org/topojson.v1.min.js'></script>
+    <script type='text/javascript' src='assets/libs/planetary.js-1.1.2/dist/planetaryjs.min.js'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="assets/js/rotating.js"></script>
 </body>
+
 </html>

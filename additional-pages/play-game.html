@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assets/css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>Around the World!</title>
 </head>
 
@@ -30,39 +31,46 @@
         </nav>
     </div>
     <div class="title-container container">
-        <h1 id="main-heading">Let's Play</h1>
+        <div class="row">
+            <div class="d-sm-inline-flex d-md-flex d-lg-flex justify-content-center">
+        <h1 id="main-heading" >Let's Play</h1>
+    </div>
+</div>  
     </div>
 
     <div id="start-game" class="container">
-        <div class="w-50 mx-auto">
-        <button id="start-button" class="button">Start Game</button>
-    </div>
+        <div class="row">
+            <div class="d-sm-inline-flex d-md-flex d-lg-flex justify-content-center">
+                <button id="start-button" class="button">Start Game</button>
+            </div>
+        </div>
+
     </div>
 
     <div id="game-container" class="hidden container">
-        <div id="progress-container" class="row">
-        <div class="col-sm-2 col-m-6">
-            <p class="progress-items">Question <span id="question-count"></span> of 10</p>
-        </div>
-        <div class="col-sm-6">
-            <p class="progress-items">Score: <span id="score-total">0</span></p>
-        </div>
+        <div id="progress-container" class="row justify-content-between">
+            <div class="col-4">
+                <p class="progress-items">Question <span id="question-count"></span> of 10</p>
+            </div>
+            <div class="col-4">
+                <p class="progress-items">Score: <span id="score-total">0</span></p>
+            </div>
         </div>
         <div id="questions-container" class="w-50 mx-auto">
             <h2 class="question">What is the capital city of <span id="country-name">country name</span>?</h2>
         </div>
         <div id="answers" class="row">
-        <div id="answers-container" class="w-50 mx-auto">
+            <div id="answers-container" class="d-sm-inline-flex d-md-flex d-lg-flex justify-content-center">
 
-        </div>
+            </div>
         </div>
         <div id="game-controls-container" class="row">
-            <div class="w-50 mx-auto">
-            <button id="next-question" class="button hidden">Next Question</button>
-            <button id="quit-button" class="button">Quit Game</button>
+            <div class="d-sm-inline-flex d-md-flex d-lg-flex justify-content-center">
+                <button id="next-question" class="button hidden">Next Question</button>
+                <button id="quit-button" class="button">Quit Game</button>
+            </div>
         </div>
-        </div>
-        
+
     </div>
 
     <script src="../assets/js/script.js" defer></script>
