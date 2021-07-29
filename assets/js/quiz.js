@@ -97,7 +97,7 @@ const countriesList = [{
     },
     {
         country: 'Bolivia',
-        capital: 'La Paz (seat of government)'
+        capital: 'La Paz'
     },
     {
         country: 'Bosnia and Herzegovina',
@@ -149,7 +149,7 @@ const countriesList = [{
     },
     {
         country: 'Chad',
-        capital: 'N"Djamena'
+        capital: "N'Djamena"
     },
     {
         country: 'Chile',
@@ -168,11 +168,11 @@ const countriesList = [{
         capital: 'Moroni'
     },
     {
-        country: 'Congo, Democratic Republic of the',
+        country: 'Democratic Republic of the Congo',
         capital: 'Kinshasa'
     },
     {
-        country: 'Congo, Republic of the',
+        country: 'Republic of the Congo',
         capital: 'Brazzaville'
     },
     {
@@ -180,7 +180,7 @@ const countriesList = [{
         capital: 'San Jose'
     },
     {
-        country: 'Cote d"Ivoire',
+        country: "Cote d'Ivoire",
         capital: 'Yamoussoukro'
     },
     {
@@ -229,7 +229,7 @@ const countriesList = [{
     },
     {
         country: 'Equatorial Guinea',
-        capital: 'Malabo (de jure) or Oyala (seat of government)'
+        capital: 'Oyala'
     },
     {
         country: 'Eritrea',
@@ -241,7 +241,7 @@ const countriesList = [{
     },
     {
         country: 'Eswatini (formerly Swaziland)',
-        capital: 'Mbabane (administrative), Lobamba (legislative, royal)'
+        capital: 'Mbabane or Lobamba'
     },
     {
         country: 'Ethiopia',
@@ -285,7 +285,7 @@ const countriesList = [{
     },
     {
         country: 'Grenada',
-        capital: 'Saint George"s'
+        capital: "Saint George's"
     },
     {
         country: 'Guatemala',
@@ -497,7 +497,7 @@ const countriesList = [{
     },
     {
         country: 'Nauru',
-        capital: 'Yaren District (de facto)'
+        capital: 'Yaren District'
     },
     {
         country: 'Nepal',
@@ -528,7 +528,7 @@ const countriesList = [{
         capital: 'Pyongyang'
     },
     {
-        country: 'North Macedonia (formerly Macedonia)',
+        country: 'North Macedonia',
         capital: 'Skopje'
     },
     {
@@ -661,7 +661,7 @@ const countriesList = [{
     },
     {
         country: 'South Africa',
-        capital: 'Pretoria (administrative) Cape Town (legislative), Bloemfontein (judicial)'
+        capital: 'Pretoria/Cape Town/Bloemfontein'
     },
     {
         country: 'South Korea',
@@ -677,7 +677,7 @@ const countriesList = [{
     },
     {
         country: 'Sri Lanka',
-        capital: 'Sri Jayawardenepura Kotte'
+        capital: 'Colombo'
     },
     {
         country: 'Sudan',
@@ -753,7 +753,7 @@ const countriesList = [{
     },
     {
         country: 'Ukraine',
-        capital: 'Kyiv (also known as Kiev)'
+        capital: 'Kiev'
     },
     {
         country: 'United Arab Emirates',
@@ -780,7 +780,7 @@ const countriesList = [{
         capital: 'Port Vila'
     },
     {
-        country: 'Vatican City (Holy See)',
+        country: 'Vatican City',
         capital: 'Vatican City'
     },
     {
