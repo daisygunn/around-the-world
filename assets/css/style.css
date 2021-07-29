@@ -102,12 +102,12 @@ body {
     margin: none;
 }
 
-/* .container {
+.globe-container {
     display: flex;
     justify-content: center;
     align-content: center;
     clear: both;
-} */
+}
 
 .button {
     background-color: white;
@@ -170,20 +170,9 @@ body {
 }
 
 
-/* #progress-container { */
-    /* height: 50px;
+/* #progress-container {
     padding: 20px;
-    width: fit-content;
-    display: inline;
-    float: right;
-}
-
-#score-container {
-    height: 50px;
-    padding: 20px;
-    width: fit-content;
-    display: inline;
-    float: left;
+    
 } */
 
 .progress-items {
