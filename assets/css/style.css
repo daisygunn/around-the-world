@@ -188,10 +188,10 @@ body {
 }
 
 
- #progress-container {
+#progress-container {
     padding: 20px;
     justify-content: space-between;
-} 
+}
 
 .progress-items {
     color: white;
@@ -257,12 +257,12 @@ h3 {
     list-style: none;
     text-align: center;
     font-family: 'Yomogi', cursive;
-    font-size: 30px;    
+    font-size: 30px;
     color: white;
     margin-bottom: 5px;
 }
 
-/* Index.html media queries for mobile phone  */
+/* Media queries for mobile phone  */
 @media screen and (max-width: 525px) {
     .animated-heading {
         font-weight: 900;
@@ -274,7 +274,37 @@ h3 {
         height: 200px;
     }
 
+    .question {
+        font-size: 25px;
+        margin: 0 10px;
+    }
+
+    /* #question-container {
+        
+    } */
+
+    #game-container {
+        margin: 0 20px 20px 20px;
+    }
+
     .answer-btn {
-        display: inline;
+        width: 200px;
+        height: 100px;
+    }
+
+    #progress-container {
+        padding: 0 !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .answer-btn {
+        display: block;
+        width: 200px;
+        height: 80px;
+    }
+
+    #progress-container {
+        padding: 0 20px;
     }
 }
