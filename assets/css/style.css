@@ -262,6 +262,10 @@ h3 {
     margin-bottom: 5px;
 }
 
+.play-again > a {
+    text-decoration: none;
+}
+
 /* Media queries for mobile phone  */
 @media screen and (max-width: 525px) {
     .animated-heading {
