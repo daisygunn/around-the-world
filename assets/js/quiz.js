@@ -861,11 +861,15 @@ function generateQuestion() {
     let countriesCount = countriesList.length;
     let randomNumber = getRandomInt(0, countriesCount);
 
+    console.log(randomNumber)
+
     // prevent same number from being used twice
     do {
         randomNumber++;
         console.log('Already found');
     } while (randomQuestionsArray.includes(randomNumber));
+    
+    console.log(randomNumber)
 
     randomQuestionsArray.push(randomNumber);
 
