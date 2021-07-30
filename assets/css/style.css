@@ -163,12 +163,12 @@ body {
     margin: 20px;
     padding: 10px !important;
     font-size: 20px;
-    min-width: 150px;
-    max-width: fit-content;
+    width: 150px;
     height: 150px;
     border: solid 1px white;
     font-weight: bold;
     border-radius: 20%;
+    overflow-wrap: break-word;
 }
 
 .answer-btn:hover {
