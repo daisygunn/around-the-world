@@ -103,11 +103,21 @@ body {
     margin: none;
 }
 
-.globe-container {
+.flex-container {
     display: flex;
     justify-content: center;
     align-content: center;
     clear: both;
+}
+
+.container {
+    justify-content: center;
+    align-content: center;
+    clear: both;
+}
+
+.block {
+    display: block;
 }
 
 .button {
@@ -178,10 +188,10 @@ body {
 }
 
 
-/* #progress-container {
+ #progress-container {
     padding: 20px;
     
-} */
+} 
 
 .progress-items {
     color: white;
