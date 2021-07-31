@@ -36,7 +36,7 @@ const countriesList = [{
         capital: 'Luanda'
     },
     {
-        country: 'Antigua and Barbuda',
+        country: 'Antigua & Barbuda',
         capital: 'Saint John"s'
     },
     {
@@ -100,7 +100,7 @@ const countriesList = [{
         capital: 'La Paz'
     },
     {
-        country: 'Bosnia and Herzegovina',
+        country: 'Bosnia & Herzegovina',
         capital: 'Sarajevo'
     },
     {
@@ -143,11 +143,7 @@ const countriesList = [{
         country: 'Canada',
         capital: 'Ottawa'
     },
-    {
-        country: 'Central African Republic',
-        capital: 'Bangui'
-    },
-    {
+     {
         country: 'Chad',
         capital: "N'Djamena"
     },
@@ -240,7 +236,7 @@ const countriesList = [{
         capital: 'Tallinn'
     },
     {
-        country: 'Eswatini (formerly Swaziland)',
+        country: 'Eswatini',
         capital: 'Mbabane or Lobamba'
     },
     {
@@ -488,7 +484,7 @@ const countriesList = [{
         capital: 'Maputo'
     },
     {
-        country: 'Myanmar (formerly Burma)',
+        country: 'Myanmar',
         capital: 'Naypyidaw'
     },
     {
@@ -596,7 +592,7 @@ const countriesList = [{
         capital: 'Kigali'
     },
     {
-        country: 'Saint Kitts and Nevis',
+        country: 'Saint Kitts & Nevis',
         capital: 'Basseterre'
     },
     {
@@ -604,7 +600,7 @@ const countriesList = [{
         capital: 'Castries'
     },
     {
-        country: 'Saint Vincent and the Grenadines',
+        country: 'Saint Vincent & the Grenadines',
         capital: 'Kingstown'
     },
     {
@@ -616,7 +612,7 @@ const countriesList = [{
         capital: 'San Marino'
     },
     {
-        country: 'Sao Tome and Principe',
+        country: 'Sao Tome & Principe',
         capital: 'São Tomé'
     },
     {
@@ -661,7 +657,7 @@ const countriesList = [{
     },
     {
         country: 'South Africa',
-        capital: 'Pretoria/Cape Town/Bloemfontein'
+        capital: 'Pretoria, Cape Town & Bloemfontein'
     },
     {
         country: 'South Korea',
@@ -728,7 +724,7 @@ const countriesList = [{
         capital: 'Nukuʻalofa'
     },
     {
-        country: 'Trinidad and Tobago',
+        country: 'Trinidad & Tobago',
         capital: 'Port of Spain'
     },
     {
@@ -764,7 +760,7 @@ const countriesList = [{
         capital: 'London'
     },
     {
-        country: 'United States of America',
+        country: 'USA',
         capital: 'Washington, D.C.'
     },
     {
