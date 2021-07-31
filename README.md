@@ -198,6 +198,7 @@ The below sources were used for content:
 [Countries and their capital cities](https://www.countries-ofthe-world.com/capitals-of-the-world.html)
 
 [Sound effects obtained from Zapsplat](https://www.zapsplat.com)
+
 ---
 ## Acknowledgements
 
