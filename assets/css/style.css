@@ -36,6 +36,57 @@ body {
 }
 
 /* Navbar styling */
+
+
+.navbar-container {
+    border-bottom: 1px solid white;
+}
+
+.navbar-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+}
+
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item {
+    margin-left: 5rem;
+    list-style: none;
+    display: inline;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Yomogi', cursive;
+
+}
+
+.nav-link {
+    color: #f2f2f2;
+    text-decoration: none;
+    padding: 10px;
+    display: inline;
+}
+
+/* 
 .navbar-container {
     display: block;
     padding-bottom: 20px;
@@ -44,26 +95,13 @@ body {
 .navbar-top {
     float: right;
     margin: 20px;
-}
-
-.navbar-top li {
-    list-style: none;
-    display: inline;
-    font-size: 20px;
-    font-weight: bold;
-    font-family: 'Yomogi', cursive;
-}
-
+} */
+/* 
 .navbar-container a {
     /* background-color: #3917ca; */
-    color: #f2f2f2;
-    text-decoration: none;
-    padding: 10px;
-    display: inline;
 
-}
 
-.navbar-container a:hover {
+.navbar-link:hover {
     background-color: #f2f2f2;
     color: #3917ca;
 }
@@ -243,7 +281,7 @@ h3 {
     display: inline;
     font-size: 15px;
     font-weight: bold;
-    
+
 }
 
 #buttons-list li a {
@@ -276,7 +314,7 @@ h3 {
     padding: 0;
 }
 
-.play-again > a {
+.play-again>a {
     text-decoration: none;
 }
 
@@ -291,6 +329,8 @@ h3 {
         width: 200px;
         height: 200px;
     }
+
+
 
     .question {
         font-size: 25px;
@@ -316,6 +356,48 @@ h3 {
 }
 
 @media screen and (max-width: 768px) {
+    .nav-menu {
+        position: fixed;
+        left: -200%;
+        top: 5rem;
+        flex-direction: column;
+        background-color: #fff;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-menu.active {
+        left: 0;
+        padding: 0;
+        z-index: 999;
+    }
+
+    .nav-item {
+        margin: 2.5rem 0;
+    }
+    .nav-link {
+        color: blue;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
     .answer-btn {
         display: block;
         width: 200px;
