@@ -8,7 +8,6 @@ In addition to the home page this website also features:
 - The 'Play Game' page
 - A 'Rules' page
 - A 'High Scores' page
-<!-- - A 'Fun Facts' page -->
 
 The business goals of the website are:
 1. To provide an educational learning platform for children.
@@ -35,7 +34,6 @@ The target audience for 'Around the World' are:
 Features that they would need included:
 - A fun & interactive quiz
 - The ability to track their high scores so they can see if they're improving
-<!-- - A page with fun and interesting facts to enhance their learning -->
 
 It was imperative to me that this website was simple & easy to use to ensure that the users had an enjoyable experience; therefore each page has a limited amount of information, written in simple language. 
 
@@ -79,16 +77,71 @@ The quiz itself has a question, a text input and four answer buttons - this layo
 ### Skeleton
 [View wireframes here](assets/documents/wiresframes.pdf) - please note the actual website differs slightly from these wireframes.
 
+Whilst building the website I opted to change the the type of quiz that this website would feature, I went for a capital's of the world quiz as this would allow me to dynamically create the question and answer buttons using JavaScript. 
+
+I also decided to add a next button instead of an alert as I felt this would provide the user with a better experience, as having to click out of the alert could be annoying for some.
+
+Furthermore I decided to add a responsive navbar to further enhance the user experience when viewing the website on a mobile phone.
+
 ### Surface
 I chose to use a graident background using blues and greens to resemble the colour of the globe, I wanted something simple so as not to detract from any of the content. 
 On the landing page there is an animated globe which zooms in and out upon the mouse being scrolled, this ineractive element provides something fun for the user straight away.
-Using google fonts I chose Yogomi and Pacifico, I felt that Yogomi had a child handwriting feel to it and this will be used for all the heading elements on the webssite. I paired this with Pacifico for the bigger pieces of text as this would be easier to read.
+Using google fonts I chose Yogomi as I felt it had a childlike handwriting feel to it and this will be used for all the heading elements on the website.
 
 ---
-
 ## Features 
+
 ---
 ## Technologies Used
+I have used several technologies that have enabled this design to work:
+
+- [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+    - Used as the basic building block for the project and to structure the content.
+- [CSS](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics)
+    - Used to style all the web content across the project. 
+- [JavaScript](https://www.javascript.com/)
+    - Used for the responsive navbar, animated heading, quiz functionality & sound effects and high-scores leaderboard.
+- [Jquery]()
+    - 
+- [Planetary JS](http://planetaryjs.com/examples/rotating.html)
+    - Library used to render the animated globe on the landing page. 
+- [Google Fonts](https://fonts.google.com/)
+    - Used to obtain the fonts linked in the header, fonts used were Playfair and Cookie
+- [Font Awesome](https://fontawesome.com/)
+    - Used to obtain the icons used on the high scores and rules pages.
+- [Google Developer Tools](https://developers.google.com/web/tools/chrome-devtools)
+    - Used as a primary method of fixing spacing issues, finding bugs, and testing responsiveness across the project.
+- [GitHub](https://github.com/)
+    - Used to store code for the project after being pushed.
+- [Git](https://git-scm.com/)
+    - Used for version control by utilising the Gitpod terminal to commit to Git and Push to GitHub.
+- [Gitpod](https://www.gitpod.io/)
+    - Used as the development environment.
+- [Balsamiq](https://balsamiq.com/)
+    - Used to create the wireframes for the project.
+- [AutoPrefixer](https://autoprefixer.github.io/)
+    - Used to parse my CSS and ass vendor prefixes.
+- [Grammarly](https://www.grammarly.com/)
+    - Used to fix the grammar errors across the project.
+- [Unicorn Revealer](https://chrome.google.com/webstore/detail/unicorn-revealer/lmlkphhdlngaicolpmaakfmhplagoaln?hl=en-GB)
+    - Used to detect overflow of elements, which allowed me to quickly debug any issues.
+- [Coloors](https://coolors.co/)
+    - Used to create a colour palette for the design.
+- [Favicon.io](https://favicon.io/)
+    - Used to create favicon's for my website
+- [Color Contrast Accessibility Validator](https://color.a11y.com/)
+    - Allowed me to test the colour contrast of my webpage.
+- [W3C Markup Validation Service](https://validator.w3.org/) 
+    - Used to validate all HTML code written and used in this webpage.
+- [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/#validate_by_input)
+    - Used to validate all CSS code written and used in this webpage.
+- [Freeformatter CSS Beautify](https://www.freeformatter.com/css-beautifier.html)
+    - Used to accurately format my CSS code.
+- [Freeformatter HTML Formatter](https://www.freeformatter.com/html-formatter.html)
+    - Used to accurately format my HTML code.
+- [AmIResponsive](http://ami.responsivedesign.is/)
+    - Used to generate repsonsive image used in README file.
+
 ---
 ## Testing
 ---
