@@ -2,7 +2,7 @@
 
 [View the website here](https://daisygunn.github.io/around-the-world/)
 
-This website has been produced to provide a platform for an Educational geography game for children aged 8-12, it offers questions in a quiz format to test their knowledge on capital cities around the world. 
+This website has been produced to provide a platform for an Educational geography game for children aged 8-12, it offers questions in a quiz format to test their knowledge of capital cities around the world. 
 
 In addition to the home page this website also features:
 - The 'Play Game' page
@@ -20,7 +20,6 @@ The user goals of this website are:
 3. To improve my previous scores & therefore my overall knowledge.
 
 --- 
-s
 ## UX
 
 ### Strategy
@@ -31,7 +30,7 @@ The target audience for 'Around the World' are:
 - Children interested in geography
 - Children that would like to improve their geographical knowledge
 
-Features that they would need included:
+Features that they would need to be included:
 - A fun & interactive quiz
 - The ability to track their high scores so they can see if they're improving
 
@@ -40,9 +39,9 @@ It was imperative to me that this website was simple & easy to use to ensure tha
 As children aren't always guaranteed to have mobile phones this website has been designed to work well on desktops & tablets as well, to ensure that no matter the device the user has a positive user experience.
 
 ### Scope
-In order to acheive the desired user and business goals this website will include the following:
+In order to achieve the desired user and business goals this website will include the following:
 1. A landing page with:
-- a H1 element
+- an H1 element
 - Interactive 3D globe that responds to mouse movement
 - Navigation bar
 
@@ -65,22 +64,22 @@ In order to acheive the desired user and business goals this website will includ
 - List of top 5 high scores
 
 ### Structure
-This is a multi-page website to keep the amount of information on each page limited and easy to digest; the rules, game and high scores are all seperated so that any child using the website is able to find what they want easily.
-Each page is designed with simplicity in mind, with a navbar and a H1 element and then the relevant content centered below; this simplicity will allow for users to feel comfortable using and navigating each page.
+This is a multi-page website to keep the amount of information on each page limited and easy to digest; the rules, game and high scores are all separated so that any child using the website can find what they want easily.
+Each page is designed with simplicity in mind, with a navbar and an H1 element and then the relevant content centred below; this simplicity will allow for users to feel comfortable using and navigating each page.
 The quiz itself has a question, a text input and four answer buttons - this layout of this will be responsive so that it isn't too squashed when being viewed on a smaller screen. 
 
 ### Skeleton
 [View wireframes here](assets/documents/wiresframes.pdf) - please note the actual website differs slightly from these wireframes.
 
-Whilst building the website I opted to change the the type of quiz that this website would feature, I went for a capital's of the world quiz as this would allow me to dynamically create the question and answer buttons using JavaScript. 
+Whilst building the website I opted to change the type of quiz that this website would feature, I went for a capital's of the world quiz as this would allow me to dynamically create the question and answer buttons using JavaScript. 
 
 I also decided to add a next button instead of an alert as I felt this would provide the user with a better experience, as having to click out of the alert could be annoying for some.
 
-Furthermore I decided to add a responsive navbar to further enhance the user experience when viewing the website on a mobile phone.
+Furthermore, I decided to add a responsive navbar to further enhance the user experience when viewing the website on a mobile phone.
 
 ### Surface
-I chose to use a graident background using blues and greens to resemble the colour of the globe, I wanted something simple so as not to detract from any of the content. 
-On the landing page there is an animated globe which zooms in and out upon the mouse being scrolled, this ineractive element provides something fun for the user straight away.
+I chose to use a gradient background using blues and greens to resemble the colour of the globe, I wanted something simple so as not to detract from any of the content. 
+On the landing page, there is an animated globe that zooms in and out upon the mouse being scrolled, this interactive element provides something fun for the user straight away.
 Using google fonts I chose Yogomi as I felt it had a childlike handwriting feel to it and this will be used for all the heading elements on the website.
 
 ---
@@ -135,7 +134,7 @@ I have used several technologies that have enabled this design to work:
 - [Freeformatter HTML Formatter](https://www.freeformatter.com/html-formatter.html)
     - Used to accurately format my HTML code.
 - [AmIResponsive](http://ami.responsivedesign.is/)
-    - Used to generate repsonsive image used in README file.
+    - Used to generate responsive image used in README file.
 
 ---
 ## Testing
@@ -174,7 +173,7 @@ Cloning your repository will allow you to download a local version of the reposi
 6. Press enter and your local clone will be created.
 ---
 ## Credits
-I have used a number of resources to produce this website, where code has been used found from another source this is credited as a comment within the HTML, CSS and JS files.
+I have used several resources to produce this website, where code has been used found from another source this is credited as a comment within the HTML, CSS and JS files.
 
 The following websites/articles were used for research and guidance:
 
