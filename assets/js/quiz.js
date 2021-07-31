@@ -143,7 +143,7 @@ const countriesList = [{
         country: 'Canada',
         capital: 'Ottawa'
     },
-     {
+    {
         country: 'Chad',
         capital: "N'Djamena"
     },
@@ -864,7 +864,7 @@ function generateQuestion() {
         randomNumber++;
         console.log('Already found');
     } while (randomQuestionsArray.includes(randomNumber));
-    
+
     console.log(randomNumber)
 
     randomQuestionsArray.push(randomNumber);
@@ -962,12 +962,12 @@ function checkAnswer(e) {
     console.log(e.target)
     var clickedButtonAnswer = e.target.getAttribute('data-answer');
     if (clickedButtonAnswer === isCorrectQuestionAnswer["option"]) {
-        $(e.target).addClass("correct");
         playCorrectSound();
+        $(e.target).addClass("correct");
         incrementScore(scoreValue);
     } else {
-        $(e.target).addClass("incorrect");
         playIncorrectSound();
+        $(e.target).addClass("incorrect");
     };
     // Loop through the remaining buttons and set them to disabled so they can't be cicked again
     for (let i = 0; i < 4; i++) {
@@ -984,13 +984,15 @@ function incrementScore(num) {
     scoreOutput.innerText = `${currentScore}`;
 };
 
-const correctSound = document.getElementById('correct-sound')
-const incorrectSound = document.getElementById('incorrect-sound')
+const correctSound = document.getElementById('correct-sound');
+const incorrectSound = document.getElementById('incorrect-sound');
 
 function playCorrectSound() {
     correctSound.play();
-}
+    console.log('sound played')
+};
 
 function playIncorrectSound() {
     incorrectSound.play();
-}
+    console.log('sound played')
+};
