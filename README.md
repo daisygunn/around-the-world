@@ -20,7 +20,7 @@ The user goals of this website are:
 3. To improve my previous scores & therefore my overall knowledge.
 
 --- 
-
+s
 ## UX
 
 ### Strategy
@@ -200,4 +200,6 @@ The below sources were used for content:
 
 [Sound effects obtained from Zapsplat](https://www.zapsplat.com)
 ---
-## Acknowledgementsx
+## Acknowledgements
+
+I would like to thank my course mentor Guido Cecilio for his support and guidance throughout the course of the project and my fellow students Harry Dhillon and Jack Crosbie for their support & feedback.
