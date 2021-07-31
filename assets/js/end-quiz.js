@@ -20,24 +20,24 @@ finalScore.innerText = mostRecentScore;
 
 username.addEventListener('keyup', () => {
     saveScore.disabled = !username.value
-})
+});
 
 saveHighScore = e => {
-    e.preventDefault()
+    e.preventDefault();
 
     const score = {
         score: mostRecentScore,
         name: username.value
-    }
+    };
 
-    highScores.push(score)
+    highScores.push(score);
 
     highScores.sort((a, b) => {
         return b.score - a.score
-    })
+    });
 
-    highScores.splice(5)
+    highScores.splice(5);
 
-    localStorage.setItem('highScores', JSON.stringify(highScores))
-    window.location.assign('https://daisygunn.github.io/around-the-world/additional-pages/high-scores.html')
+    localStorage.setItem('highScores', JSON.stringify(highScores));
+    window.location.assign('https://daisygunn.github.io/around-the-world/additional-pages/high-scores.html');
 };
