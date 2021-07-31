@@ -132,6 +132,7 @@ body {
     padding: 15px;
     border-radius: 20%;
     width: 150px;
+    height: 100px;
     font-weight: bold;
     cursor: pointer;
 }
@@ -269,6 +270,10 @@ h3 {
     font-size: 30px;
     color: white;
     margin-bottom: 5px;
+}
+
+#high-scores-leaderboard {
+    padding: 0;
 }
 
 .play-again > a {
