@@ -107,12 +107,14 @@ body {
     display: flex;
     justify-content: center;
     align-content: center;
+    align-items: center;
     clear: both;
 }
 
 .container {
     justify-content: center;
     align-content: center;
+    align-items: center;
     clear: both;
 }
 
@@ -229,11 +231,16 @@ h3 {
     text-align: center;
 }
 
+#buttons-list {
+    padding: 0;
+}
+
 #buttons-list li {
     list-style: none;
     display: inline;
     font-size: 15px;
     font-weight: bold;
+    
 }
 
 #buttons-list li a {

@@ -14,17 +14,17 @@
         <h1 id="game-over-heading">Game over!</h1>
     </div>
 
-    <div id="end-game-container container">
+    <div id="end-game-container" class="container">
         <div id="final-score-container">
             <h2>Final Score: <span id="final-score-total">0</span></h2>
             <h3>Save your score below & see if you've made our high scores table!</h3>
         </div>
-        <form id="save-score-form">
+        <form id="save-score-form" class="flex-container">
             <input type="text" name="username" placeholder="Please enter your name!" id="username" aria-label="Add your name for the high-scores leaderboard!" required>
             <button class="button" id="save-score" type="submit" onclick="saveHighScore(event)" disabled>Save!</button>
         </form>
 
-        <div id="buttons-container" class="container">
+        <div id="buttons-container" class="flex-container">
             <ul id="buttons-list">
                 <li>
                     <button id="high-scores-button" class="button"><a href="high-scores.html">High Scores</a></button>
