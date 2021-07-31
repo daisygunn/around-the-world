@@ -138,7 +138,7 @@ body {
 
 /* General content styling for entire website */
 #title-container {
-    margin: none;
+    margin: 0;
     width: 100%;
 }
 
@@ -218,7 +218,8 @@ body {
 .answer-btn:hover {
     background-color: white;
     color: #3917ca;
-    border: solid 1pxs #3917ca;
+    border: solid 1px #3917ca;
+    border-radius: 20%;
 }
 
 .correct {
