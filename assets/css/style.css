@@ -133,6 +133,7 @@ body {
     border-radius: 20%;
     width: 150px;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .button:hover {
@@ -171,6 +172,7 @@ body {
     font-weight: bold;
     border-radius: 20%;
     overflow-wrap: break-word;
+    cursor: pointer;
 }
 
 .answer-btn:hover {
