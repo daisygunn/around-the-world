@@ -64,11 +64,6 @@ In order to acheive the desired user and business goals this website will includ
 - Navigation bar
 - List of top 5 high scores
 
-<!-- 4. Fun Facts page:
-- H1 element
-- Navigation bar
-- Animated text boxes for users to click in order to read the fun facts. -->
-
 ### Structure
 This is a multi-page website to keep the amount of information on each page limited and easy to digest; the rules, game and high scores are all seperated so that any child using the website is able to find what they want easily.
 Each page is designed with simplicity in mind, with a navbar and a H1 element and then the relevant content centered below; this simplicity will allow for users to feel comfortable using and navigating each page.
@@ -179,5 +174,30 @@ Cloning your repository will allow you to download a local version of the reposi
 6. Press enter and your local clone will be created.
 ---
 ## Credits
+I have used a number of resources to produce this website, where code has been used found from another source this is credited as a comment within the HTML, CSS and JS files.
+
+The following websites/articles were used for research and guidance:
+
+[JavaScript do/while loop](https://www.javascripttutorial.net/javascript-do-while/)
+
+[Object.keys](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys)
+
+[Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox)
+
+[Responsive Navbar](https://dev.to/devggaurav/let-s-build-a-responsive-navbar-and-hamburger-menu-using-html-css-and-javascript-4gci)
+
+I obtained code from the following resources:
+
+[Vanilla JavaScript quiz tutorial, used to save high scores, increment score and question count](https://www.youtube.com/watch?v=f4fB9Xg2JEY)
+
+[Animated heading code](https://tobiasahlin.com/moving-letters/#6)
+
+[Planetary JS, used for animated & interactive globe](http://planetaryjs.com/examples/rotating.html)
+
+The below sources were used for content: 
+
+[Countries and their capital cities](https://www.countries-ofthe-world.com/capitals-of-the-world.html)
+
+[Sound effects obtained from Zapsplat](https://www.zapsplat.com)
 ---
-## Acknowledgements
+## Acknowledgementsx
