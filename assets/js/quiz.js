@@ -985,3 +985,12 @@ function incrementScore(num) {
     currentScore += num;
     scoreOutput.innerText = `${currentScore}`;
 };
+
+const correct = 
+function playCorrectSound() {
+    correct.play();
+}
+
+function playIncorrectSound() {
+    incorrect.play();
+}
