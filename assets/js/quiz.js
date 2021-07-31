@@ -967,9 +967,11 @@ function checkAnswer(e) {
     var clickedButtonAnswer = e.target.getAttribute('data-answer');
     if (clickedButtonAnswer === isCorrectQuestionAnswer["option"]) {
         $(e.target).addClass("correct");
+        playCorrectSound();
         incrementScore(scoreValue);
     } else {
         $(e.target).addClass("incorrect");
+        playIncorrectSound();
     };
     // Loop through the remaining buttons and set them to disabled so they can't be cicked again
     for (let i = 0; i < 4; i++) {
@@ -986,11 +988,13 @@ function incrementScore(num) {
     scoreOutput.innerText = `${currentScore}`;
 };
 
-const correct = 
+const correctSound = document.getElementById('correct-sound')
+const incorrectSound = document.getElementById('incorrect-sound')
+
 function playCorrectSound() {
-    correct.play();
+    correctSound.play();
 }
 
 function playIncorrectSound() {
-    incorrect.play();
+    incorrectSound.play();
 }
