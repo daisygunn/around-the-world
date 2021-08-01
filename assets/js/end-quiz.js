@@ -20,7 +20,7 @@ finalScore.innerText = mostRecentScore;
 
 username.addEventListener('keyup', () => {
     saveScore.disabled = !username.value
-});
+  });
 
 saveHighScore = e => {
     e.preventDefault();

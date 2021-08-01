@@ -20,7 +20,7 @@
             <h3>Save your score below & see if you've made our high scores table!</h3>
         </div>
         <form id="save-score-form" class="flex-container">
-            <input type="text" name="username" placeholder="Please enter your name!" id="username" aria-label="Add your name for the high-scores leaderboard!" required>
+            <input type="text" name="username" placeholder="Please enter your name!" id="username" minlength="5" maxlength="15" pattern="^[a-zA-Z0-9]{5,15}$" aria-label="Add your name for the high-scores leaderboard!" required>
             <button class="button" id="save-score" type="submit" onclick="saveHighScore(event)" aria-labelledby="Save your score by clicking on this button"disabled>Save!</button>
         </form>
 
