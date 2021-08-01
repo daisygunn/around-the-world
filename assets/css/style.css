@@ -254,10 +254,7 @@ body {
 }
 
 /* Styling for end-page */
-#game-over-heading {
-    position: absolute;
-    text-align: center;
-}
+
 #end-game-container {
     position: absolute;
     top: 150px;
@@ -268,6 +265,7 @@ body {
 #final-score-container {
     justify-content: center;
     align-items: center;
+    align-content: center;
 }
 
 #final-score-container>h2,
