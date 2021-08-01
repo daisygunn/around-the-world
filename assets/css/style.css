@@ -185,6 +185,18 @@ body {
     display: none;
 }
 
+.button>a {
+    text-decoration: none;
+    color: #3917ca;
+}
+
+.button>a:hover{
+    color: white;
+}
+.button>a::after {
+    color: #3917ca;
+}
+
 /* Styling for quiz game */
 
 #game-container {
@@ -218,7 +230,7 @@ body {
 .answer-btn:hover {
     background-color: white;
     color: #3917ca;
-    }
+}
 
 .correct {
     background-color: green !important;
@@ -315,9 +327,7 @@ h3 {
     padding: 0;
 }
 
-.play-again>a {
-    text-decoration: none;
-}
+
 
 /* @media screen and (min-width: 320px) {
     .progress-items {
@@ -326,7 +336,7 @@ h3 {
 
 /* Media queries for mobile phone  */
 @media screen and (max-width: 525px) {
-     
+
     .animated-heading {
         font-weight: 900;
         font-size: 1.5em;
@@ -353,7 +363,7 @@ h3 {
     }
 
     h3  */
-    
+
     .progress-items {
         font-size: 16px;
     }
@@ -396,6 +406,7 @@ h3 {
     .nav-item {
         margin: 2.5rem 0;
     }
+
     .nav-link {
         color: blue;
     }
@@ -404,6 +415,7 @@ h3 {
         display: block;
         cursor: pointer;
     }
+
     .hamburger.active .bar:nth-child(2) {
         opacity: 0;
     }
@@ -415,6 +427,7 @@ h3 {
     .hamburger.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
+
     .answer-btn {
         display: block;
         width: 200px;
