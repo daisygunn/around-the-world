@@ -14,16 +14,20 @@
         <nav class="navbar-top">
             <ul class="nav-menu">
                 <li class="nav-item">
-                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="index.html" class="nav-link active"
+                        aria-label="Link to home page (this is the current page)">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a href="additional-pages/rules.html" class="nav-link">Rules</a>
-                </li>
-                <li class="nav-item" >
-                    <a href="additional-pages/play-game.html" class="nav-link">Play Game</a>
+                    <a href="additional-pages/rules.html" class="nav-link"
+                        aria-label="Link to rules page, this will take you to a new page">Rules</a>
                 </li>
                 <li class="nav-item">
-                    <a href="additional-pages/high-scores.html" class="nav-link">High Scores</a>
+                    <a href="additional-pages/play-game.html" class="nav-link"
+                        aria-label="Link to Play Game page, this will take you to a new page">Play Game</a>
+                </li>
+                <li class="nav-item">
+                    <a href="additional-pages/high-scores.html" class="nav-link"
+                        aria-label="Link to High Scores page, this will take you to a new page">High Scores</a>
                 </li>
                 <!-- <li>
                     <a href="additional-pages/end-page.html">end page</a>
@@ -36,24 +40,25 @@
             </div>
         </nav>
     </header>
-    <div id="title-container" class="container"> 
+    <div id="title-container" class="container">
         <h1 class="animated-heading">
             <span class="text-wrapper">
                 <span class="letters">Around the World</span>
             </span>
         </h1>
     </div>
-    <div id="globe" class="flex-container">
+    <div id="globe" class="flex-container" aria-label="Animated 3D globe">
         <canvas id='rotatingGlobe' width='400' height='400'></canvas>
 
     </div>
     <div id="play-game" class="flex-container">
-                <button id="game-button" class="button"><a href="additional-pages/play-game.html">To the
-                    Quiz</a></button>
+        <button id="game-button" class="button"><a href="additional-pages/play-game.html"
+                aria-label="Link to the quiz, will take you to a new page">To the
+                Quiz</a></button>
 
 
     </div>
-    
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <script src='https://d3js.org/d3.v3.min.js'></script>
     <script src='https://d3js.org/topojson.v1.min.js'></script>
