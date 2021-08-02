@@ -33,6 +33,15 @@ body {
     height: 100%;
 }
 
+footer {
+    font-family: 'Yomogi', cursive;
+    text-align: center;
+    color: #f2f2f2;
+    align-content: center;
+    font-size: 30px;
+    margin: 15px 0;
+}
+
 /* Navbar styling */
 
 
