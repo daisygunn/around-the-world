@@ -884,17 +884,33 @@ function generateQuestion() {
         option: correctAnswer
     };
 
-    // To do: Need to prevent correct answer being generated in the random answers
+    
     // Generate 3 random cities from capitalListOptions to act as other answer options
     let answerOption1 = countriesList[getRandomInt(0, countriesList.length)].capital;
     randomQuestionsArray.push(getRandomInt(0, countriesList.length));
     console.log(randomQuestionsArray);
+
     let answerOption2 = countriesList[getRandomInt(0, countriesList.length)].capital;
-    randomQuestionsArray.push(getRandomInt(0, countriesList.length));
-    console.log(randomQuestionsArray);
+    // Compare answer options and generate new option if there is a duplication
+    if (answerOption2 === answerOption1) {
+        answerOption2 = countriesList[getRandomInt(0, countriesList.length)].capital;
+        console.log('Number changed1')
+        randomQuestionsArray.push(getRandomInt(0, countriesList.length));
+        console.log(randomQuestionsArray);
+    } else {randomQuestionsArray.push(getRandomInt(0, countriesList.length));
+        console.log(randomQuestionsArray)};
+
     let answerOption3 = countriesList[getRandomInt(0, countriesList.length)].capital;
-    randomQuestionsArray.push(getRandomInt(0, countriesList.length));
-    console.log(randomQuestionsArray);
+     // Compare answer options and generate new option if there is a duplication
+    if (answerOption3 === answerOption2 || answerOption1) {
+        answerOption3 = countriesList[getRandomInt(0, countriesList.length)].capital;
+        console.log('Number changed2')
+        randomQuestionsArray.push(getRandomInt(0, countriesList.length));
+        console.log(randomQuestionsArray);
+    } else {
+        randomQuestionsArray.push(getRandomInt(0, countriesList.length));
+        console.log(randomQuestionsArray)};
+
 
     let optionOutputs = [{
             'question': chosenCountry,
@@ -925,6 +941,7 @@ function generateQuestion() {
     addButtonsEventListener();
 };
 
+// Function to render the answer 
 function renderOptions(options) {
     let buttonOutputs = '';
 
