@@ -11,7 +11,7 @@ In addition to the home page this website also features:
 
 The business goals of the website are:
 1. To provide an educational learning platform for children.
-2. To provide engagisng content so that users enjoy using this quiz.
+2. To provide engaging content so that users enjoy using this quiz.
 3. To create an easy to navigate website to ensure that it is user friendly.
 
 The user goals of this website are:
@@ -80,7 +80,7 @@ Furthermore, I decided to add a responsive navbar to further enhance the user ex
 ### Surface
 I chose to use a gradient background using blues and greens to resemble the colour of the globe, I wanted something simple so as not to detract from any of the content. 
 On the landing page, there is an animated globe that zooms in and out upon the mouse being scrolled, this interactive element provides something fun for the user straight away.
-Using google fonts I chose Yogomi as I felt it had a childlike handwriting feel to it and this will be used for all the heading elements on the website.
+Using google fonts I chose Yogomi as I felt it had a childlike handwriting feel to it and this will be used for all text elements on the website.
 
 ---
 ## Features 
