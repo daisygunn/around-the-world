@@ -1,3 +1,5 @@
+/*jshint esversion: 6 */
+
 //  Code for  main heading found here https://tobiasahlin.com/moving-letters/#6
 
 let textWrapper = document.querySelector('.animated-heading .letters');
@@ -30,7 +32,7 @@ hamburger.addEventListener("click", mobileMenu);
 function mobileMenu() {
   hamburger.classList.toggle("active");
   navMenu.classList.toggle("active");
-};
+}
 
 const navLink = document.querySelectorAll(".nav-link");
 
@@ -39,4 +41,4 @@ navLink.forEach(n => n.addEventListener("click", closeMenu));
 function closeMenu() {
     hamburger.classList.remove("active");
     navMenu.classList.remove("active");
-};
+}
