@@ -30,7 +30,7 @@ body {
     background-image: linear-gradient(to right bottom, #3917ca, #352ad2, #3138d9, #2d44e0, #2b50e6, #1762f0, #0074f8, #0084ff, #009dff, #00b2ff, #0dc6ff, #5fd8fb);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100%;
+    height: 100vh;
 }
 
 footer {
@@ -38,8 +38,12 @@ footer {
     text-align: center;
     color: #f2f2f2;
     align-content: center;
-    font-size: 30px;
+    font-size: 20px;
     margin: 15px 0;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
 }
 
 /* Navbar styling */
@@ -346,13 +350,6 @@ h3 {
     padding: 0;
 }
 
-
-
-/* @media screen and (min-width: 320px) {
-    .progress-items {
-        font-size: 15px !important;
-    } */
-
 /* Media queries for mobile phone  */
 @media screen and (max-width: 525px) {
 
@@ -365,6 +362,10 @@ h3 {
         width: 200px;
         height: 200px;
     }
+
+   #tag-line {
+       font-size: 16px;
+   } 
 
     .question {
         font-size: 25px;
@@ -402,6 +403,10 @@ h3 {
 }
 
 @media screen and (max-width: 768px) {
+
+    body {
+        height: 120vh;
+    }
     .nav-menu {
         position: fixed;
         left: -200%;
