@@ -135,11 +135,21 @@ I have used several technologies that have enabled this design to work:
     - Used to accurately format my HTML code.
 - [AmIResponsive](http://ami.responsivedesign.is/)
     - Used to generate responsive image used in README file.
-
+- [Wave]()
+    - Used to test the accessibility the website.
 ---
 ## Testing
 
 Throughout the entire project I have used Google Chrome Developer Tools to debug any issues with styling and alignment; this tool enabled me to change things and see the effect this had immediately. The use of the console whilst in dev tools was also incredibly helpful as I was able to utilise this to test me JavaScript code, using `console.log()` to check that my functions were being called correctly and that the desired information was going to be displayed. This was pivotal in designing the quiz as I needed to have access to the information of the various elements in order to be able to programme the quiz correctly.
+
+I also used Jshint to ensure that there were no errors within any of my JavaScript code, initially there were errors as you can see below:
+
+However I implemented all changes to ensure my code passed with no errors, as you can see below:
+
+In addition to Jshint, I used Jigsaw to validate my HTML and CSS which both now pass with no errors:
+
+To further ensure that my website is fully accessible I used WAVE - initially I had some errors with mislabelling which I then resolved.
+
 
 
 ---
