@@ -247,6 +247,7 @@ footer {
     font-weight: bold;
     border-radius: 20%;
     overflow-wrap: break-word;
+    vertical-align:middle;
     cursor: pointer;
 }
 
