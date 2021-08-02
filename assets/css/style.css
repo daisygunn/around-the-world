@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Pacifico&family=Yomogi&display=swap');
 
+html {
+    height: 100%
+}
 h1 {
     font-family: 'Yomogi', cursive;
     text-align: center;
@@ -30,7 +33,9 @@ body {
     background-image: linear-gradient(to right bottom, #3917ca, #352ad2, #3138d9, #2d44e0, #2b50e6, #1762f0, #0074f8, #0084ff, #009dff, #00b2ff, #0dc6ff, #5fd8fb);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    height: max-content;
+    min-height: 100%;
+    max-height: max-content;
 }
 
 footer {
