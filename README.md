@@ -11,7 +11,7 @@ In addition to the home page this website also features:
 
 The business goals of the website are:
 1. To provide an educational learning platform for children.
-2. To provide engaging content so that users enjoy using this quiz.
+2. To provide engagisng content so that users enjoy using this quiz.
 3. To create an easy to navigate website to ensure that it is user friendly.
 
 The user goals of this website are:
@@ -149,12 +149,15 @@ I have used several technologies that have enabled this design to work:
 
 4. **As a recurring user, I want to improve my previous scores & therefore my overall knowledge.**
 
+### Lighthouse
 
+
+### Known bugs and fixes
 Throughout the entire project I have used Google Chrome Developer Tools to debug any issues with styling and alignment; this tool enabled me to change things and see the effect this had immediately. The use of the console whilst in dev tools was also incredibly helpful as I was able to utilise this to test me JavaScript code, using `console.log()` to check that my functions were being called correctly and that the desired information was going to be displayed. This was pivotal in designing the quiz as I needed to have access to the information of the various elements in order to be able to programme the quiz correctly.
 
 I tested the quizzes functionality by 'playing' it myself, to ensure the user experience was positive and that everything was working as it should. One key bug that I resolved was the duplication of answer options, I had written a `do-while` loop in the generateQuestion function which I thought had fixed the problem but whilst testing I found the occasional duplication occurred. For this reason I added two more `if` statements to the same function to prevent this occurring. Using `console.log()` I was able to prove that this implementation worked and the bug had been resolved.
 
-
+### Validation: HTML, CSS and JavaScript
 Furthermore, I used Jshint to ensure that there were no errors within any of my JavaScript code, initially there were errors as you can see below:
 
 However, I implemented all changes to ensure my code passed with no errors:
@@ -163,8 +166,7 @@ In addition to Jshint, I used Jigsaw to validate my HTML and CSS which both now 
 
 To further ensure that my website is fully accessible I used WAVE - initially I had some errors with mislabelling which I was able to resolve.
 
-
-
+In addition to testing that I conducted I got my friends, family & fellow students to test the website on their phones/laptops/tablets/desktops and provide feedback on anything they felt didn't work or look right, this enabled me to debug any issues that I might not have otherwise found.
 ---
 ## Deployment
 I deployed this website by using GitPages and following the below steps:
