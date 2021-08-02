@@ -1,3 +1,5 @@
+/*jshint esversion: 6 */
+
 // Game controls
 const startButton = document.getElementById('start-button');
 const quitButton = document.getElementById('quit-button');
@@ -812,27 +814,27 @@ const scoreValue = 10;
 
 // Start game
 function startGame() {
-    startButton.classList.add('hidden')
-    mainHeading.classList.add('hidden')
-    gameContainer.classList.remove('hidden')
+    startButton.classList.add('hidden');
+    mainHeading.classList.add('hidden');
+    gameContainer.classList.remove('hidden');
     questionCount = 0;
     currentScore = 0;
-    generateQuestion()
-};
+    generateQuestion();
+}
 
 // Quit Game
 function quitGame() {
     if (window.confirm('Are you sure you want to quit?')) {
-        gameContainer.classList.add('hidden')
-        mainHeading.classList.remove('hidden')
-        startButton.classList.remove('hidden')
+        gameContainer.classList.add('hidden');
+        mainHeading.classList.remove('hidden');
+        startButton.classList.remove('hidden');
     }
-};
+}
 
 // Function for the 'Next Question' button
 function getNextQuestion(event) {
     generateQuestion();
-};
+}
 
 /**
  * Function to generate each question
@@ -857,7 +859,7 @@ function generateQuestion() {
     let countriesCount = countriesList.length;
     let randomNumber = getRandomInt(0, countriesCount);
 
-    console.log(randomNumber)
+    console.log(randomNumber);
 
     // prevent same number from being used twice
     do {
@@ -865,7 +867,7 @@ function generateQuestion() {
         console.log('Already found');
     } while (randomQuestionsArray.includes(randomNumber));
 
-    console.log(randomNumber)
+    console.log(randomNumber);
 
     randomQuestionsArray.push(randomNumber);
 
@@ -894,22 +896,22 @@ function generateQuestion() {
     // Compare answer options and generate new option if there is a duplication
     if (answerOption2 === answerOption1) {
         answerOption2 = countriesList[getRandomInt(0, countriesList.length)].capital;
-        console.log('Number changed1')
+        console.log('Number changed1');
         randomQuestionsArray.push(getRandomInt(0, countriesList.length));
         console.log(randomQuestionsArray);
     } else {randomQuestionsArray.push(getRandomInt(0, countriesList.length));
-        console.log(randomQuestionsArray)};
+        console.log(randomQuestionsArray);}
 
     let answerOption3 = countriesList[getRandomInt(0, countriesList.length)].capital;
      // Compare answer options and generate new option if there is a duplication
     if (answerOption3 === answerOption2 || answerOption1) {
         answerOption3 = countriesList[getRandomInt(0, countriesList.length)].capital;
-        console.log('Number changed2')
+        console.log('Number changed2');
         randomQuestionsArray.push(getRandomInt(0, countriesList.length));
         console.log(randomQuestionsArray);
     } else {
         randomQuestionsArray.push(getRandomInt(0, countriesList.length));
-        console.log(randomQuestionsArray)};
+        console.log(randomQuestionsArray);}
 
 
     let optionOutputs = [{
@@ -931,7 +933,7 @@ function generateQuestion() {
     ];
 
     // Randomise the outputs so the correct answer isn't in the same place all the time 
-    randomOptionOutputs = optionOutputs.sort(() => Math.random() - 0.5);
+    let randomOptionOutputs = optionOutputs.sort(() => Math.random() - 0.5);
 
     // Create the answer buttons and the questionText
     document.getElementById('country-name').innerHTML = chosenCountry;
@@ -939,7 +941,7 @@ function generateQuestion() {
 
     // Add onclick event listener to each button
     addButtonsEventListener();
-};
+}
 
 // Function to render the answer 
 function renderOptions(options) {
@@ -968,7 +970,7 @@ function getRandomInt(min, max) {
     min = Math.ceil(min);
     max = Math.floor(max);
     return Math.floor(Math.random() * (max - min) + min); //The maximum is exclusive and the minimum is inclusive
-};
+}
 
 // Checks if the answer selected is right, increments the score if it is, then moves on the to the next question
 function checkAnswer(e) {
@@ -976,40 +978,40 @@ function checkAnswer(e) {
     /** retrieve the data-answer for the button clicked and 
      * compare this with the isCorrectQuestionAnswer object 'option'
      */
-    console.log(e.target)
+    console.log(e.target);
     var clickedButtonAnswer = e.target.getAttribute('data-answer');
-    if (clickedButtonAnswer === isCorrectQuestionAnswer["option"]) {
+    if (clickedButtonAnswer === isCorrectQuestionAnswer.option) {
         playCorrectSound();
         $(e.target).addClass("correct");
         incrementScore(scoreValue);
     } else {
         playIncorrectSound();
         $(e.target).addClass("incorrect");
-    };
+    }
     // Loop through the remaining buttons and set them to disabled so they can't be cicked again
     for (let i = 0; i < 4; i++) {
-        document.getElementById("answer-" + i).setAttribute('disabled', true)
-    };
+        document.getElementById("answer-" + i).setAttribute('disabled', true);
+    }
     // Show the nextQuestion button
     nextQuestion.classList.remove('hidden');
 
-};
+}
 
 // Increment the score by 1
 function incrementScore(num) {
     currentScore += num;
     scoreOutput.innerText = `${currentScore}`;
-};
+}
 
 const correctSound = document.getElementById('correct-sound');
 const incorrectSound = document.getElementById('incorrect-sound');
 
 function playCorrectSound() {
     correctSound.play();
-    console.log('sound played')
-};
+    console.log('sound played');
+}
 
 function playIncorrectSound() {
     incorrectSound.play();
-    console.log('sound played')
-};
+    console.log('sound played');
+}
