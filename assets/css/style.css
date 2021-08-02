@@ -280,12 +280,16 @@ footer {
 }
 
 /* Styling for rules page */
+#rules-container {
+    width: 50%;
+    margin-left: 25vw;
+}
+
 #rules-list {
     font-family: 'Yomogi', cursive;
     color: white;
     font-size: 20px;
     margin: 20px;
-
 }
 
 /* Styling for end-page */
@@ -460,5 +464,14 @@ h3 {
 
     #progress-container {
         padding: 0 20px;
+    }
+
+    #rules-container {
+        width: 100%;
+        margin: 5px;
+    }
+
+    #rules-list {
+        font-size: 16px;
     }
 }
