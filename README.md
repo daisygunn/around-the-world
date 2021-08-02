@@ -138,6 +138,10 @@ I have used several technologies that have enabled this design to work:
 
 ---
 ## Testing
+
+Throughout the entire project I have used Google Chrome Developer Tools to debug any issues with styling and alignment; this tool enabled me to change things and see the effect this had immediately. The use of the console whilst in dev tools was also incredibly helpful as I was able to utilise this to test me JavaScript code, using `console.log()` to check that my functions were being called correctly and that the desired information was going to be displayed. This was pivotal in designing the quiz as I needed to have access to the information of the various elements in order to be able to programme the quiz correctly.
+
+
 ---
 ## Deployment
 I deployed this website by using GitPages and following the below steps:
@@ -176,6 +180,8 @@ Cloning your repository will allow you to download a local version of the reposi
 I have used several resources to produce this website, where code has been used found from another source this is credited as a comment within the HTML, CSS and JS files.
 
 The following websites/articles were used for research and guidance:
+
+[Stack Overflow](https://stackoverflow.com/)
 
 [JavaScript do/while loop](https://www.javascripttutorial.net/javascript-do-while/)
 
