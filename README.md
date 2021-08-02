@@ -15,8 +15,8 @@ The business goals of the website are:
 3. To create an easy to navigate website to ensure that it is user friendly.
 
 The user goals of this website are:
-1. To learn key geography facts and information about our world.
-2. To test my geography knowledge using the quiz game.
+1. To learn new capital cities around the world.
+2. To test my knowledge of capital cities using the quiz.
 3. To improve my previous scores & therefore my overall knowledge.
 
 --- 
@@ -140,15 +140,28 @@ I have used several technologies that have enabled this design to work:
 ---
 ## Testing
 
+### User Stories 
+1. **As a first time user, I want to be able to navigate my way easily throughout the website.**
+
+2. **As a first time user, I want to learn new capital cities around the world.**
+
+3. **As a first time & recurring user, I want to test my knowledge of capital cities using the quiz.**
+
+4. **As a recurring user, I want to improve my previous scores & therefore my overall knowledge.**
+
+
 Throughout the entire project I have used Google Chrome Developer Tools to debug any issues with styling and alignment; this tool enabled me to change things and see the effect this had immediately. The use of the console whilst in dev tools was also incredibly helpful as I was able to utilise this to test me JavaScript code, using `console.log()` to check that my functions were being called correctly and that the desired information was going to be displayed. This was pivotal in designing the quiz as I needed to have access to the information of the various elements in order to be able to programme the quiz correctly.
 
-I also used Jshint to ensure that there were no errors within any of my JavaScript code, initially there were errors as you can see below:
+I tested the quizzes functionality by 'playing' it myself, to ensure the user experience was positive and that everything was working as it should. One key bug that I resolved was the duplication of answer options, I had written a `do-while` loop in the generateQuestion function which I thought had fixed the problem but whilst testing I found the occasional duplication occurred. For this reason I added two more `if` statements to the same function to prevent this occurring. Using `console.log()` I was able to prove that this implementation worked and the bug had been resolved.
 
-However I implemented all changes to ensure my code passed with no errors, as you can see below:
+
+Furthermore, I used Jshint to ensure that there were no errors within any of my JavaScript code, initially there were errors as you can see below:
+
+However, I implemented all changes to ensure my code passed with no errors:
 
 In addition to Jshint, I used Jigsaw to validate my HTML and CSS which both now pass with no errors:
 
-To further ensure that my website is fully accessible I used WAVE - initially I had some errors with mislabelling which I then resolved.
+To further ensure that my website is fully accessible I used WAVE - initially I had some errors with mislabelling which I was able to resolve.
 
 
 
