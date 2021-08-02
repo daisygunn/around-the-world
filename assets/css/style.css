@@ -7,8 +7,7 @@ h1 {
     align-content: center;
     padding-top: 20px;
     font-size: 55px;
-    line-height: 75px;
-}
+    }
 
 h2 {
     font-family: 'Yomogi', cursive;
@@ -16,8 +15,7 @@ h2 {
     color: #f2f2f2;
     align-content: center;
     font-size: 30px;
-    line-height: 75px;
-}
+    }
 
 h3 {
     font-family: 'Yomogi', cursive;
@@ -32,7 +30,7 @@ body {
     background-image: linear-gradient(to right bottom, #3917ca, #352ad2, #3138d9, #2d44e0, #2b50e6, #1762f0, #0074f8, #0084ff, #009dff, #00b2ff, #0dc6ff, #5fd8fb);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 200vh;
+    height: 100%;
 }
 
 /* Navbar styling */
