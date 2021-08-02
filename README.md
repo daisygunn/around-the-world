@@ -84,6 +84,15 @@ Using google fonts I chose Yogomi as I felt it had a childlike handwriting feel 
 
 ---
 ## Features 
+### Navbar
+
+### Animated Globe
+
+### Quiz
+
+### High Scores Leaderboard
+
+### Animated headings
 
 ---
 ## Technologies Used
