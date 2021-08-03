@@ -254,7 +254,7 @@ h3 {
     text-align: center;
 }
 
-#mute-button {
+.volume-button {
     width: 15px;
     height: 15px;
     color: white;
