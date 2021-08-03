@@ -84,15 +84,58 @@ Using google fonts I chose Yogomi as I felt it had a childlike handwriting feel 
 
 ---
 ## Features 
-### Navbar
 
-### Animated Globe
+### All pages
+#### *Navbar*
+The navbar features on all pages & is fully responsive, on screens smaller than 768px it collapses in a hamburger icon which when clicked opens the menu with links in a vertical list. I felt this simple way of displaying the menu on all screen sizes would be intutive and provide all users with a postive user experience.
+
+### *Title* 
+All page titles are `H1` elements, they are centered and large in size so there is no ambiguity as to which page the user is on.
+
+### *Buttons*
+All of the navigation buttons throughout the site are styled in the same way & they change once the user hovers over them; this continuity was intentional as I want all users to feel comfortable with this website & its features and be able to use it with ease.
+
+### Home page
+#### *Animated Globe*
+The animated globe on the home page was added to provide a fun interactive element as soon as users entered the site, as the target audience is children I wanted to create a positive reaction instantaneously so that users would feel encouraged to continue through the site.
+
+#### *Animated heading*
+In addition to the globe I chose to animate the heading to continue that feeling of fun, I felt this would entice users over a static heading.
+
+#### *To the Quiz button*
+After asking my family to test the quiz it was highlighted to me that having a button to take you straight to the quiz might make it easier for users to navigate and so I added this button in. It is styled as all of the other buttons are throughout the site.
+
+### Rules
+#### *Rules list*
+The list of rules is an `ol` element, it has been styled to remain in the center of the screen to allow for better responsivity.
 
 ### Quiz
+#### *Game controls*
+These buttons are follow the same style rules as the other buttons, they just appear on the screen at different times depending on what the user clicks. I wanted to give the user control over the quiz process and also to be able to quit if required.
 
-### High Scores Leaderboard
+#### *Quiz elements*
+The quiz is made up of the following: 
+- Two progress items (question & score counts), these remain at the top of the quiz on opposite sides of the page so the user can clearly see their progress.
+- Question, this is dynamically created each time a new question is generated but always remains in the centre of the screen.
+- Answer buttons, these are styled in opposite colours to the other buttons featured. They have been designed in this way to create a clear difference so that users aren't confused.
 
-### Animated headings
+#### *Sound toggle button*
+After adding the sound effects for a right/wrong answer I decided that in order to further enhance the user experience there should be a control for this on the page. Using a favicon mute & sound icon that change when clicked, I added a JavaScript function to mute or unmute the sound. 
+
+### End page
+#### *Blinking title*
+I wanted to animate this heading in a familiar 'game' way as I felt this would further engage the user and clearly indicate the game is over.
+
+#### *Save score form*
+In order for the user to save their score to the High Scores page they need to input their username and click save, this is done using a form made up of a text input and submit button. 
+
+#### *Nav buttons*
+Unlike the other pages this page doesn't feature a navbar as I felt buttons directly under the form would indicate to the user they needed to do something in order to move on from this page.
+
+### High Scores
+#### *High Scores Leaderboard*
+The High Scores Leaderboard is an `ul` element, it has been styled to remain in the center of the screen to allow for better responsivity. The scores in this list are generated in `high-scores.js` using local storage.
+
 
 ---
 ## Technologies Used
