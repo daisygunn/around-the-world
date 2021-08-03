@@ -1006,6 +1006,12 @@ function incrementScore(num) {
 const correctSound = document.getElementById('correct-sound');
 const incorrectSound = document.getElementById('incorrect-sound');
 
+function muteSound() {
+    correctSound.muted=true;
+    incorrectSound.muted=true;
+    console.log('Sound muted');
+} 
+
 function playCorrectSound() {
     correctSound.play();
     console.log('sound played');
