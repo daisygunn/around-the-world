@@ -187,19 +187,25 @@ I have used several technologies that have enabled this design to work:
     - Used to accurately format my HTML code.
 - [AmIResponsive](http://ami.responsivedesign.is/)
     - Used to generate responsive image used in README file.
-- [Wave]()
+- [Wave](https://wave.webaim.org/)
     - Used to test the accessibility the website.
 ---
 ## Testing
 
 ### User Stories 
 1. **As a first time user, I want to be able to navigate my way easily throughout the website.**
+The navbar being placed right at the gives the user a clear indication of how to navigate through the website, it is placed in the same place on every page to provide continuity for the user.
+![](documents/images/navigation_user_story.png)
 
-2. **As a first time user, I want to learn new capital cities around the world.**
+2. **As a first time user, I want to learn new capital cities around the world playing the quiz.**
+As part of the quiz design, I added both visual & sound cues so that the user will know when they have answered a question correctly. This instant feedback, following them to learn as they play the quiz.
+![](document/images/correct_answer_userstory2.png)
+![](document/images/incorrect_answer_userstory2.png)
 
-3. **As a first time & recurring user, I want to test my knowledge of capital cities using the quiz.**
+3. **As a recurring user, I want to track my scores to see if I've made the high scores leaderboard.**
+Upon completing the quiz the user is taken to the end page, where they are able to save their score against their username, the top 5 scores saved to local storage are then displayed on the high scores page:
+![](docments/images/high_scores_testing.png)
 
-4. **As a recurring user, I want to improve my previous scores & therefore my overall knowledge.**
 
 ### Lighthouse
 
@@ -211,12 +217,20 @@ I tested the quizzes functionality by 'playing' it myself, to ensure the user ex
 
 ### Validation: HTML, CSS and JavaScript
 Furthermore, I used Jshint to ensure that there were no errors within any of my JavaScript code, initially there were errors as you can see below:
+![](docments/images/jshint_errors.png)
 
-However, I implemented all changes to ensure my code passed with no errors:
+Howewer, I implemented all changes to ensure my code passed with no errors:
+![](docments/images/jshint_no_errors.png)
 
-In addition to Jshint, I used Jigsaw to validate my HTML and CSS which both now pass with no errors:
+In addition to Jshint, I used Jigsaw to validate my HTML and CSS which both passed with errors initially:
+![](documents/images/css_validation_with_errors.png)
+![](documents/images/html_validation_with_errors.png)
 
-To further ensure that my website is fully accessible I used WAVE - initially I had some errors with mislabelling which I was able to resolve.
+Which both now pass with no errors: 
+![]()
+
+To further ensure that my website is fully accessible I used WAVE - initially I had some errors with mislabelling which I was able to resolve:
+![]()
 
 In addition to testing that I conducted I got my friends, family & fellow students to test the website on their phones/laptops/tablets/desktops and provide feedback on anything they felt didn't work or look right, this enabled me to debug any issues that I might not have otherwise found.
 ---
