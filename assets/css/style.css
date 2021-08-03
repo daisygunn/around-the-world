@@ -406,7 +406,6 @@ h3 {
         height: 100px;
         width: 100px;
     }
-    
     .question {
         font-size: 25px;
         margin: 0 10px;
@@ -482,6 +481,9 @@ h3 {
         transform: translateY(-8px) rotate(-45deg);
     }
 
+    .footer {
+        font-size: 15px;
+    }
     .answer-btn {
         display: block;
         width: 200px;
