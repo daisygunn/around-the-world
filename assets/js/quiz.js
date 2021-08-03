@@ -1005,11 +1005,23 @@ function incrementScore(num) {
 
 const correctSound = document.getElementById('correct-sound');
 const incorrectSound = document.getElementById('incorrect-sound');
+const muteButton = document.getElementById('mute-button');
+const unmuteButton = document.getElementById('unmute-button');
 
 function muteSound() {
     correctSound.muted=true;
     incorrectSound.muted=true;
+    muteButton.classList.add('hidden');
+    unmuteButton.classList.remove('hidden');
     console.log('Sound muted');
+} 
+
+function unmuteSound() {
+    correctSound.muted=false;
+    incorrectSound.muted=false;
+    unmuteButton.classList.add('hidden');
+    muteButton.classList.remove('hidden');
+    console.log('Sound unmuted');
 } 
 
 function playCorrectSound() {
