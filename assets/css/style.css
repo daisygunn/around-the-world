@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Yomogi&display=swap');
 
-/* html {
+html {
     height: 110vh;
-} */
+}
 
 h1 {
     font-family: 'Yomogi', cursive;
@@ -29,22 +29,10 @@ h3 {
     font-size: 20px;
 }
 
-#home-body {
+body {
     font-family: 'Yomogi', cursive;
-    background-image: linear-gradient(to right bottom, #3917ca, #352ad2, #3138d9, #2d44e0, #2b50e6, #1762f0, #0074f8, #0084ff, #009dff, #00b2ff, #0dc6ff, #5fd8fb);
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 100%;
-    max-height: max-content;
-}
-
-.other-body {
-    font-family: 'Yomogi', cursive;
-    background-image: linear-gradient(to right bottom, #3917ca, #352ad2, #3138d9, #2d44e0, #2b50e6, #1762f0, #0074f8, #0084ff, #009dff, #00b2ff, #0dc6ff, #5fd8fb);
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 110vh;
-    max-height: max-content;
+    background-color: #0697F8;
+ 
 }
 
 .footer {
@@ -440,16 +428,16 @@ h3 {
         font-size: 22px;
     }
 
-   .other-body {
+   /* .other-body {
        min-height: 150vh;
-   }
+   } */
 }
 
 @media screen and (max-width: 768px) {
 
-    #home-body {
+    /* #home-body {
         min-height: 100vh;
-    }
+    } */
 
     .nav-menu {
         position: fixed;
@@ -540,9 +528,9 @@ h3 {
 }
 
 @media screen and (min-width: 1440px) {
-    #home-body {
+    /* #home-body {
         height: 100vh;
-    }
+    } */
 
     .nav-link {
         font-size: 25px;

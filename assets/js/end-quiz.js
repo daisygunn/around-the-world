@@ -36,6 +36,7 @@ function validateForm() {
         return;
     } else {
         console.log('username entered');
+        saveScore.innerText = "Score saved";
     }
 }
   
@@ -57,5 +58,5 @@ function saveHighScore(e) {
     highScores.splice(maxHighScores);
 
     localStorage.setItem('highScores', JSON.stringify(highScores));
-    window.location.assign('https://daisygunn.github.io/around-the-world/additional-pages/high-scores.html');
+    window.location.assign('https://daisygunn.github.io/around-the-world/additional-pages/end-page.html');
 }
