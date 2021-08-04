@@ -129,21 +129,6 @@ h3 {
     background-color: #5fd8fb;
 }
 
-/* 
-.navbar-container {
-    display: block;
-    padding-bottom: 20px;
-}
-
-.navbar-top {
-    float: right;
-    margin: 20px;
-} */
-/* 
-.navbar-container a {
-    /* background-color: #3917ca; */
-
-
 .navbar-link:hover {
     background-color: #f2f2f2;
     color: #3917ca;
@@ -217,6 +202,11 @@ h3 {
     height: 100px;
     font-weight: bold;
     cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 .button:hover {
@@ -228,16 +218,12 @@ h3 {
     display: none;
 }
 
-.button>a {
-    text-decoration: none;
-    color: #3917ca;
+#game-button {
+    height: 60px;
+    width: 80px;
 }
 
-.button>a:hover {
-    color: white;
-}
-
-.button>a::after {
+.button::after {
     color: #3917ca;
 }
 
