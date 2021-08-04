@@ -183,7 +183,7 @@ body {
     border: white;
     margin: 15px;
     padding: 15px;
-    border-radius: 20%;
+    border-radius: 10px;
     width: 150px;
     height: 100px;
     font-weight: bold;
@@ -251,7 +251,7 @@ body {
     height: 150px;
     border: solid 1px white;
     font-weight: bold;
-    border-radius: 20%;
+    border-radius: 10px;
     overflow-wrap: break-word;
     vertical-align: middle;
     cursor: pointer;
@@ -330,11 +330,15 @@ h3 {
     display: inline;
     font-size: 15px;
     font-weight: bold;
-
 }
 
 #buttons-list li a {
     text-decoration: none;
+    display: inline-block;
+    padding: 20px;
+    height: auto;
+    margin: 0 0 5px;
+    border-radius: 10px;
 }
 
 #save-score-form {
@@ -425,7 +429,6 @@ h3 {
 }
 
 @media screen and (max-width: 768px) {
-
 
     .nav-menu {
         position: fixed;

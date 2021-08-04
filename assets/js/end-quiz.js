@@ -28,23 +28,13 @@ username.addEventListener('keyup', () => {
     });
 
 
-function validateForm() {
-    let usernameLength = username.value.length;
-    console.log(usernameLength);
-    if (usernameLength < 5) {
-        alert("Name must be more than 5 characters");
-        return;
-    } else {
-        console.log('username entered');
-        saveScore.innerText = "Score saved";
-    }
-}
+
   
 // Save the score to local storage
 function saveHighScore(e) {
     e.preventDefault();
-    validateForm();
-    const score = {
+    saveScore.innerText = "Score saved";
+        const score = {
         score: mostRecentScore,
         name: username.value
     };
@@ -59,4 +49,6 @@ function saveHighScore(e) {
 
     localStorage.setItem('highScores', JSON.stringify(highScores));
     window.location.assign('https://daisygunn.github.io/around-the-world/additional-pages/end-page.html');
+
+    
 }
