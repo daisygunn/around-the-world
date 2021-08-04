@@ -151,6 +151,7 @@ h3 {
     padding-bottom: 0.1em;
     overflow: hidden;
     white-space: nowrap;
+    width: fit-content;
 }
 
 .animated-heading .letter {
