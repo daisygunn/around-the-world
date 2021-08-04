@@ -227,10 +227,11 @@ In addition to Jshint, I used Jigsaw to validate my HTML and CSS which both pass
 ![](assets/documents/images/html_validation_with_errors.png)
 
 Which both now pass with no errors: 
-![]()
+![](assets/documents/images/css_validation_no_errors.png)
+![](assets/documents/images/html_validation_no_errors.png)
 
 To further ensure that my website is fully accessible I used WAVE - initially I had some errors with mislabelling which I was able to resolve:
-![]()
+![](assets/documents/images/wave_report_no_errors.png)
 
 In addition to testing that I conducted I got my friends, family & fellow students to test the website on their phones/laptops/tablets/desktops and provide feedback on anything they felt didn't work or look right, this enabled me to debug any issues that I might not have otherwise found.
 ---
