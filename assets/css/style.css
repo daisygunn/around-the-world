@@ -339,6 +339,8 @@ h3 {
 
 #buttons-list {
     padding: 0;
+    width: 50%;
+    text-align: center;
 }
 
 #buttons-list li {
@@ -437,6 +439,10 @@ h3 {
     .high-score {
         font-size: 22px;
     }
+
+   .other-body {
+       min-height: 150vh;
+   }
 }
 
 @media screen and (max-width: 768px) {
@@ -445,9 +451,6 @@ h3 {
         min-height: 100vh;
     }
 
-    /* .other-body {
-
-    } */
     .nav-menu {
         position: fixed;
         left: -200%;
@@ -500,6 +503,8 @@ h3 {
     h1 {
         font-size: 25px;
     }
+
+   
     .answer-btn {
         display: block;
         width: 200px;
@@ -518,9 +523,23 @@ h3 {
     #rules-list {
         font-size: 16px;
     }
+
+    #game-over-heading {
+        font-size: 45px;
+    }
+
+    #buttons-list>li {
+        display: block;
+        margin: 35px 0;
+    }
+
+    #save-score {
+        height: 80px;
+    }
+
 }
 
-@media screen and (min-width: 1440px){
+@media screen and (min-width: 1440px) {
     #home-body {
         height: 100vh;
     }
@@ -528,6 +547,7 @@ h3 {
     .nav-link {
         font-size: 25px;
     }
+
     #tag-line {
         margin-bottom: 40px;
         font-size: 35px;
@@ -540,6 +560,7 @@ h3 {
     #rules-list {
         font-size: 35px;
     }
+
     .progress-items {
         font-size: 30px;
     }
@@ -556,8 +577,9 @@ h3 {
         font-size: 35px;
     }
 
-    #play-again, #game-button {
+    #play-again,
+    #game-button {
         height: 80px;
         width: 100px;
-}
+    }
 }
