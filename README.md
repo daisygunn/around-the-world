@@ -217,14 +217,14 @@ I tested the quizzes functionality by 'playing' it myself, to ensure the user ex
 
 ### Validation: HTML, CSS and JavaScript
 Furthermore, I used Jshint to ensure that there were no errors within any of my JavaScript code, initially there were errors as you can see below:
-![](docments/images/jshint_errors.png)
+![](assets/documents/images/jshint_errors.png)
 
 Howewer, I implemented all changes to ensure my code passed with no errors:
-![](docments/images/jshint_no_errors.png)
+![](assets/documents/images/jshint_no_errors.png)
 
 In addition to Jshint, I used Jigsaw to validate my HTML and CSS which both passed with errors initially:
-![](documents/images/css_validation_with_errors.png)
-![](documents/images/html_validation_with_errors.png)
+![](assets/documents/images/css_validation_with_errors.png)
+![](assets/documents/images/html_validation_with_errors.png)
 
 Which both now pass with no errors: 
 ![]()
