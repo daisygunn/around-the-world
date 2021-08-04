@@ -360,6 +360,10 @@ h3 {
     display: block;
 }
 
+#end-page-footer {
+    position: absolute;
+}
+
 /* High-scores page */
 
 .high-score {
@@ -373,6 +377,11 @@ h3 {
 
 #high-scores-leaderboard {
     padding: 0;
+}
+
+#play-again {
+    height: 60px;
+    width: 80px;
 }
 
 /* Media queries for mobile phone  */
