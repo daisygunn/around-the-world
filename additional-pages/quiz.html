@@ -26,18 +26,14 @@
                         aria-label="Link to rules page, this will take you to a new page">Rules</a>
                 </li>
                 <li class="nav-item">
-                    <a href="quiz.html" class="nav-link"
-                        aria-label="Link to Quiz page (the current page)">Quiz</a>
+                    <a href="quiz.html" class="nav-link" aria-label="Link to Quiz page (the current page)">Quiz</a>
                 </li>
                 <li class="nav-item">
                     <a href="high-scores.html" class="nav-link"
                         aria-label="Link to High Scores page, this will take you to a new page">High Scores</a>
                 </li>
-                <!-- <li>
-                    <a href="additional-pages/end-page.html">end page</a>
-                </li> -->
             </ul>
-            <div class="hamburger" onclick="mobileMenu()" aria-label="Hamburger menu icon for full menu">
+            <div class="hamburger" onclick="mobileMenu()">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -67,7 +63,7 @@
         <div id="sound-toggle"><button id="mute-button" class="volume-button" onclick="muteSound()"><i
                     class="fas fa-volume-up" alt="Mute sound button"></i></button>
             <button id="unmute-button" class="volume-button hidden" onclick="unmuteSound()"><i
-                    class="fas fa-volume-mute" alt="Play sound button"></i></button></div>
+                    class="fas fa-volume-mute"></i></button></div>
         <div id="questions-container" class="block">
             <h2 class="question">What is the capital city of <span id="country-name">country name</span>?</h2>
         </div>
@@ -80,8 +76,8 @@
         <audio src="../assets/audio/incorrect_sound.mp3" id="incorrect-sound"></audio>
         <div id="game-controls-container" class="flex-container">
             <button id="next-question" class="button hidden"
-                aria-labelledby="Button to take you to the next question">Next Question</button>
-            <button id="quit-button" class="button" aria-labelledby="Button to quit the game">Quit Game</button>
+                aria-label="Button to take you to the next question">Next Question</button>
+            <button id="quit-button" class="button" aria-label="Button to quit the game">Quit Game</button>
         </div>
 
     </div>
