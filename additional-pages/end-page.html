@@ -23,19 +23,19 @@
         </div>
         <form id="save-score-form" class="flex-container">
             <input type="text" name="username" placeholder="Please enter your name!" id="username" minlength="5" maxlength="15" pattern="^[a-zA-Z0-9]{5,15}$" aria-label="Add your name for the high-scores leaderboard!" required>
-            <button class="button" id="save-score" type="submit" onclick="saveHighScore(event)" aria-label="Save your score by clicking on this button"disabled>Save!</button>
+            <button class="button" id="save-score" type="submit" onclick="saveHighScore(event)" aria-label="Save your score by clicking on this button" disabled>Save!</button>
         </form>
 
         <div id="buttons-container" class="flex-container">
             <ul id="buttons-list">
                 <li>
-                    <button id="high-scores-button" class="button"><a href="high-scores.html" aria-label="Link to High Scores page, this will take you to a new page">High Scores</a></button>
+                    <a href="high-scores.html" id="high-scores-button" class="button" aria-label="Link to High Scores page, this will take you to a new page">High Scores</a>
                 </li>
                 <li>
-                    <button class="button play-again"><a href="quiz.html" aria-label="Link back to the quiz, will take you to a new page">Play Again</a></button>
+                    <a href="quiz.html" class="button play-again" aria-label="Link back to the quiz, will take you to a new page">Play Again</a>
                 </li>
                 <li>
-                    <button id="home-button" class="button" aria-label="Link to home page, will take you to a new page"><a href="../index.html">Home</a></button>
+                    <a href="../index.html" id="home-button" class="button" aria-label="Link to home page, will take you to a new page">Home</a>
                 </li>
             </ul>
         </div>
