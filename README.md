@@ -1,5 +1,7 @@
 # Around The World
 
+![](assets/documents/images/am_i_responsive.png)
+
 [View the website here](https://daisygunn.github.io/around-the-world/)
 
 This website has been produced to provide a platform for an Educational geography game for children aged 8-12, it offers questions in a quiz format to test their knowledge of capital cities around the world. 
