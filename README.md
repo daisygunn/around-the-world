@@ -78,7 +78,7 @@ I also decided to add a next button instead of an alert as I felt this would pro
 Furthermore, I decided to add a responsive navbar to further enhance the user experience when viewing the website on a mobile phone.
 
 ### Surface
-I chose to use a gradient background using blues and greens to resemble the colour of the globe, I wanted something simple so as not to detract from any of the content. 
+I chose to use a background colour of 'Dodger Blue', I think blue has a direct correlation with images of the earth and our planet and it's for this reason I chose it, I also wanted something simple so as not to detract from any of the content. 
 On the landing page, there is an animated globe that zooms in and out upon the mouse being scrolled, this interactive element provides something fun for the user straight away.
 Using google fonts I chose Yogomi as I felt it had a childlike handwriting feel to it and this will be used for all text elements on the website.
 
