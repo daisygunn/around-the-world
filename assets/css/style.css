@@ -50,7 +50,7 @@ h3 {
 .footer {
     position: static;
     left: 0;
-    bottom: 0;;
+    bottom: 0;
 }
 
 .page-footer {
@@ -73,6 +73,7 @@ h3 {
     border-bottom: 1px solid white;
 }
 
+/* Navbar CSS found here: https://dev.to/devggaurav/let-s-build-a-responsive-navbar-and-hamburger-menu-using-html-css-and-javascript-4gci */
 .navbar-top {
     display: flex;
     justify-content: space-around;
@@ -206,7 +207,7 @@ h3 {
     text-align: center;
     justify-content: center;
     align-items: center;
-    
+
 }
 
 .button:hover {
@@ -227,7 +228,7 @@ h3 {
     color: #3917ca;
 }
 
-/* Styling for quiz game */
+/* Styling for quiz page*/
 
 #game-container {
     margin: 20px;
@@ -301,6 +302,7 @@ h3 {
 }
 
 /* Styling for rules page */
+
 #rules-container {
     width: 50%;
     margin-left: 25vw;
@@ -407,6 +409,7 @@ h3 {
         height: 100px;
         width: 100px;
     }
+
     .question {
         font-size: 25px;
         margin: 0 10px;
@@ -485,6 +488,7 @@ h3 {
     .footer {
         font-size: 15px;
     }
+
     .answer-btn {
         display: block;
         width: 200px;

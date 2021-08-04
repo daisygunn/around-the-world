@@ -25,17 +25,23 @@ finalScore.innerText = mostRecentScore;
 // Disable the save score button if there is no value in the username
 username.addEventListener('keyup', () => {
     saveScore.disabled = !username.value;
-  });
+});
 
+
+function validateForm() {
+    let usernameLength = username.length;
+    if (usernameLength > 5) {
+        alert("Name must be more than 5 characters");
+        return false;
+    } else {
+        console.log('username entered');
+    }
+}
+  
 // Save the score to local storage
 function saveHighScore(e) {
     e.preventDefault();
-
-    // if (username == "" || username == " "){
-    //     console.log('No name inputted');
-    //     alert('You must input a name in order to save!');
-    //     return false;
-    // } else {
+    validateForm();
     const score = {
         score: mostRecentScore,
         name: username.value
@@ -51,4 +57,4 @@ function saveHighScore(e) {
 
     localStorage.setItem('highScores', JSON.stringify(highScores));
     window.location.assign('https://daisygunn.github.io/around-the-world/additional-pages/end-page.html');
-};
+}
