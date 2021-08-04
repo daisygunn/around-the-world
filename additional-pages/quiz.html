@@ -41,11 +41,7 @@
         </nav>
     </header>
     <div class="title-container container">
-
-        <div class="">
-            <h1 id="main-heading">Let's Play</h1>
-        </div>
-
+        <h1 id="main-heading">Let's Play</h1>
     </div>
 
     <div id="start-game" class="container">
@@ -60,9 +56,10 @@
 
             <p class="progress-items">Score: <span id="score-total">0</span></p>
         </div>
-        <div id="sound-toggle"><button id="mute-button" class="volume-button" onclick="muteSound()"><i
+        <div id="sound-toggle">
+            <button id="mute-button" class="volume-button" onclick="muteSound()">Sound Off <i
                     class="fas fa-volume-up"></i></button>
-            <button id="unmute-button" class="volume-button hidden" onclick="unmuteSound()"><i
+            <button id="unmute-button" class="volume-button hidden" onclick="unmuteSound()">Sound On <i
                     class="fas fa-volume-mute"></i></button></div>
         <div id="questions-container" class="block">
             <h2 class="question">What is the capital city of <span id="country-name">country name</span>?</h2>
@@ -75,8 +72,8 @@
         <audio src="../assets/audio/correct_sound.mp3" id="correct-sound"></audio>
         <audio src="../assets/audio/incorrect_sound.mp3" id="incorrect-sound"></audio>
         <div id="game-controls-container" class="flex-container">
-            <button id="next-question" class="button hidden"
-                aria-label="Button to take you to the next question">Next Question</button>
+            <button id="next-question" class="button hidden" aria-label="Button to take you to the next question">Next
+                Question</button>
             <button id="quit-button" class="button" aria-label="Button to quit the game">Quit Game</button>
         </div>
 

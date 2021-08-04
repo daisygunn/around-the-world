@@ -241,14 +241,18 @@ h3 {
 }
 
 .volume-button {
-    width: 15px;
     height: 15px;
     color: white;
     background: 0;
     border: none;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 16px;
+    font-family: 'Yomogi', cursive;
+    text-align: center;
+    left: 20px;
+    position: relative;
 }
+
 .answer-btn {
     font-family: 'Yomogi', cursive;
     text-align: center;
