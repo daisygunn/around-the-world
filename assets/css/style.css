@@ -27,8 +27,7 @@ h3 {
 
 body {
     font-family: 'Yomogi', cursive;
-    background-color: #03045E;
- 
+    background-color: #3626D0;
 }
 
 .footer {
@@ -424,16 +423,10 @@ h3 {
         font-size: 22px;
     }
 
-   /* .other-body {
-       min-height: 150vh;
-   } */
 }
 
 @media screen and (max-width: 768px) {
 
-    /* #home-body {
-        min-height: 100vh;
-    } */
 
     .nav-menu {
         position: fixed;
@@ -488,7 +481,6 @@ h3 {
         font-size: 25px;
     }
 
-   
     .answer-btn {
         display: block;
         width: 200px;
