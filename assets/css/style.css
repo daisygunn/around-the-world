@@ -408,7 +408,6 @@ h3 {
     }
 
     #game-button {
-        height: 100px;
         width: 100px;
     }
 
@@ -434,14 +433,21 @@ h3 {
     #progress-container {
         padding: 0 !important;
     }
+
+    .high-score {
+        font-size: 22px;
+    }
 }
 
 @media screen and (max-width: 768px) {
 
-    /* body {
-        height: 100vh;
-    } */
+    #home-body {
+        min-height: 100vh;
+    }
 
+    /* .other-body {
+
+    } */
     .nav-menu {
         position: fixed;
         left: -200%;
@@ -487,10 +493,13 @@ h3 {
         transform: translateY(-8px) rotate(-45deg);
     }
 
-    .footer {
+    .page-footer {
         font-size: 15px;
     }
 
+    h1 {
+        font-size: 25px;
+    }
     .answer-btn {
         display: block;
         width: 200px;
@@ -509,4 +518,46 @@ h3 {
     #rules-list {
         font-size: 16px;
     }
+}
+
+@media screen and (min-width: 1440px){
+    #home-body {
+        height: 100vh;
+    }
+
+    .nav-link {
+        font-size: 25px;
+    }
+    #tag-line {
+        margin-bottom: 40px;
+        font-size: 35px;
+    }
+
+    .button {
+        font-size: 25px;
+    }
+
+    #rules-list {
+        font-size: 35px;
+    }
+    .progress-items {
+        font-size: 30px;
+    }
+
+    .question {
+        font-size: 40px;
+    }
+
+    .answer-btn {
+        font-size: 25px;
+    }
+
+    .high-score {
+        font-size: 35px;
+    }
+
+    #play-again, #game-button {
+        height: 80px;
+        width: 100px;
+}
 }
