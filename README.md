@@ -199,16 +199,16 @@ The navbar being placed right at the gives the user a clear indication of how to
 
 2. **As a first time user, I want to learn new capital cities around the world playing the quiz.**
 As part of the quiz design, I added both visual & sound cues so that the user will know when they have answered a question correctly. This instant feedback, following them to learn as they play the quiz.
-![](document/images/correct_answer_userstory2.png)
-![](document/images/incorrect_answer_userstory2.png)
+![](documents/images/correct_answer_userstory2.png)
+![](documents/images/incorrect_answer_userstory2.png)
 
 3. **As a recurring user, I want to track my scores to see if I've made the high scores leaderboard.**
 Upon completing the quiz the user is taken to the end page, where they are able to save their score against their username, the top 5 scores saved to local storage are then displayed on the high scores page:
-![](docments/images/high_scores_testing.png)
-
+![](documents/images/high_scores_testing.png)
 
 ### Lighthouse
-
+I used the Lighthouse report on Google Dev Tools to test me websites performance, accessibility and best practices, my first report has an SEO score of under 90, after adding more detailed `meta-keywords` & `meta-description` all of my scores are now above 90:
+![](documents/images/lighthouse_report.png)
 
 ### Known bugs and fixes
 Throughout the entire project I have used Google Chrome Developer Tools to debug any issues with styling and alignment; this tool enabled me to change things and see the effect this had immediately. The use of the console whilst in dev tools was also incredibly helpful as I was able to utilise this to test me JavaScript code, using `console.log()` to check that my functions were being called correctly and that the desired information was going to be displayed. This was pivotal in designing the quiz as I needed to have access to the information of the various elements in order to be able to programme the quiz correctly.
