@@ -1,4 +1,6 @@
 /*jshint esversion: 6 */
+
+// Code for responsive navbar found here: https://dev.to/devggaurav/let-s-build-a-responsive-navbar-and-hamburger-menu-using-html-css-and-javascript-4gci
 function mobileMenu() {
     console.log('clicked');
     let hamburger = document.querySelector(".hamburger");
