@@ -294,9 +294,11 @@ The following websites/articles were used for research and guidance:
 
 [Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox)
 
-[Responsive Navbar](https://dev.to/devggaurav/let-s-build-a-responsive-navbar-and-hamburger-menu-using-html-css-and-javascript-4gci)
-
 I obtained code from the following resources:
+
+[Blinking Game Over heading](https://www.youtube.com/watch?v=9iDm3QiIEzU)
+
+[Responsive Navbar](https://dev.to/devggaurav/let-s-build-a-responsive-navbar-and-hamburger-menu-using-html-css-and-javascript-4gci)
 
 [Vanilla JavaScript quiz tutorial, used to save high scores, increment score and question count](https://www.youtube.com/watch?v=f4fB9Xg2JEY)
 
