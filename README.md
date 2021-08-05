@@ -4,10 +4,10 @@
 
 [View the website here](https://daisygunn.github.io/around-the-world/)
 
-This website has been produced to provide a platform for an Educational geography game for children aged 8-12, it offers questions in a quiz format to test their knowledge of capital cities around the world. 
+This website has been produced to provide a platform for an Educational geography game for children aged 8+, it offers questions in a quiz format to test their knowledge of capital cities around the world. 
 
 In addition to the home page this website also features:
-- The 'Play Game' page
+- The 'Quiz' page
 - A 'Rules' page
 - A 'High Scores' page
 
@@ -28,7 +28,7 @@ The user goals of this website are:
 Using the core UX principles I first started with Strategy, thinking about the target audience for this quiz & the features they would want.
 
 The target audience for 'Around the World' are:
-- Children aged 8-12
+- Children aged 8+
 - Children interested in geography
 - Children that would like to improve their geographical knowledge
 
@@ -44,26 +44,26 @@ As children aren't always guaranteed to have mobile phones this website has been
 To achieve the desired user and business goals this website will include the following:
 1. A landing page with:
 - Navigation bar
-- Animated H1 element
-- a H2 tagline
+- Animated `H1` element
+- a `H2` tagline
 - An interactive 3D globe that responds to mouse movement
 
 2. Quiz page:
 - Navigation bar
-- H1 element
+- `H1` element
 - Start game button
 - Question count & score tally
 - Quiz question & answer buttons
 - Quit game button
 
 3. End of quiz page:
-- H1 element
+- `H1` element
 - Form to submit high score
 - Control buttons
 
 4. Rules page:
 - Navigation bar
-- H1 element
+- `H1` element
 - Quiz rules and instructions
 
 5. High Scores page:
