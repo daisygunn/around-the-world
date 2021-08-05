@@ -1,4 +1,5 @@
 /*jshint esversion: 6 */
+/* globals $ */
 
 // Game controls
 const startButton = document.getElementById('start-button');
