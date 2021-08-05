@@ -2,7 +2,7 @@
 
 // Blinking Game Over heading - https://www.youtube.com/watch?v=9iDm3QiIEzU
 setInterval(function () {
-    var gameOverText = document.getElementById('game-over-heading');
+    let gameOverText = document.getElementById('game-over-heading');
 
     gameOverText.innerHTML = "Game Over!";
 
@@ -27,9 +27,6 @@ username.addEventListener('keyup', () => {
     saveScore.disabled = !username.value;
     });
 
-
-
-  
 // Save the score to local storage
 function saveHighScore(e) {
     e.preventDefault();

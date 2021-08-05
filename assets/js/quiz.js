@@ -14,7 +14,7 @@ let currentScore = 0;
 let questionCount = 0;
 
 const scoreOutput = document.getElementById('score-total');
-var questionCountOutput = document.getElementById('question-count');
+let questionCountOutput = document.getElementById('question-count');
 
 // Array used to generate questions
 const countriesList = [{
@@ -982,8 +982,7 @@ function checkAnswer(e) {
     /** retrieve the data-answer for the button clicked and 
      * compare this with the isCorrectQuestionAnswer object 'option'
      */
-    console.log(e.target);
-    var clickedButtonAnswer = e.target.getAttribute('data-answer');
+    let clickedButtonAnswer = e.target.getAttribute('data-answer');
     if (clickedButtonAnswer === isCorrectQuestionAnswer.option) {
         playCorrectSound();
         $(e.target).addClass("correct");
@@ -998,7 +997,6 @@ function checkAnswer(e) {
     }
     // Show the nextQuestion button
     nextQuestion.classList.remove('hidden');
-
 }
 
 // Increment the score by 1
@@ -1010,8 +1008,12 @@ function incrementScore(num) {
 // Set variables for sound effects & sound buttons
 const correctSound = document.getElementById('correct-sound');
 const incorrectSound = document.getElementById('incorrect-sound');
-const muteButton = document.getElementById('mute-button');
-const unmuteButton = document.getElementById('unmute-button');
+let muteButton = document.getElementById('mute-button');
+let unmuteButton = document.getElementById('unmute-button');
+
+// Add click event listeners to the sound icons
+muteButton.addEventListener('click', muteSound);
+unmuteButton.addEventListener('click', unmuteSound);
 
 // Function to mute the audio files
 function muteSound() {
