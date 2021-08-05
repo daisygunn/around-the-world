@@ -17,7 +17,7 @@ The business goals of the website are:
 3. To create an easy to navigate website to ensure that it is user friendly.
 
 The user goals of this website are:
-1. To learn new capital cities around the world.
+1. To learn about new capital cities around the world.
 2. To test my knowledge of capital cities using the quiz.
 3. To improve my previous scores & therefore my overall knowledge.
 
@@ -41,33 +41,39 @@ It was imperative to me that this website was simple & easy to use to ensure tha
 As children aren't always guaranteed to have mobile phones this website has been designed to work well on desktops & tablets as well, to ensure that no matter the device the user has a positive user experience.
 
 ### Scope
-In order to achieve the desired user and business goals this website will include the following:
+To achieve the desired user and business goals this website will include the following:
 1. A landing page with:
-- an H1 element
-- Interactive 3D globe that responds to mouse movement
 - Navigation bar
+- Animated H1 element
+- a H2 tagline
+- An interactive 3D globe that responds to mouse movement
 
-2. Play game page:
-- H1 element
+2. Quiz page:
 - Navigation bar
+- H1 element
 - Start game button
-- Quiz questions
-- Score tally
+- Question count & score tally
+- Quiz question & answer buttons
 - Quit game button
 
-3. Rules page:
+3. End of quiz page:
 - H1 element
+- Form to submit high score
+- Control buttons
+
+4. Rules page:
 - Navigation bar
+- H1 element
 - Quiz rules and instructions
 
-4. High Scores page:
-- H1 element
+5. High Scores page:
 - Navigation bar
+- H1 element
 - List of top 5 high scores
 
 ### Structure
 This is a multi-page website to keep the amount of information on each page limited and easy to digest; the rules, game and high scores are all separated so that any child using the website can find what they want easily.
-Each page is designed with simplicity in mind, with a navbar and an H1 element and then the relevant content centred below; this simplicity will allow for users to feel comfortable using and navigating each page.
+Each page is designed with simplicity in mind, with a responsive navbar and an H1 element and then the relevant content centred below; this simplicity will allow for users to feel comfortable using and navigating each page. The only page that differs from this layout is the end-page, I opted to have navigation buttons instead of a navbar at the top as I wanted the user to know they had to click something to move on from this page. 
 The quiz itself has a question, a text input and four answer buttons - this layout of this will be responsive so that it isn't too squashed when being viewed on a smaller screen. 
 
 ### Skeleton
@@ -89,10 +95,10 @@ Using google fonts I chose Yogomi as I felt it had a childlike handwriting feel 
 
 ### All pages
 #### *Navbar*
-The navbar features on all pages & is fully responsive, on screens smaller than 768px it collapses in a hamburger icon which when clicked opens the menu with links in a vertical list. I felt this simple way of displaying the menu on all screen sizes would be intutive and provide all users with a postive user experience.
+The navbar features on all pages & is fully responsive, on screens smaller than 768px it collapses in a hamburger icon which when clicked opens the menu with links in a vertical list. I felt this simple way of displaying the menu on all screen sizes would be intuitive and provide all users with a positive user experience.
 
 ### *Title* 
-All page titles are `H1` elements, they are centered and large in size so there is no ambiguity as to which page the user is on.
+All page titles are `H1` elements, they are centred and large in size so there is no ambiguity as to which page the user is on.
 
 ### *Buttons*
 All of the navigation buttons throughout the site are styled in the same way & they change once the user hovers over them; this continuity was intentional as I want all users to feel comfortable with this website & its features and be able to use it with ease.
@@ -105,38 +111,38 @@ The animated globe on the home page was added to provide a fun interactive eleme
 In addition to the globe I chose to animate the heading to continue that feeling of fun, I felt this would entice users over a static heading.
 
 #### *To the Quiz button*
-After asking my family to test the quiz it was highlighted to me that having a button to take you straight to the quiz might make it easier for users to navigate and so I added this button in. It is styled as all of the other buttons are throughout the site.
+After asking my family to test the quiz it was highlighted to me that having a button to take you straight to the quiz might make it easier for users to navigate and so I added this button. It is styled as all of the other buttons are throughout the site.
 
 ### Rules
 #### *Rules list*
-The list of rules is an `ol` element, it has been styled to remain in the center of the screen to allow for better responsivity.
+The list of rules is an `ol` element, it has been styled to remain in the centre of the screen to allow for better responsivity.
 
 ### Quiz
 #### *Game controls*
-These buttons are follow the same style rules as the other buttons, they just appear on the screen at different times depending on what the user clicks. I wanted to give the user control over the quiz process and also to be able to quit if required.
+These buttons follow the same style rules as the other buttons, they just appear on the screen at different times depending on what the user clicks. I wanted to give the user control over the quiz process and also to be able to quit if required.
 
 #### *Quiz elements*
 The quiz is made up of the following: 
-- Two progress items (question & score counts), these remain at the top of the quiz on opposite sides of the page so the user can clearly see their progress.
+- Two progress items (question & score counts), which remain at the top of the quiz on opposite sides of the page so the user can see their progress.
 - Question, this is dynamically created each time a new question is generated but always remains in the centre of the screen.
 - Answer buttons, these are styled in opposite colours to the other buttons featured. They have been designed in this way to create a clear difference so that users aren't confused.
 
 #### *Sound toggle button*
-After adding the sound effects for a right/wrong answer I decided that in order to further enhance the user experience there should be a control for this on the page. Using a favicon mute & sound icon that change when clicked, I added a JavaScript function to mute or unmute the sound. 
+After adding the sound effects for a right/wrong answer I decided that to further enhance the user experience there should be a control for this on the page. Using a favicon mute & sound icon (that change when clicked), I added a JavaScript function to mute or unmute the sound. 
 
 ### End page
 #### *Blinking title*
 I wanted to animate this heading in a familiar 'game' way as I felt this would further engage the user and clearly indicate the game is over.
 
 #### *Save score form*
-In order for the user to save their score to the High Scores page they need to input their username and click save, this is done using a form made up of a text input and submit button. 
+For the user to save their score to the High Scores page they need to input their username and click save, this is done using a form made up of a text input and submit button. 
 
 #### *Nav buttons*
-Unlike the other pages this page doesn't feature a navbar as I felt buttons directly under the form would indicate to the user they needed to do something in order to move on from this page.
+Unlike the other pages, this page doesn't feature a navbar as I felt buttons directly under the form would indicate to the user they needed to do something to move on from this page.
 
 ### High Scores
 #### *High Scores Leaderboard*
-The High Scores Leaderboard is an `ul` element, it has been styled to remain in the center of the screen to allow for better responsivity. The scores in this list are generated in `high-scores.js` using local storage.
+The High Scores Leaderboard is an `ul` element, it has been styled to remain in the centre of the screen to allow for better responsivity. The scores in this list are generated in `high-scores.js` using local storage.
 
 
 ---
@@ -190,7 +196,7 @@ I have used several technologies that have enabled this design to work:
 - [AmIResponsive](http://ami.responsivedesign.is/)
     - Used to generate responsive image used in README file.
 - [Wave](https://wave.webaim.org/)
-    - Used to test the accessibility the website.
+    - Used to test the accessibility of the website.
 ---
 ## Testing
 
@@ -199,8 +205,9 @@ I have used several technologies that have enabled this design to work:
 The navbar being placed right at the gives the user a clear indication of how to navigate through the website, it is placed in the same place on every page to provide continuity for the user.
 ![](assets/documents/images/navigation_user_story.png)
 
-2. **As a first time user, I want to learn new capital cities around the world playing the quiz.**
-As part of the quiz design, I added both visual & sound cues so that the user will know when they have answered a question correctly. This instant feedback, following them to learn as they play the quiz.
+2. **As a first time user, I want to learn about new capital cities around the world by playing the quiz.**
+As part of the quiz design, I added both visual & sound cues so that the user will know when they have answered a question correctly. This instant feedback will allow them to learn as they play the quiz.
+Furthermore, the quiz features every country in the world and so there is a vast opportunity to learn about countries they may not have known about before.
 ![](assets/documents/images/correct_answer_userstory2.png)
 ![](assets/documents/images/incorrect_answer_userstory2.png)
 
@@ -209,19 +216,19 @@ Upon completing the quiz the user is taken to the end page, where they are able 
 ![](assets/documents/images/high_scores_testing.png)
 
 ### Lighthouse
-I used the Lighthouse report on Google Dev Tools to test me websites performance, accessibility and best practices, my first report has an SEO score of under 90, after adding more detailed `meta-keywords` & `meta-description` all of my scores are now above 90:
+I used the Lighthouse report on Google Dev Tools to test my websites performance, accessibility and best practices, my first report has an SEO score of under 90, after adding more detailed `meta-keywords` & `meta-description` all of my scores are now above 90:
 ![](assets/documents/images/lighthouse_report.png)
 
 ### Known bugs and fixes
-Throughout the entire project I have used Google Chrome Developer Tools to debug any issues with styling and alignment; this tool enabled me to change things and see the effect this had immediately. The use of the console whilst in dev tools was also incredibly helpful as I was able to utilise this to test me JavaScript code, using `console.log()` to check that my functions were being called correctly and that the desired information was going to be displayed. This was pivotal in designing the quiz as I needed to have access to the information of the various elements in order to be able to programme the quiz correctly.
+Throughout the entire project, I have used Google Chrome Developer Tools to debug any issues with styling and alignment; this tool enabled me to change things and see the effect this had immediately. The use of the console whilst in dev tools was also incredibly helpful as I was able to utilise this to test my JavaScript code, using `console.log()` to check that my functions were being called correctly and that the desired information was going to be displayed. This was pivotal in designing the quiz as I needed to have access to the information of the various elements in order to be able to programme the quiz correctly.
 
-I tested the quizzes functionality by 'playing' it myself, to ensure the user experience was positive and that everything was working as it should. One key bug that I resolved was the duplication of answer options, I had written a `do-while` loop in the generateQuestion function which I thought had fixed the problem but whilst testing I found the occasional duplication occurred. For this reason I added two more `if` statements to the same function to prevent this occurring. Using `console.log()` I was able to prove that this implementation worked and the bug had been resolved.
+I tested the quizzes functionality by 'playing' it myself, to ensure the user experience was positive and that everything was working as it should. One key bug that I resolved was the duplication of answer options, I had written a `do-while` loop in the generateQuestion function which I thought had fixed the problem but whilst testing I found the occasional duplication occurred. For this reason, I added two more `if` statements to the same function to prevent this from occurring. Using `console.log()` I was able to prove that this implementation worked and the bug had been resolved.
 
 ### Validation: HTML, CSS and JavaScript
 Furthermore, I used Jshint to ensure that there were no errors within any of my JavaScript code, initially there were errors as you can see below:
 ![](assets/documents/images/jshint_errors.png)
 
-Howewer, I implemented all changes to ensure my code passed with no errors:
+However, I implemented all changes to ensure my code passed with no errors:
 ![](assets/documents/images/jshint_no_errors.png)
 
 In addition to Jshint, I used Jigsaw to validate my HTML and CSS which both passed with errors initially:
@@ -232,14 +239,14 @@ Which both now pass with no errors:
 ![](assets/documents/images/css_validation_no_errors.png)
 ![](assets/documents/images/html_validation_no_errors.png)
 
-To further ensure that my website is fully accessible I used WAVE and color contrast - initially I had some errors with mislabelling which I was able to resolve:
+To further ensure that my website is fully accessible I used WAVE and color contrast - initially, I had some errors with mislabelling which I was able to resolve:
 ![](assets/documents/images/wave_report.png)
 
 My background colour also failed the contrast report so I changed it to a darker shade of blue and now this report has no errors:
 ![](assets/documents/images/contrast_report.png)
 
 
-In addition to testing that I conducted I got my friends, family & fellow students to test the website on their phones/laptops/tablets/desktops and provide feedback on anything they felt didn't work or look right, this enabled me to debug any issues that I might not have otherwise found.
+In addition to testing that I conducted, I got my friends, family & fellow students to test the website on their phones/laptops/tablets/desktops and provide feedback on anything they felt didn't work or look right, this enabled me to debug any issues that I might not have otherwise found.
 ---
 ## Deployment
 I deployed this website by using GitPages and following the below steps:
