@@ -28,7 +28,7 @@ username.addEventListener('keyup', () => {
     });
 
 // Save the score to local storage
-function saveHighScore(e) {
+document.getElementById("save-score-form").addEventListener('submit', function(e) {
     e.preventDefault();
     saveScore.innerText = "Score saved";
         const score = {
@@ -48,4 +48,4 @@ function saveHighScore(e) {
     window.location.assign('https://daisygunn.github.io/around-the-world/additional-pages/end-page.html');
 
     
-}
+});

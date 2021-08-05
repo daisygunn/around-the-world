@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Educational website with quiz for children aged 8+ to test their knowledge on capital cities around the world.">
-    <meta name="keywords" content="Capital cities quiz, educational game, geography game, capital cities, childrens quiz">
+    <meta name="description"
+        content="Educational website with quiz for children aged 8+ to test their knowledge on capital cities around the world.">
+    <meta name="keywords"
+        content="Capital cities quiz, educational game, geography game, capital cities, childrens quiz">
     <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
@@ -25,33 +27,33 @@
             <h2>Final Score: <span id="final-score-total">0</span></h2>
             <h3>Save your score below & see if you've made our high scores table!</h3>
         </div>
-        <form id="save-score-form" class="flex-container" onsubmit="saveHighScore(event)">
-            <input type="text" name="username" placeholder="Please enter your name!" id="username" pattern="[a-zA-Z0-9]{5,15}" aria-label="Add your name for the high-scores leaderboard!" required>
-            <button class="button" id="save-score" type="submit" aria-label="Save your score by clicking on this button" disabled>Save!</button>
+        <form id="save-score-form" class="flex-container">
+             <input type="text" name="username" placeholder="Please enter your name!" id="username"
+                pattern="[a-zA-Z0-9]{5,15}" aria-label="Add your name for the high-scores leaderboard!" required>
+            <button class="button" id="save-score" type="submit" aria-label="Save your score by clicking on this button"
+                disabled>Save!</button>
         </form>
 
         <div id="buttons-container" class="flex-container">
             <ul id="buttons-list">
                 <li>
-                    <a href="high-scores.html" id="high-scores-button" class="button" aria-label="Link to High Scores page, this will take you to a new page">High Scores</a>
+                    <a href="high-scores.html" id="high-scores-button" class="button"
+                        aria-label="Link to High Scores page, this will take you to a new page">High Scores</a>
                 </li>
                 <li>
-                    <a href="quiz.html" class="button" aria-label="Link back to the quiz, will take you to a new page">Play Again</a>
+                    <a href="quiz.html" class="button"
+                        aria-label="Link back to the quiz, will take you to a new page">Play Again</a>
                 </li>
                 <li>
-                    <a href="../index.html" id="home-button" class="button" aria-label="Link to home page, will take you to a new page">Home</a>
+                    <a href="../index.html" id="home-button" class="button"
+                        aria-label="Link to home page, will take you to a new page">Home</a>
                 </li>
             </ul>
         </div>
     </div>
-    <!-- <div class="footer">
-        <footer id="end-page-footer" class="page-footer">
-            <h4>Copyright 2021 - Daisy Lindsay-Gunn</h4>
-        </footer>
-    </div> -->
-    <script src="../assets/js/end-quiz.js" defer></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/ad6c696766.js" crossorigin="anonymous"></script>
-    </body>
+    <script src="../assets/js/end-quiz.js" defer></script>
+</body>
 
 </html>
