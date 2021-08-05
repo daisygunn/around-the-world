@@ -861,15 +861,10 @@ function generateQuestion() {
     let countriesCount = countriesList.length;
     let randomNumber = getRandomInt(0, countriesCount);
 
-    console.log(randomNumber);
-
     // Prevent same number from being used twice
     do {
         randomNumber++;
-        console.log('Already found');
     } while (randomQuestionsArray.includes(randomNumber));
-
-    console.log(randomNumber);
 
     // Add the number generated to an array so it can be used in the above do-while loop
     randomQuestionsArray.push(randomNumber);
@@ -878,11 +873,7 @@ function generateQuestion() {
     let correctAnswer = countriesList[randomNumber].capital; // Generate the correct capital city from array 
 
     randomQuestionsArray.push(randomNumber);
-    console.log(randomQuestionsArray);
-
-    console.log(chosenCountry);
-    console.log(correctAnswer);
-
+    
     // Define correct answer to compare against
     isCorrectQuestionAnswer = {
         question: chosenCountry,
@@ -892,30 +883,23 @@ function generateQuestion() {
     // Generate 3 random cities from capitalListOptions to act as other answer options
     let answerOption1 = countriesList[getRandomInt(0, countriesList.length)].capital;
     randomQuestionsArray.push(getRandomInt(0, countriesList.length));
-    console.log(randomQuestionsArray);
-
+    
     let answerOption2 = countriesList[getRandomInt(0, countriesList.length)].capital;
     // Compare answer options and generate new option if there is a duplication
     if (answerOption2 === answerOption1) {
         answerOption2 = countriesList[getRandomInt(0, countriesList.length)].capital;
-        console.log('Number changed1');
         randomQuestionsArray.push(getRandomInt(0, countriesList.length));
-        console.log(randomQuestionsArray);
     } else {
         randomQuestionsArray.push(getRandomInt(0, countriesList.length));
-        console.log(randomQuestionsArray);
     }
 
     let answerOption3 = countriesList[getRandomInt(0, countriesList.length)].capital;
     // Compare answer options and generate new option if there is a duplication
     if (answerOption3 === answerOption2 || answerOption1) {
         answerOption3 = countriesList[getRandomInt(0, countriesList.length)].capital;
-        console.log('Number changed2');
         randomQuestionsArray.push(getRandomInt(0, countriesList.length));
-        console.log(randomQuestionsArray);
     } else {
         randomQuestionsArray.push(getRandomInt(0, countriesList.length));
-        console.log(randomQuestionsArray);
     }
 
     // Answer buttons options
@@ -1022,7 +1006,6 @@ function muteSound() {
     incorrectSound.muted = true;
     muteButton.classList.add('hidden');
     unmuteButton.classList.remove('hidden');
-    console.log('Sound muted');
 }
 
 // Function to unmute the audio files
@@ -1031,17 +1014,14 @@ function unmuteSound() {
     incorrectSound.muted = false;
     unmuteButton.classList.add('hidden');
     muteButton.classList.remove('hidden');
-    console.log('Sound unmuted');
 }
 
 // Function to play sound when the answer is correct
 function playCorrectSound() {
     correctSound.play();
-    console.log('sound played');
 }
 
 // Function to play sound when the answer is incorrect
 function playIncorrectSound() {
     incorrectSound.play();
-    console.log('sound played');
 }
