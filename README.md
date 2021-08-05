@@ -144,7 +144,6 @@ Unlike the other pages, this page doesn't feature a navbar as I felt buttons dir
 #### *High Scores Leaderboard*
 The High Scores Leaderboard is an `ul` element, it has been styled to remain in the centre of the screen to allow for better responsivity. The scores in this list are generated in `high-scores.js` using local storage.
 
-
 ---
 ## Technologies Used
 I have used several technologies that have enabled this design to work:
@@ -244,7 +243,6 @@ To further ensure that my website is fully accessible I used WAVE and color cont
 
 My background colour also failed the contrast report so I changed it to a darker shade of blue and now this report has no errors:
 ![](assets/documents/images/contrast_report.png)
-
 
 In addition to testing that I conducted, I got my friends, family & fellow students to test the website on their phones/laptops/tablets/desktops and provide feedback on anything they felt didn't work or look right, this enabled me to debug any issues that I might not have otherwise found.
 ---
