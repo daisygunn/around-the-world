@@ -155,8 +155,8 @@ I have used several technologies that have enabled this design to work:
     - Used to style all the web content across the project. 
 - [JavaScript](https://www.javascript.com/)
     - Used for the responsive navbar, animated heading, quiz functionality & sound effects and high-scores leaderboard.
-- [Jquery]()
-    - 
+- [Jquery](https://jquery.com/)
+    - This library has been used occassionally in my JavaScript code, specifically in my checkAnswer function in quiz.js.
 - [Planetary JS](http://planetaryjs.com/examples/rotating.html)
     - Library used to render the animated globe on the landing page. 
 - [Google Fonts](https://fonts.google.com/)
